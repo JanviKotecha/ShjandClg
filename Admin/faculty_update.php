@@ -23,7 +23,7 @@
           move_uploaded_file($_FILES['image']['tmp_name'],UPLOAD_PROFILE_URL.$Img);
           $qm->updateRecord("instructor","instructor_iamge='".$Img."'","id=".$id);
           $_SESSION['alert_msg'] .= "<div class='msg_success'>instructor updated successfully.</div>";
-          header("location:instructors.php");
+          header("location:faculty.php");
           exit;  
         }
         else{
@@ -32,7 +32,7 @@
         }
       }
       $_SESSION['alert_msg'] .= "<div class='msg_success'>instructor updated successfully.</div>";
-      header("location:instructors.php");
+      header("location:faculty.php");
       exit;  
   } else {
     echo "<script>alert('Please select the category');history.back();</script>";
@@ -46,12 +46,12 @@
       $row = mysqli_fetch_array($res);
     } else {
       $_SESSION['alert_msg'] .= "<div class='msg_error'>Data can't be found.</div>";
-      header("location:instructors.php");
+      header("location:faculty.php");
       exit;
     } 
   } else {
     $_SESSION['alert_msg'] .= "<div class='msg_error'>Data can't be found.</div>";
-    header("location:instructors.php");
+    header("location:faculty.php");
     exit;
   }
 ?>
@@ -70,10 +70,10 @@
             <div class="col-12">
               <div class="page-title-header" style="display:flex">
                 <h5>
-                  <a href="instructors.php" style="text-decoration: none;color: black;">instructors&nbsp;</a>
+                  <a href="faculty.php" style="text-decoration: none;color: black;">instructors&nbsp;</a>
                   <i class="fa fa-chevron-right"></i> Update instructor
                 </h5>
-                <a href="instructors.php" class="btn btn-primary"
+                <a href="faculty.php" class="btn btn-primary"
                   style="margin-left: auto !important;margin-bottom:20px">Back</a>
               </div>
               <?php include("include/loder.php"); ?>

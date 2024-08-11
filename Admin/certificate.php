@@ -98,7 +98,7 @@ if (isset($_GET['id'])) {
                                                             </td>
                                                             <td>
                                                                 <a class="btn btn-primary width"
-                                                                    href="instructors_update.php?id=<?php echo $row['id']; ?>"><i
+                                                                    href="faculty_update.php?id=<?php echo $row['id']; ?>"><i
                                                                         class="fa fa-edit"></i></a>
                                                                 <a class="btn btn-danger width"
                                                                     href="instructors.php?id=<?php echo $row['id']; ?>"

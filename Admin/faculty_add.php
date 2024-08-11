@@ -22,7 +22,7 @@ if (isset($_POST['add_pro'])) {
         $update = $qm->updateRecordReturn("instructor", "Instructor_iamge='" . $Img . "'", "id=" . $insert);
         move_uploaded_file($_FILES["image"]["tmp_name"], UPLOAD_PROFILE_URL . $Img);
         $_SESSION['alert_msg'] .= "<div class='msg_success'>Instructor added successfully.</div>";
-        header("location:instructors.php");
+        header("location:faculty.php");
 
       } else {
         echo "<script>alert('Image is not formeted');history.back();</script>";
@@ -53,10 +53,10 @@ if (isset($_POST['add_pro'])) {
             <div class="col-12">
               <div class="page-title-header" style="display:flex">
                 <h5>
-                  <a href="instructors.php" style="text-decoration: none;color: black;">instructors&nbsp;</a>
+                  <a href="faculty.php" style="text-decoration: none;color: black;">instructors&nbsp;</a>
                   <i class="fa fa-chevron-right"></i> Add instructor
                 </h5>
-                <a href="instructors.php" class="btn btn-primary"
+                <a href="faculty.php" class="btn btn-primary"
                   style="margin-left: auto !important;margin-bottom:20px">Back</a>
               </div>
               <div class="card">

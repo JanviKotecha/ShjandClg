@@ -77,9 +77,9 @@
     <li class="menu-header small text-uppercase">
       <span class="menu-header-text">College Topers Management</span>
     </li>
-    <li class="menu-item <?php echo $page_title =='event' ? 'active' : '' ;?>">
-      <a href="events.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-calendar-event"></i>
+    <li class="menu-item <?php echo $page_title =='toper' ? 'active' : '' ;?>">
+      <a href="topers.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-medal"></i>
         <div data-i18n="Account Settings">College Topers</div>
       </a>
     </li>
