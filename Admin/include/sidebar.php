@@ -1,7 +1,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-  <div class="app-brand demo">
-    <a href="dashbord.php" style=" text-align: center;">
-      <img src="assets/FIPLOGO.png" alt="" class="size">
+  <div class="app-brand demo justify-content-center">
+    <a href="dashbord" style="text-align: center;">
+      <img src="assets/logo.png" alt="" class="size">
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -20,28 +20,13 @@
       </a>
     </li>
     <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">User Managment</span>
+      <span class="menu-header-text">Faculty Managment</span>
     </li>
     <!-- Pages -->
-    <li class="menu-item <?php echo $page_title =='info' ? 'active' : '' ;?>">
-      <a href="customer.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="Account Settings">Users</div>
-      </a>
-    </li>
-    <li class="menu-item <?php echo $page_title =='membership' ? 'active' : '' ;?>">
-      <a href="membership_user.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-user-check"></i>
-        <div data-i18n="Account Settings">Membership User</div>
-      </a>
-    </li>
-    <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Manage Instructors</span>
-    </li>
-    <li class="menu-item <?php echo $page_title =='instructors' ? 'active' : '' ;?>">
-      <a href="instructors.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-chalkboard"></i>
-        <div data-i18n="Account Settings">Instructors</div>
+    <li class="menu-item <?php echo $page_title =='faculty' ? 'active' : '' ;?>">
+      <a href="faculty.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-book-reader"></i>
+        <div data-i18n="Account Settings">Faculty</div>
       </a>
     </li>
     <li class="menu-header small text-uppercase">
@@ -53,38 +38,13 @@
         <div data-i18n="Account Settings">Course</div>
       </a>
     </li> 
-    <li class="menu-item <?php echo $page_title =='backup' ? 'active' : '' ;?>">
-      <a href="backup.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-cloud-download"></i>
-        <div data-i18n="Account Settings">Backup</div>
-      </a>
-    </li> 
-
     <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Certificate Managment</span>
+      <span class="menu-header-text">Gallery / Event Management</span>
     </li>
-    <li class="menu-item <?php echo $page_title =='cerificate' ? 'active' : '' ;?>">
-      <a href="certificate.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-certification"></i>
-        <div data-i18n="Account Settings">Certificate</div>
-      </a>
-    </li> 
-    <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Pricing Management</span>
-    </li>
-    <li class="menu-item <?php echo $page_title =='member_pricing' ? 'active' : '' ;?>">
-      <a href="membership_pricing.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-dollar"></i>
-        <div data-i18n="Account Settings">Membership Price </div>
-      </a>
-    </li>
-    <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">FAQ Management</span>
-    </li>
-    <li class="menu-item <?php echo $page_title =='faq' ? 'active' : '' ;?>">
-      <a href="faq.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-question-mark"></i>
-        <div data-i18n="Account Settings">FAQ </div>
+    <li class="menu-item <?php echo $page_title =='event' ? 'active' : '' ;?>">
+      <a href="events.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-calendar-event"></i>
+        <div data-i18n="Account Settings">Events & Activity</div>
       </a>
     </li>
     <li class="menu-header small text-uppercase">
@@ -115,12 +75,30 @@
       </a>
     </li>
     <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Notification Management</span>
+      <span class="menu-header-text">College Topers Management</span>
     </li>
-    <li class="menu-item <?php echo $page_title =='notification' ? 'active' : '' ;?>">
-      <a href="notification.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-bell"></i>
-        <div data-i18n="Account Settings">Notification</div>
+    <li class="menu-item <?php echo $page_title =='toper' ? 'active' : '' ;?>">
+      <a href="topers.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-medal"></i>
+        <div data-i18n="Account Settings">College Topers</div>
+      </a>
+    </li>
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">PROMINENT Alumni Management</span>
+    </li>
+    <li class="menu-item <?php echo $page_title =='event' ? 'active' : '' ;?>">
+      <a href="events.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bxs-graduation"></i>
+        <div data-i18n="Account Settings">Alumni Students</div>
+      </a>
+    </li>
+    <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">FAQ Management</span>
+    </li>
+    <li class="menu-item <?php echo $page_title =='faq' ? 'active' : '' ;?>">
+      <a href="faq.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-question-mark"></i>
+        <div data-i18n="Account Settings">FAQ </div>
       </a>
     </li>
     <li class="menu-header small text-uppercase">
@@ -130,15 +108,6 @@
       <a href="contact.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-envelope"></i>
         <div data-i18n="Account Settings">Contact Us </div>
-      </a>
-    </li>
-    <li class="menu-header small text-uppercase">
-      <span class="menu-header-text">Payment Gateway</span>
-    </li>
-    <li class="menu-item <?php echo $page_title =='payment-method' ? 'active' : '' ;?>">
-      <a href="payment_method.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-credit-card"></i>
-        <div data-i18n="Account Settings">Payment Methods </div>
       </a>
     </li>
     <li class="menu-header small text-uppercase">
@@ -156,29 +125,6 @@
         <div data-i18n="Account Settings">Change Password</div>
       </a>
     </li>
-    <!-- <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-        <div data-i18n="Authentications">Authentications</div>
-      </a>
-      <ul class="menu-sub">
-        <li class="menu-item">
-          <a href="auth-login-basic.html" class="menu-link" target="_blank">
-            <div data-i18n="Basic">Login</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="auth-register-basic.html" class="menu-link" target="_blank">
-            <div data-i18n="Basic">Register</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
-            <div data-i18n="Basic">Forgot Password</div>
-          </a>
-        </li>
-      </ul>
-    </li> -->
 
   
   </ul>

@@ -9,21 +9,21 @@ if (isset($_GET['id'])) {
                 $qm->deleteRecord("instructor", "id=" . $_GET['id']);
                 $result = mysqli_fetch_array($res);
                 $_SESSION['alert_msg'] .= "<div class='msg_success'>instructor deleated successfully.</div>";
-                header("location:instructors.php");
+                header("location:faculty.php");
                 exit;
             } else {
                 $_SESSION['alert_msg'] .= "<div class='msg_error'>Data can't be found.</div>";
-                header("location:instructors.php");
+                header("location:faculty.php");
                 exit;
             }
         } else {
             $_SESSION['alert_msg'] .= "<div class='msg_error'>Only numeric value required.</div>";
-            header("location:instructors.php");
+            header("location:faculty.php");
             exit;
         }
     } else {
         $_SESSION['alert_msg'] .= "<div class='msg_error'>Id can't be empty.</div>";
-        header("location:instructors.php");
+        header("location:faculty.php");
         exit;
     }
 }
@@ -52,7 +52,7 @@ if (isset($_GET['id'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">instructor Detail
-                                        <a href="instructors_add.php" class="btn btn-primary" style="float: right;"><i
+                                        <a href="faculty_add.php" class="btn btn-primary" style="float: right;"><i
                                                 class="fa fa-plus"></i></a>
                                     </h3>
                                     <div class="table-responsive">
@@ -99,10 +99,10 @@ if (isset($_GET['id'])) {
                                                             </td>
                                                             <td>
                                                                 <a class="btn btn-primary width"
-                                                                    href="instructors_update.php?id=<?php echo $row['id']; ?>"><i
+                                                                    href="faculty_update.php?id=<?php echo $row['id']; ?>"><i
                                                                         class="fa fa-edit"></i></a>
                                                                 <a class="btn btn-danger width"
-                                                                    href="instructors.php?id=<?php echo $row['id']; ?>"
+                                                                    href="faculty.php?id=<?php echo $row['id']; ?>"
                                                                     onclick="return confirm('Are you sure');"><i
                                                                         class="fa fa-trash"></i></a>
                                                             </td>

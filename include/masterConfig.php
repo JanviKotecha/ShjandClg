@@ -2,5 +2,5 @@
 	$host = "localhost";
 	$username = "root";
 	$password = "";
-	$db = "fip";
+	$db = "sahjanand_clg";
 ?>

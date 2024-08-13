@@ -1,6 +1,8 @@
 <?php
-	define("HOST_URL","http://localhost/FIP_web/");
-	define("WEB_TITLE","FIP");
+	// define("HOST_URL","http://localhost/FIP_web/");
+	define("HOST_URL","http://localhost/myWork/ShjandClg/");
+	
+	define("WEB_TITLE","Sahjanand College");
 
 	define("IMAGE_URL", HOST_URL."images/");
 	define("PROFILE_URL", IMAGE_URL."instructorprofile/");

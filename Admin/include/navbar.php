@@ -10,7 +10,7 @@
     <!-- Search -->
     <div class="navbar-nav align-items-center">
       <div class="nav-item d-flex align-items-center">
-        <p class="mb-0 nav-title">Welcome to FIP Admin Panel ! 👋</p>
+        <p class="mb-0 nav-title">Welcome to Sahjanand College Admin Panel ! 👋</p>
       </div>
     </div>
     <!-- /Search -->
