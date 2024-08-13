@@ -1,83 +1,6 @@
-/*!
-Template Name: Bitrader - Professional Multipurpose HTML Template for Your Crypto, Forex, Stocks & Day Trading Business
-Template URI: 
-Author: thetork
-Author URI: https: //themeforest.net/user/thetork/portfolio
-Description: Experience the power of Bitrader, the ultimate HTML template designed to transform your trading business. With its sleek design and advanced features, Bitrader empowers you to showcase your expertise, engage clients, and dominate the markets. Elevate your online presence and unlock new trading possibilities with Bitrader.
-Version: 1.0.0
-Text Domain: Bitrader
-Tags: Crypto, Forex, and Stocks Trading Business
-
-*/
-/*
------------------Table of content start -----------------
-
-1. Configuration and helpers
-    -extends,
-    -variables,
-    -functions,
-    -mixins
-
-2. Vendors
-    -normalize,
-    -nice-select,
-    -rfs
-
-3. Base stuff
-    -fonts,
-    -typography,
-    -animations,
-    -common,
-    -helpers
-
-
-4. Layout-related sections
-    -header,
-    -banner,
-    -contact,
-    -account,
-    -form,
-    -footer
-
-
-5. Components
-    -button,
-    -preloader,
-    -lightdark-switch,
-    -social-link,
-    -foating-content,
-    -partner,
-    -feature,
-    -service,
-    -pricing,
-    -team,
-    -blog,
-    -blog-details,
-    -testimonial,
-    -cta,
-    -story,
-    -sidebar,
-    -faq,
-    -error,
-    -servicer-details,
-    -nav,
-    -roadmap,
-    -comment,
-    -about
-
-6. Page-specific styles
-    -home
-
-
-7. Themes
-    -theme
-
------------------Table of content end -----------------
-
-*/
-/*=====================================================================*/
-/* @@@@@@@@@@@@@  Extend Property CSS start here  @@@@@@@@@@@@@@ */
-/*=========<<Flex property extends start>>=========*/
+.lightdark-switch{
+  display:none !important;
+}
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 .about__content--style2 .about__content-inner, .roadmap--style2 .roadmap__upper-inner, .roadmap--style1 .roadmap__item-header, .accordion__button, .comment__author, .comment__head, .tags--style2 ul, .tags ul, .sidebar__categorie-body ul li, .sidebar__recentpost-inner, .testimonial__author, .testimonial__footer, .testimonial__item--style3 .testimonial__item-body, .blog-details__action-inner, .blog__writer, .floating-content__item--style4, .floating-content__item--style2, .social, .btn-group, .footer__end-links, .footer__app-inner, .footer__app, .account__check, .contact__item-inner, .subtitle, .section-header--style4, .menu, .header-wrapper .menu-area .header-btn, .header-wrapper .menu-area, .header-wrapper, .paginations ul li:not(:first-child, :last-child) a, .paginations ul li a, .swiper-nav {
   display: flex;
@@ -486,11 +409,11 @@ ol {
 /* @@@@@@@@@@@@@  aditional Property CSS Writing Now  @@@@@@@@@@@@@@ */
 :root {
   --brand-color: #e79a59;
-  --secondary-color:#cd4f2b;
+  --secondary-color:#cd4f2b ;
   --tertiary-color: #e79a5985;
   --tertiary-color2: #F5F7FC;
   --tertiary-color3: #F5F7FC;
-  --tertiary-color4: #cd4f2b;
+  --tertiary-color4: #cd4f2b ;
   --body-color:#FFFFFF;
   --header-bg-color: #0e352a;
   --header-bg-color2: #093d47;
@@ -502,7 +425,7 @@ ol {
   --border-color-9: rgba(5, 0, 26, 0.12);
   --border-color-10: rgba(20, 24, 33, 0.10);
   --border-color-11: #E6E6E6;
-  --feature-bg-color: #00150F;
+  --feature-bg-color:   #cd4f2b ;
   --social-border-color: #F0F4FA;
   --social-border-color-2: #e79a5985;
   --social-border-color-3: #e79a5985;
@@ -557,15 +480,15 @@ ol {
   --bg-shape-color-trans: rgba(255, 255, 255, 0.22);
   --bg-shape-color-2: #e79a5985;
   --bg-shape-color-trans-2: rgba(255, 255, 255, 0.22);
-  --footer-bg-color: #00150F;
-  --faq-img-bg-shadow: #16d466;
+  --footer-bg-color:   #cd4f2b ;
+  --faq-img-bg-shadow:   #cd4f2b ;
   --pagination-bg-color: #e79a5985;
   --section-bg-color: #f8f8f8;
   --sec-bg-color-2: #fff;
   --account-bg-color: #F5F7FC;
   --account-bg-color2: #FFF;
   --arrow-color1: #B5CAF2;
-  --arrow-icon-color: #cd4f2b;
+  --arrow-icon-color: #cd4f2b ;
   --header-border-color: #EBE9E1;
   --header-border-color2: rgba(255, 255, 255, 0.12);
   --banner2-bg-color: #0e241d;
@@ -592,8 +515,8 @@ ol {
   --tertiary-color:#002A1E;
   --tertiary-color2:#002A1E;
   --tertiary-color3:#0E221E;
-  --tertiary-color4:#cd4f2b;
-  --body-color:#00150F;
+  --tertiary-color4:#cd4f2b ;
+  --body-color:  #cd4f2b ;
   --border-color:#e79a59851F;
   --border-color-5: rgba(255, 255, 255, 0.08);
   --border-color-6: rgba(255, 255, 255, 0.08);
@@ -627,7 +550,7 @@ ol {
   --bg-grad-color-4: rgba(0, 208, 148, 0.24);
   --bg-grad-color-trans-4: rgba(0, 208, 148, 0.00);
   --bg-color-2:#2D2C2C;
-  --bg-color-3:#00150F;
+  --bg-color-3:  #cd4f2b ;
   --bg-color-4:linear-gradient(150.39deg, rgba(237, 242, 248, 0.0264) 15.02%, rgba(237, 242, 248, 0.12) 99.59%);
   --bg-color-5:linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #e79a5985 99.59%);
   --bg-color-6:#2D2C2C;
@@ -659,13 +582,13 @@ ol {
   --bg-shape-color-trans: rgba(255, 255, 255, 0.02);
   --bg-shape-color-2: rgba(213, 229, 249, 0.16);
   --bg-shape-color-trans-2: rgba(255, 255, 255, 0.04);
-  --footer-bg-color: #00150F;
-  --faq-img-bg-shadow: #16d4668f;
-  --pagination-bg-color: #00150F;
+  --footer-bg-color:   #cd4f2b ;
+  --faq-img-bg-shadow:   #cd4f2b 8f;
+  --pagination-bg-color:   #cd4f2b ;
   --section-bg-color: rgba(237, 242, 248, 0.02);
   --sec-bg-color-2: #081c17;
-  --account-bg-color: #00150F;
-  --account-bg-color2: #00150F;
+  --account-bg-color:   #cd4f2b ;
+  --account-bg-color2:   #cd4f2b ;
   --arrow-color1: #2B4B43;
   --arrow-icon-color: #fff;
   --header-border-color: rgba(255, 255, 255, 0.16);
@@ -2081,7 +2004,7 @@ ol {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   border-radius: 99px;
-  background-color: #cd4f2b;
+  background-color: #cd4f2b ;
   display: grid;
   place-items: center;
 }
@@ -5769,7 +5692,7 @@ textarea:focus-within {
 }
 
 .footer {
-  background-color: var(--footer-bg-color);
+  background: linear-gradient(91deg, #f0f4fa29 0%, #e79a5985 100%) !important;
   color: var(--wh-color);
   font-weight: 400;
 }
@@ -5849,7 +5772,7 @@ textarea:focus-within {
   font-size: 0.875rem;
 }
 .footer__about-moto {
-  color: var(--text-color-2);
+  color: #e79a59;
 }
 @media (min-width: 768px) {
   .footer__about-moto {
@@ -5858,7 +5781,7 @@ textarea:focus-within {
   }
 }
 .footer__links-tittle h6 {
-  color: var(--bg-white);
+  color: #e79a59;
 }
 @media (min-width: 576px) {
   .footer__links-tittle h6 {
@@ -5874,7 +5797,7 @@ textarea:focus-within {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  color: var(--text-color-2);
+  color: #e79a59;
 }
 .footer__linklist-item a::after {
   -webkit-transform: translateY(-50%);
@@ -5917,7 +5840,7 @@ textarea:focus-within {
 }
 .footer__end {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-color-2);
+  color: #e79a59;
   font-size: 1rem;
 }
 @media (min-width: 576px) {
@@ -6236,7 +6159,7 @@ textarea:focus-within {
 .trk-btn {
   font-size: 1rem;
   border: transparent;
-  color: #0C263A;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   padding: 0.75rem 1rem;
   text-decoration: none;
@@ -6397,8 +6320,8 @@ textarea:focus-within {
   color: var(--wh-color);
 }
 .trk-btn--secondary2 {
-  background-color: #cd4f2b;
-  border: 1px solid #cd4f2b;
+  background-color: #cd4f2b ;
+  border: 1px solid #cd4f2b ;
   color: var(--bg-white);
 }
 .trk-btn--secondary3 {
@@ -6673,8 +6596,8 @@ textarea:focus-within {
   stroke: #0C263A;
 }
 .trk-btn.active.trk-btn--outline22, .trk-btn:hover.trk-btn--outline22 {
-  background-color: #cd4f2b;
-  border-color: #cd4f2b;
+  background-color: #cd4f2b ;
+  border-color: #cd4f2b ;
   color: var(--bg-white);
 }
 .trk-btn.active.trk-btn--outline22 span.style1 i rect,
@@ -7030,7 +6953,7 @@ textarea:focus-within {
 }
 .social__link--style22 svg,
 .social__link--style22 i {
-  color: var(--bg-white);
+  color:#e79a59; 
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -9387,7 +9310,7 @@ textarea:focus-within {
   color: #0C263A;
 }
 .cta__subscribe h2 span {
-  color: #cd4f2b;
+  color: #cd4f2b ;
 }
 @media (max-width: 767px) {
   .cta__subscribe h2 {
@@ -11117,8 +11040,8 @@ html[data-bs-theme=dark] .form-control--style1 {
   border-right: none;
 }
 html[data-bs-theme=dark] .sidebar__search form input {
-  background-color: #00150F;
-  border-color: #00150F;
+  background-color:   #cd4f2b ;
+  border-color:   #cd4f2b ;
   color: var(--bg-white);
 }
 html[data-bs-theme=dark] .account__social-btn {

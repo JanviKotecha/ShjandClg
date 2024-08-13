@@ -10,38 +10,25 @@
           <div class="menu-area">
             <ul class="menu menu--style1">
               <li>
-                <a href="#">Services</a>
+                <a href="our-identity.php">Who We Are</a>
+              </li>
+              <li>
+                <a href="#">Admissions</a>
                 <ul class="submenu">
-                  <li><a href="services.php">Services</a></li>
-                  <li><a href="service-details.php">Services Details</a></li>
+                  <li><a href="why-study-at-shjanand-college.php">Why studdy at sahajanand college</a></li>
+                  <li><a href="how-to-apply.php">How to Apply</a></li>
+                  <li><a href="admission-offices.php">Admission Offices</a></li>
+                  
                 </ul>
               </li>
               <li>
-                <a href="#">About</a>
-                <ul class="submenu">
-                  <li><a href="about.php">About Us</a></li>
-                  <li><a href="price.php">Price</a></li>
-                  <li><a href="team.php">Team</a></li>
-                  <li><a href="team-2.php">Team 2</a></li>
-                  <li><a href="team-details.php">Team Details</a></li>
-                </ul>
+                <a href="courses.php">Courses</a>
               </li>
-
               <li>
-                <a href="#">Pages</a>
-                <ul class="submenu">
-                  <li><a href="blogs.php">Blogs</a></li>
-                  <li><a href="blog-sidebar.php">Blog - Side Bar</a></li>
-                  <li><a href="blog-details.php">Blog Details</a></li>
-                  <li><a href="signup.php">Sign Up</a></li>
-                  <li><a href="signup-2.php">Sign Up 2</a></li>
-                  <li><a href="signin.php">Sign In</a></li>
-                  <li><a href="signin-2.php">Sign In 2</a></li>
-                  <li><a href="forgot-pass.php">Reset Password</a></li>
-                  <li><a href="forgot-pass-2.php">Reset Password 2</a></li>
-                  <li><a href="404.php">404 Error</a></li>
-                </ul>
-
+                <a href="alumni.php">Alumni</a>
+              </li>
+              <li>
+                <a href="£">Events</a>
               </li>
               <li>
                 <a href="contact.php">Contact Us</a>
@@ -53,10 +40,13 @@
             <div class="menu-area">
               <div class="header-btn">
                 <a href="signup.php" class="trk-btn trk-btn--border trk-btn--primary">
-                  <span>Join Now</span>
+                  <span>Admissions</span>
                 </a>
               </div>
-
+              <div class="lightdark-switch">
+                <span class="switch-btn" id="btnSwitch"><img src="assets/images/icon/moon.svg" alt="light-dark-switchbtn"
+                    class="swtich-icon"></span>
+              </div>
               <!-- toggle icons -->
               <div class="header-bar d-lg-none home1">
                 <span></span>
@@ -69,3 +59,4 @@
       </div>
     </div>
   </header>
+ 

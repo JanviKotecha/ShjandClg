@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-  <title>Bitrader - Professional Multipurpose HTML Template for Your Crypto, Forex, Stocks & Day Trading Business </title>
+  <title>sahajanand college of IT and management Gondal </title>
   <?php include("include/head.php"); ?>
 </head>
 
@@ -11,21 +11,7 @@
   <!-- ===============>> Preloader start here <<================= -->
  <?php include("include/preloder.php"); ?>
   <!-- ===============>> Preloader end here <<================= -->
-
-
-
-  <!-- ===============>> light&dark switch start here <<================= -->
-  <div class="lightdark-switch">
-    <span class="switch-btn" id="btnSwitch"><img src="assets/images/icon/moon.svg" alt="light-dark-switchbtn"
-        class="swtich-icon"></span>
-  </div>
-  <!-- ===============>> light&dark switch start here <<================= -->
-
-
-
-
-
-  <!-- ===============>> Header section start here <<================= -->
+    <!-- ===============>> Header section start here <<================= -->
   <header class="header-section bg-color-3">
   <?php include("include/header.php"); ?>
   </header>
