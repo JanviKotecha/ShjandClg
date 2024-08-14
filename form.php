@@ -95,76 +95,6 @@
                                                 id="dob" value="<?php echo  isset($_POST['submit']) ? $dof :'' ?>" />
                                                 <small id="error-dob" class="text-danger"></small>
                                         </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Sex <sup style="color:#9194A0">*</sup> </p>
-                                            <select class="multisteps-form__select form-control" name="sex" id="sex">
-                                                <option value="sex"></option>
-                                                <option value="Male" selected>Male</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                            <small id="error-sex" class="text-danger"></small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Ethnicity </p>
-                                            <select class="multisteps-form__select form-control" name="eth" id="eth">
-                                                <option value="African American">African American</option>
-                                                <option value="Asian">Asian</option>
-                                                <option value="Hispanic or Latino">Hispanic or Latino</option>
-                                                <option value="Not Specified">Not Specified</option>
-                                            </select>
-                                            <small id="error-eth" class="text-danger"></small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Race </p>
-                                            <select class="multisteps-form__select form-control" name="race" id="race">
-                                                <option value="American Indian / Alaska Native">American Indian / Alaska
-                                                    Native</option>
-                                                <option value="Asian">Asian</option>
-                                                <option value="Black/African American">Black/African American</option>
-                                                <option value="Native Hawaiian / Other Pacific Islander">Native Hawaiian
-                                                    / Other Pacific Islander &nbsp;</option>
-                                                <option value="White">White</option>
-                                                <option value="Unknown">Unknown</option>
-                                            </select>
-                                            <small id="error-race" class="text-danger"></small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Address <sup style="color:#9194A0">*</sup> </p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="address" id="address">
-                                            <small>Error Message</small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>City <sup style="color:#9194A0">*</sup> </p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="city" id="city">
-                                            <small>Error Message</small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>State <sup style="color:#9194A0">*</sup> </p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="state" id="state">
-                                            <small>Error Message</small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Zip <sup style="color:#9194A0">*</sup></p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="zip" id="zip">
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Email <sup style="color:#9194A0">*</sup> </p>
-                                            <input class="multisteps-form__input form-control" type="email"
-                                                placeholder="Ex. biolink@gmail.com" name="email" id="email"
-                                                value="<?php echo  isset($_POST['submit']) ? $eml : ''; ?>">
-                                            <small>Error Message</small>
-                                        </div>
-                                        <div class="col-12 col-md-4 col-sm-6 px-1">
-                                            <p>Contact No. <sup style="color:#9194A0">*</sup> </p>
-                                            <input class="multisteps-form__input form-control" type="tel"
-                                                placeholder="Ex. 9196789478" name="phn" id="phn">
-                                            <small>Error Message</small>
-                                        </div>
                                     </div>
                                     <div class="button-row d-flex mt-4">
                                         <button class="btn btn-primary ml-auto js-btn-next" type="button"
@@ -180,36 +110,20 @@
                                     <div class="form-row mt-4">
                                         <div class="col-12 col-sm-6 mt-4 mt-sm-0">
                                             <p>Bill To </p>
-                                            <select class="multisteps-form__select form-control" name="billto">
+                                            <select class="multisteps-form__select form-control" name="billto" id="billto">
+                                                <option value=""></option>
                                                 <option value="Insurance">Insurance</option>
                                                 <option value="Uninsurance">Uninsured</option>
                                                 <option value="Patient">Patient</option>
                                                 <option value="Provider or Business">Provider or Business</option>
                                             </select>
+                                            <small id="error-billto" class="text-danger"></small>
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <p>Insurance Name </p>
                                             <input class="multisteps-form__input form-control" type="text"
                                                 placeholder="" name="insunm" id="insunm" />
-                                        </div>
-                                    </div>
-                                    <div class="form-row mt-4">
-                                        <div class="col-12 col-sm-6">
-                                            <p>Insurance ID </p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="insuid" />
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <p>Insurance Group </p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="insugrp" />
-                                        </div>
-                                    </div>
-                                    <div class="form-row mt-4">
-                                        <div class="col-12 col-sm-6">
-                                            <p>DL / SSN </p>
-                                            <input class="multisteps-form__input form-control" type="text"
-                                                placeholder="" name="dlssn" />
+                                            <small id="error-insunm" class="text-danger"></small>
                                         </div>
                                     </div>
                                     <div class="button-row d-flex mt-4">

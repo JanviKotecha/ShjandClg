@@ -89,32 +89,32 @@ const setFormHeight = () => {
 
 // Next Step Button Click Event
 DOMstrings.stepsForm.addEventListener("click", (e) => {
-  if (!e.target.classList.contains(`${DOMstrings.stepNextBtnClass}`)) {
-    return;
-  }
+  if (e.target.classList.contains(`${DOMstrings.stepNextBtnClass}`)) {
+    const activePanel = findParent(e.target, DOMstrings.stepFormPanelClass);
+    const activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(
+      activePanel
+    );
+    const nextPanel = activePanelNum + 1;
 
-  const activePanel = findParent(e.target, DOMstrings.stepFormPanelClass);
-  const activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(
-    activePanel
-  );
-  const nextPanel = activePanelNum + 1;
-
-  if (validateForm()) {
-    setActiveStep(nextPanel);
-    setActivePanel(nextPanel);
+    if (validateForm()) {
+      setActiveStep(nextPanel);
+      setActivePanel(nextPanel);
+    }
   }
 });
 
 // Previous Step Button Click Event
-DOMstrings.stepsBar.addEventListener("click", (e) => {
-  if (!e.target.classList.contains(`${DOMstrings.stepsBtnClass}`)) {
-    return;
+DOMstrings.stepsForm.addEventListener("click", (e) => {
+  if (e.target.classList.contains(`${DOMstrings.stepPrevBtnClass}`)) {
+    const activePanel = findParent(e.target, DOMstrings.stepFormPanelClass);
+    const activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(
+      activePanel
+    );
+    const prevPanel = activePanelNum - 1;
+
+    setActiveStep(prevPanel);
+    setActivePanel(prevPanel);
   }
-
-  const activeStep = getActiveStep(e.target);
-
-  setActiveStep(activeStep);
-  setActivePanel(activeStep);
 });
 
 // Set form height on page load
@@ -130,13 +130,6 @@ function validateForm() {
     { id: "fnm", message: "First Name is required" },
     { id: "lnm", message: "Last Name is required" },
     { id: "dob", message: "Date of Birth is required" },
-    { id: "sex", message: "Sex is required" },
-    { id: "address", message: "Address is required" },
-    { id: "city", message: "City is required" },
-    { id: "state", message: "State is required" },
-    { id: "zip", message: "Zip Code is required" },
-    { id: "email", message: "Email is required" },
-    { id: "phn", message: "Contact Number is required" },
   ];
 
   fields.forEach((field) => {
