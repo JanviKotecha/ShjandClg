@@ -184,9 +184,9 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
     } else if (disability === "Yes" && disabilityPercentage == "") {
       alert("Please Enter Disability Percentage");
     }
-    //  else if (disability === "Yes" && disabilityCertificate == "") {
-    //   alert("Please Upload Disability Certificate");
-    // }
+     else if (disability === "Yes" && disabilityCertificate == "") {
+      alert("Please Upload Disability Certificate");
+    }
     else if (nationality == "") {
       alert("Please Select Nationality");
     } else if (!locality) {
@@ -196,12 +196,12 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
     } else if (religion == "") {
       alert("Please Select Religion");
     }
-    // else if (profilePhoto == "") {
-    //   alert("Please Upload Profile Photo");
-    // }
-    // else if (signaturePhoto == "") {
-    //   alert("Please Upload Signature Photo");
-    // }
+    else if (profilePhoto == "") {
+      alert("Please Upload Profile Photo");
+    }
+    else if (signaturePhoto == "") {
+      alert("Please Upload Signature Photo");
+    }
     else {
       activePanelNum++;
     }
@@ -283,6 +283,14 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
       alert("Please enter S.S.C. Percentage.");
     } else if (sscMarksheet === "") {
       alert("Please upload S.S.C. Marksheet.");
+    } else {
+      activePanelNum++;
+    }
+  } else if (activePanelNum === 3) {
+    let agreeCheckbox = document.getElementById("agree");
+
+    if (!agreeCheckbox.checked) {
+      alert("You must agree to the terms and conditions before submitting.");
     } else {
       activePanelNum++;
     }

@@ -39,7 +39,7 @@
           <div class="header-action">
             <div class="menu-area">
               <div class="header-btn">
-                <a href="signup.php" class="trk-btn trk-btn--border trk-btn--primary">
+                <a href="frm.php" class="trk-btn trk-btn--border trk-btn--primary">
                   <span>Admissions</span>
                 </a>
               </div>

@@ -73,7 +73,7 @@
                 style="background: white;color: #0392ce;">
                 Previous Step
             </button>
-            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next Step</button>
+            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
         </div>
     </div>
 </div>

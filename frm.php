@@ -58,7 +58,7 @@
                             <button class="multisteps-form__progress-btn js-active" type="button">Personal Detials</button>
                             <button class="multisteps-form__progress-btn" type="button">Address Details</button>
                             <button class="multisteps-form__progress-btn" type="button">Academic Details</button>
-                            <button class="multisteps-form__progress-btn" type="button">Step 4</button>
+                            <button class="multisteps-form__progress-btn" type="button">Terms & Submit</button>
                         </div>
                         <br><br>
                     </div>
@@ -73,25 +73,8 @@
                             <?php include("Step2.php"); ?>
                             <!--single form panel 3 -->
                             <?php include("Step3.php"); ?>
-                            
-                            <!-- thank you -->
-                            <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn"
-                                style="height: 400px;">
-                                <center>
-                                    <img src="images/icon/ico.png" alt="" style="height: 97px; padding:5px">
-                                    <div class="multisteps-form__content">
-                                        <div class="form-row mt-4">
-                                            <div class="col-12 col-sm-12 mt-4 mt-sm-0">
-                                                <h1>Success !</h1>
-                                                <h6>Your form has been submitted.</h6>
-                                            </div>
-                                        </div>
-                                        <div class="button-row d-flex mt-4">
-                                            <button class="btn  ml-auto" type="submit" title="Send" name="submit"
-                                                style="background-color:#0392ce; color:white; margin: 0px 296px; margin-top: 74px; border:none;">Go
-                                                To Home</button>
-                                </center>
-                            </div>
+                            <!-- single form panel 4 -->  
+                            <?php include("Step4.php"); ?>                         
                         </form>
                     </div>
                 </div>

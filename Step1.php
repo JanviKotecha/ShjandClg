@@ -151,7 +151,7 @@
                 <small id="error-religion" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-4 col-sm-6 px-1">
-                <p>Is Minority <sup style="color:#9194A0">*</sup></p>
+                <p>Is Minority</p>
                 <input class="form-check-input" type="checkbox" name="is_minority" id="is_minority">
                 <small id="error-is_minority" class="text-danger"></small>
             </div>
@@ -164,12 +164,12 @@
             </div>
             <div class="col-12 col-md-4 col-sm-6 px-1">
                 <p>Signature Photo <sup style="color:#9194A0">*</sup></p>
-                <input class="00" type="file" name="signature_photo" id="signature_photo">
+                <input class="multisteps-form__input form-control" type="file" name="signature_photo" id="signature_photo">
                 <small id="error-signature_photo" class="text-danger"></small>
             </div>
         </div>
         <div class="button-row d-flex mt-4">
-            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next Step</button>
+            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
         </div>
     </div>
 </div>

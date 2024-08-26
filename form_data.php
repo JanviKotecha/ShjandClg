@@ -54,12 +54,18 @@ if (isset($_POST['submit'])) {
     $sscSeatNo = $_POST['ssc_seat_no'];
     $sscPercentage = $_POST['ssc_percentage'];
     $sscMarksheet = $_FILES['ssc_marksheet']['name'];
+
+    // Agree to Terms
+    $agreeTerms = isset($_POST['agree']) ? 1 : 0;
+
+    // Default Status
+    $status = 'Pending';
    
     // Insert query
     $insert = $qm->insertRecordReturn(
         "admission", 
-        "course_type, application_no, applicant_name, birthdate, email, mobile_no, fathers_name, mothers_name, parents_mobile_no, no_of_siblings, category, gender, disability, disability_percentage, disability_certificate, nationality, locality, aadhar_number, religion, is_minority, signature_photo, present_address, present_state, present_district, present_taluka, present_pincode, permanent_address, permanent_state, permanent_district, permanent_taluka, permanent_pincode, hsc_diploma, hsc_board, hsc_passing_year, hsc_seat_no, hsc_percentage, hsc_marksheet, ssc_board, ssc_passing_year, ssc_seat_no, ssc_percentage, ssc_marksheet", 
-        "'$courseType', '$applicationNo', '$applicantName', '$dob', '$email', '$mobileNo', '$fathersName', '$mothersName', '$parentsMobileNo', '$noOfSiblings', '$category', '$gender', '$disability', '$disabilityPercentage', '$disabilityCertificate', '$nationality', '$locality', '$aadharNumber', '$religion', '$isMinority', '$signaturePhoto', '$presentAddress', '$presentState', '$presentDistrict', '$presentTaluka', '$presentPincode', '$permanentAddress', '$permanentState', '$permanentDistrict', '$permanentTaluka', '$permanentPincode', '$hscDiploma', '$hscBoard', '$hscPassingYear', '$hscSeatNo', '$hscPercentage', '$hscMarksheet', '$sscBoard', '$sscPassingYear', '$sscSeatNo', '$sscPercentage', '$sscMarksheet'"
+        "course_type, application_no, applicant_name, birthdate, email, mobile_no, fathers_name, mothers_name, parents_mobile_no, no_of_siblings, category, gender, disability, disability_percentage, disability_certificate, nationality, locality, aadhar_number, religion, is_minority, signature_photo, present_address, present_state, present_district, present_taluka, present_pincode, permanent_address, permanent_state, permanent_district, permanent_taluka, permanent_pincode, hsc_diploma, hsc_board, hsc_passing_year, hsc_seat_no, hsc_percentage, hsc_marksheet, ssc_board, ssc_passing_year, ssc_seat_no, ssc_percentage, ssc_marksheet, agree_terms, status",  
+        "'$courseType', '$applicationNo', '$applicantName', '$dob', '$email', '$mobileNo', '$fathersName', '$mothersName', '$parentsMobileNo', '$noOfSiblings', '$category', '$gender', '$disability', '$disabilityPercentage', '$disabilityCertificate', '$nationality', '$locality', '$aadharNumber', '$religion', '$isMinority', '$signaturePhoto', '$presentAddress', '$presentState', '$presentDistrict', '$presentTaluka', '$presentPincode', '$permanentAddress', '$permanentState', '$permanentDistrict', '$permanentTaluka', '$permanentPincode', '$hscDiploma', '$hscBoard', '$hscPassingYear', '$hscSeatNo', '$hscPercentage', '$hscMarksheet', '$sscBoard', '$sscPassingYear', '$sscSeatNo', '$sscPercentage', '$sscMarksheet', '$agreeTerms', '$status'"
     );
     
     // File upload handling

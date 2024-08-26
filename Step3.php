@@ -75,8 +75,7 @@
         <div class="button-row d-flex mt-4">
             <button class="btn btn-primary js-btn-prev" type="button" title="Prev"
                 style="background: white;color: #0392ce;">Previous Step</button>
-            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next"
-                style="background-color:green; border:none;">Submit</button>
+            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
         </div>
     </div>
 </div>
