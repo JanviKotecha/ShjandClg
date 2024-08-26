@@ -9,34 +9,7 @@
                     alt="Logo"></a>
                 <p class="footer__about-moto ">Welcome to our trading site! We offer the best, most
                   affordable products and services around. Shop now and start finding great deals!</p>
-                <div class="footer__app">
-                  <div class="footer__app-item footer__app-item--apple">
-                    <div class="footer__app-inner">
-                      <div class="footer__app-thumb">
-                        <a href="https://www.apple.com/app-store/" target="_blank" class="stretched-link">
-                          <img src="assets/images/footer/apple.png" alt="apple-icon">
-                        </a>
-                      </div>
-                      <div class="footer__app-content">
-                        <span>Download on the</span>
-                        <p class="mb-0">App Store</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="footer__app-item footer__app-item--playstore">
-                    <div class="footer__app-inner">
-                      <div class="footer__app-thumb">
-                        <a href="https://play.google.com/store" target="_blank" class="stretched-link">
-                          <img src="assets/images/footer/play.png" alt="playstore-icon">
-                        </a>
-                      </div>
-                      <div class="footer__app-content">
-                        <span>GET IT ON</span>
-                        <p class="mb-0">Google Play</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              
               </div>
             </div>
             <div class="col-md-2 col-sm-4 col-6">
@@ -100,8 +73,8 @@
         <div class="footer__bottom">
           <div class="footer__end">
             <div class="footer__end-copyright">
-              <p class=" mb-0">© 2024 All Rights Reserved By <a href="https://themeforest.net/user/thetork/portfolio"
-                  target="_blank">Thetork</a> </p>
+              <p class=" mb-0">© 2024 All Rights Reserved By <a href="#"
+                  target="_blank">Sahajanand college</a> </p>
             </div>
             <div>
               <ul class="social">

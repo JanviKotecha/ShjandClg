@@ -1,13 +1,13 @@
 .footer {
     @extend %of-hidden,
     %p-rel;
-    background-color: $footer-bg-color;
+    background-color: linear-gradient(91deg, var(--bg-grad-color-trans-3) 0%, var(--bg-grad-color-3) 100%) !important;
     color: $wh-color;
     font-weight: 400;
 
 
     &--style2 {
-        background-color: $bg-color-12;
+        background-color: linear-gradient(91deg, var(--bg-grad-color-trans-3) 0%, var(--bg-grad-color-3) 100%) !important;
     }
 
     &__wrapper {
