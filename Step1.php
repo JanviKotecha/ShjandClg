@@ -97,14 +97,14 @@
                 </select>
                 <small id="error-disability" class="text-danger"></small>
             </div>
-            <div class="col-12 col-md-4 col-sm-6 px-1">
+            <div class="col-12 col-md-4 col-sm-6 px-1" id="disability_percentage_container" style="display: none;">
                 <p>Disability Percentage <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="number" name="disability_percentage"
                     id="disability_percentage"
                     value="<?php echo isset($_POST['submit']) ? $disability_percentage : ''; ?>">
                 <small id="error-disability_percentage" class="text-danger"></small>
             </div>
-            <div class="col-12 col-md-4 col-sm-6 px-1">
+            <div class="col-12 col-md-4 col-sm-6 px-1" id="disability_certificate_container" style="display: none;">
                 <p>Disability Certificate <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="file" name="disability_certificate"
                     id="disability_certificate">

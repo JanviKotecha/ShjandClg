@@ -55,7 +55,8 @@
                 <div class="row">
                     <div class="col-12 col-lg-8 m-auto mb-4">
                         <div class="multisteps-form__progress" id="hidden">
-                            <button class="multisteps-form__progress-btn js-active" type="button">Personal Detials</button>
+                            <button class="multisteps-form__progress-btn js-active" type="button">Personal
+                                Detials</button>
                             <button class="multisteps-form__progress-btn" type="button">Address Details</button>
                             <button class="multisteps-form__progress-btn" type="button">Academic Details</button>
                             <button class="multisteps-form__progress-btn" type="button">Terms & Submit</button>
@@ -66,15 +67,16 @@
 
                 <div class="row g-5">
                     <div class="col-12 col-lg-12 m-auto">
-                        <form class="multisteps-form__form" action="form_data.php" method="post" name="myform" enctype="multipart/form-data" novalidate>
+                        <form class="multisteps-form__form" action="form_data.php" method="post" name="myform"
+                            enctype="multipart/form-data" novalidate>
                             <!--single form panel 1 -->
                             <?php include("Step1.php"); ?>
                             <!--single form panel 2 -->
                             <?php include("Step2.php"); ?>
                             <!--single form panel 3 -->
                             <?php include("Step3.php"); ?>
-                            <!-- single form panel 4 -->  
-                            <?php include("Step4.php"); ?>                         
+                            <!-- single form panel 4 -->
+                            <?php include("Step4.php"); ?>
                         </form>
                     </div>
                 </div>
@@ -89,6 +91,21 @@
     </div>
     <!-- ===============>> Contact section start here <<================= -->
 
+    <script>
+        document.getElementById('disability').addEventListener('change', function() {
+            var disabilityValue = this.value;
+            var percentageContainer = document.getElementById('disability_percentage_container');
+            var certificateContainer = document.getElementById('disability_certificate_container');
+
+            if (disabilityValue === 'Yes') {
+                percentageContainer.style.display = 'block';
+                certificateContainer.style.display = 'block';
+            } else {
+                percentageContainer.style.display = 'none';
+                certificateContainer.style.display = 'none';
+            }
+        });
+    </script>
     <script src="script.js"></script>
 
     <!-- ===============>> footer start here <<================= -->
