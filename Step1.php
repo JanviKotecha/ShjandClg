@@ -157,15 +157,22 @@
             </div>
         </div>
         <div class="form-row mt-4">
-            <div class="col-12 col-md-4 col-sm-6 px-1">
+            <div class="col-12 col-md-6 col-sm-6 px-1">
                 <p>Profile Photo <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="file" name="profile_photo" id="profile_photo">
                 <small id="error-profile_photo" class="text-danger"></small>
             </div>
-            <div class="col-12 col-md-4 col-sm-6 px-1">
+            <div class="col-12 col-md-6 col-sm-6 px-1 d-flex justify-content-center">
+                <img id="profile_photo_preview" style="display: none; margin-top: 10px;" width="40" height="40" />
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 px-1">
                 <p>Signature Photo <sup style="color:#9194A0">*</sup></p>
-                <input class="multisteps-form__input form-control" type="file" name="signature_photo" id="signature_photo">
+                <input class="multisteps-form__input form-control" type="file" name="signature_photo"
+                    id="signature_photo">
                 <small id="error-signature_photo" class="text-danger"></small>
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 px-1">
+                <img id="signature_photo_preview" style="display: none; margin-top: 10px;" width="40" height="40" />
             </div>
         </div>
         <div class="button-row d-flex mt-4">

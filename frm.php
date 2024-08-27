@@ -106,6 +106,30 @@
             }
         });
     </script>
+
+    <script>
+        function showImagePreview(input, previewElementId) {
+            var file = input.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var previewElement = document.getElementById(previewElementId);
+                    previewElement.src = e.target.result;
+                    previewElement.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        document.getElementById('profile_photo').addEventListener('change', function() {
+            showImagePreview(this, 'profile_photo_preview');
+        });
+
+        document.getElementById('signature_photo').addEventListener('change', function() {
+            showImagePreview(this, 'signature_photo_preview');
+        });
+    </script>
+
     <script src="script.js"></script>
 
     <!-- ===============>> footer start here <<================= -->
