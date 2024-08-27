@@ -19,26 +19,26 @@
                 </div>
                 <small id="error-locality" class="text-danger"></small>
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Exam Board</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Exam Board <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="hsc_board" id="hsc_board" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Passing Year</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Passing Year <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="hsc_passing_year"
                     id="hsc_passing_year" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Seat No</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Seat No <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="hsc_seat_no" id="hsc_seat_no" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Percentage</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Percentage <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="number" name="hsc_percentage"
                     id="hsc_percentage" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Marksheet (upload)</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Marksheet  <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="file" name="hsc_marksheet"
                     id="hsc_marksheet" accept=".pdf,.doc,.docx" />
             </div>
@@ -47,26 +47,26 @@
         <!-- S.S.C. Details -->
         <h4 class="multisteps-form__title mt-4" style="padding-left:18px;">S.S.C. Details</h4>
         <div class="form-row mt-4 px-1">
-            <div class="col-12 col-sm-6 mt-4">
-                <p>Exam Board</p>
+            <div class="col-12 col-sm-6 mt-2">
+                <p>Exam Board <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="ssc_board" id="ssc_board" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Passing Year</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Passing Year <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="ssc_passing_year"
                     id="ssc_passing_year" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Seat No</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Seat No <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="ssc_seat_no" id="ssc_seat_no" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Percentage</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Percentage <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="number" name="ssc_percentage"
                     id="ssc_percentage" />
             </div>
-            <div class="col-12 col-sm-6 mt-4 px-1">
-                <p>Marksheet (upload)</p>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Marksheet  <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="file" name="ssc_marksheet"
                     id="ssc_marksheet" accept=".pdf,.doc,.docx" />
             </div>
