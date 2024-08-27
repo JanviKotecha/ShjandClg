@@ -92,19 +92,19 @@
     <!-- ===============>> Contact section start here <<================= -->
 
     <script>
-    document.getElementById('disability').addEventListener('change', function() {
-        var disabilityValue = this.value;
-        var percentageContainer = document.getElementById('disability_percentage_container');
-        var certificateContainer = document.getElementById('disability_certificate_container');
+        document.getElementById('disability').addEventListener('change', function() {
+            var disabilityValue = this.value;
+            var percentageContainer = document.getElementById('disability_percentage_container');
+            var certificateContainer = document.getElementById('disability_certificate_container');
 
-        if (disabilityValue === 'Yes') {
-            percentageContainer.style.display = 'block';
-            certificateContainer.style.display = 'block';
-        } else {
-            percentageContainer.style.display = 'none';
-            certificateContainer.style.display = 'none';
-        }
-    });
+            if (disabilityValue === 'Yes') {
+                percentageContainer.style.display = 'block';
+                certificateContainer.style.display = 'block';
+            } else {
+                percentageContainer.style.display = 'none';
+                certificateContainer.style.display = 'none';
+            }
+        });
     </script>
 
     <script>
@@ -145,6 +145,34 @@
             if (validateImage(this)) {
                 showImagePreview(this, 'signature_photo_preview');
             }
+        });
+    </script>
+
+    <script>
+        function validateDocument(input) {
+            var file = input.files[0];
+            if (file) {
+                var fileType = file.type;
+                var validTypes = ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
+                if (!validTypes.includes(fileType)) {
+                    alert("Invalid file format. Please select a PDF, DOC, or DOCX file.");
+                    input.value = ''; // Clear the input
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        document.getElementById('disability_certificate').addEventListener('change', function () {
+            validateDocument(this);
+        });
+
+        document.getElementById('hsc_marksheet').addEventListener('change', function () {
+            validateDocument(this);
+        });
+
+        document.getElementById('ssc_marksheet').addEventListener('change', function () {
+            validateDocument(this);
         });
     </script>
 

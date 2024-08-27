@@ -40,7 +40,7 @@
             <div class="col-12 col-sm-6 mt-4 px-1">
                 <p>Marksheet (upload)</p>
                 <input class="multisteps-form__input form-control" type="file" name="hsc_marksheet"
-                    id="hsc_marksheet" />
+                    id="hsc_marksheet" accept=".pdf,.doc,.docx" />
             </div>
         </div>
 
@@ -68,7 +68,7 @@
             <div class="col-12 col-sm-6 mt-4 px-1">
                 <p>Marksheet (upload)</p>
                 <input class="multisteps-form__input form-control" type="file" name="ssc_marksheet"
-                    id="ssc_marksheet" />
+                    id="ssc_marksheet" accept=".pdf,.doc,.docx" />
             </div>
         </div>
 

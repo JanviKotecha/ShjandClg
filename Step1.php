@@ -107,7 +107,7 @@
             <div class="col-12 col-md-4 col-sm-6 px-1" id="disability_certificate_container" style="display: none;">
                 <p>Disability Certificate <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="file" name="disability_certificate"
-                    id="disability_certificate">
+                    id="disability_certificate" accept=".pdf,.doc,.docx" >
                 <small id="error-disability_certificate" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-4 col-sm-6 px-1">
@@ -159,7 +159,7 @@
         <div class="form-row mt-4">
             <div class="col-12 col-md-6 col-sm-6 px-1">
                 <p>Profile Photo <sup style="color:#9194A0">*</sup></p>
-                <input class="multisteps-form__input form-control" type="file" name="profile_photo" id="profile_photo">
+                <input class="multisteps-form__input form-control" type="file" name="profile_photo" id="profile_photo" accept="image/png, image/jpeg, image/jpg">
                 <small id="error-profile_photo" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-6 col-sm-6 px-1 d-flex justify-content-center">
@@ -168,7 +168,7 @@
             <div class="col-12 col-md-6 col-sm-6 px-1">
                 <p>Signature Photo <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="file" name="signature_photo"
-                    id="signature_photo">
+                    id="signature_photo" accept="image/png, image/jpeg, image/jpg">
                 <small id="error-signature_photo" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-6 col-sm-6 px-1 d-flex justify-content-center">
