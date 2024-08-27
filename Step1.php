@@ -175,8 +175,8 @@
                 <img id="signature_photo_preview" style="display: none; margin-top: 10px;" width="40" height="40" />
             </div>
         </div>
-        <div class="button-row d-flex mt-4">
-            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+        <div class="button-row d-flex justify-content-center mt-5">
+            <button class="trk-btn trk-btn--border trk-btn--primary ml-auto js-btn-next" type="button" title="Next">Next</button>
         </div>
     </div>
 </div>

@@ -68,12 +68,12 @@
             </div>
         </div>
 
-        <div class="button-row d-flex mt-4">
-            <button class="btn btn-primary js-btn-prev" type="button" title="Prev"
-                style="background: white;color: #0392ce;">
+        <div class="button-row d-flex justify-content-center mt-5">
+            <button class="trk-btn trk-btn--border trk-btn--primary js-btn-prev mx-2" type="button" title="Prev"
+                style="background: white;color: #e79a59;">
                 Previous Step
             </button>
-            <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+            <button class="trk-btn trk-btn--border trk-btn--primary ml-auto js-btn-next mx-2" type="button" title="Next">Next</button>
         </div>
     </div>
 </div>

@@ -16,8 +16,13 @@
                 </div>
             </div>
 
-            <div class="button-row mt-4">
-                <button class="btn ml-auto" id="submit-button" type="submit" title="Send" name="submit"
-                    style="background-color:#0392ce; color:white; margin: 0px 296px; margin-top: 74px; border:none;">Submit</button>
+
+            <div class="button-row d-flex justify-content-center mt-5">
+                <button class="trk-btn trk-btn--border trk-btn--primary js-btn-prev mx-2 mt-5" type="button" title="Prev"
+                    style="background: white;color: #e79a59;">Previous Step</button>
+                <button class="trk-btn trk-btn--border trk-btn--primary ml-auto mx-2 mt-5" id="submit-button" type="submit"
+                    title="Send" name="submit">Submit</button>
+            </div>
+        </div>
     </center>
 </div>
