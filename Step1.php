@@ -171,7 +171,7 @@
                     id="signature_photo">
                 <small id="error-signature_photo" class="text-danger"></small>
             </div>
-            <div class="col-12 col-md-6 col-sm-6 px-1">
+            <div class="col-12 col-md-6 col-sm-6 px-1 d-flex justify-content-center">
                 <img id="signature_photo_preview" style="display: none; margin-top: 10px;" width="40" height="40" />
             </div>
         </div>

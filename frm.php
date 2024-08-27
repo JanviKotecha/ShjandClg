@@ -92,19 +92,19 @@
     <!-- ===============>> Contact section start here <<================= -->
 
     <script>
-        document.getElementById('disability').addEventListener('change', function() {
-            var disabilityValue = this.value;
-            var percentageContainer = document.getElementById('disability_percentage_container');
-            var certificateContainer = document.getElementById('disability_certificate_container');
+    document.getElementById('disability').addEventListener('change', function() {
+        var disabilityValue = this.value;
+        var percentageContainer = document.getElementById('disability_percentage_container');
+        var certificateContainer = document.getElementById('disability_certificate_container');
 
-            if (disabilityValue === 'Yes') {
-                percentageContainer.style.display = 'block';
-                certificateContainer.style.display = 'block';
-            } else {
-                percentageContainer.style.display = 'none';
-                certificateContainer.style.display = 'none';
-            }
-        });
+        if (disabilityValue === 'Yes') {
+            percentageContainer.style.display = 'block';
+            certificateContainer.style.display = 'block';
+        } else {
+            percentageContainer.style.display = 'none';
+            certificateContainer.style.display = 'none';
+        }
+    });
     </script>
 
     <script>
@@ -121,12 +121,30 @@
             }
         }
 
+        function validateImage(input) {
+            var file = input.files[0];
+            if (file) {
+                var fileType = file.type;
+                var validTypes = ["image/png", "image/jpeg", "image/jpg"];
+                if (!validTypes.includes(fileType)) {
+                    alert("Invalid file format. Please select a PNG, JPG, or JPEG image.");
+                    input.value = ''; // Clear the input
+                    return false;
+                }
+            }
+            return true;
+        }
+
         document.getElementById('profile_photo').addEventListener('change', function() {
-            showImagePreview(this, 'profile_photo_preview');
+            if (validateImage(this)) {
+                showImagePreview(this, 'profile_photo_preview');
+            }
         });
 
         document.getElementById('signature_photo').addEventListener('change', function() {
-            showImagePreview(this, 'signature_photo_preview');
+            if (validateImage(this)) {
+                showImagePreview(this, 'signature_photo_preview');
+            }
         });
     </script>
 
