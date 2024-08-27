@@ -4,7 +4,7 @@
 <head>
     <title>Sahjanand College - Gondal</title>
     <?php include("include/head.php"); ?>
-    <link rel="stylesheet" href="assets/css/frm.css">
+    <link rel="stylesheet" href="assets/css/application.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
@@ -201,7 +201,7 @@
     </script>
 
     <!-- form validation script -->
-    <script src="script.js"></script>
+    <script src="assets/js/application_script.js"></script>
 
     <!-- check terms checkbox and confirm alert to submit form -->
     <script>
