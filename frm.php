@@ -91,6 +91,7 @@
     </div>
     <!-- ===============>> Contact section start here <<================= -->
 
+    <!-- validation for disability.. if Yes  show input for precentage & dis..Certificate -->
     <script>
         document.getElementById('disability').addEventListener('change', function() {
             var disabilityValue = this.value;
@@ -107,6 +108,7 @@
         });
     </script>
 
+    <!--  validation for file upload image that allow only jpg png and image Preview -->
     <script>
         function showImagePreview(input, previewElementId) {
             var file = input.files[0];
@@ -148,6 +150,7 @@
         });
     </script>
 
+    <!--  validation for file upload that allow only pdf doc etc.. -->
     <script>
         function validateDocument(input) {
             var file = input.files[0];
@@ -176,8 +179,31 @@
         });
     </script>
 
+    <!-- same as current address -  address auto file in parement address as current address  -->
+    <script>
+        document.getElementById('same_as_present').addEventListener('change', function() {
+            if (this.checked) {
+                // Copy values from present address fields to permanent address fields
+                document.getElementById('permanent_address').value = document.getElementById('present_address').value;
+                document.getElementById('permanent_state').value = document.getElementById('present_state').value;
+                document.getElementById('permanent_district').value = document.getElementById('present_district').value;
+                document.getElementById('permanent_taluka').value = document.getElementById('present_taluka').value;
+                document.getElementById('permanent_pincode').value = document.getElementById('present_pincode').value;
+            } else {
+                // Clear the permanent address fields if the checkbox is unchecked
+                document.getElementById('permanent_address').value = '';
+                document.getElementById('permanent_state').value = '';
+                document.getElementById('permanent_district').value = '';
+                document.getElementById('permanent_taluka').value = '';
+                document.getElementById('permanent_pincode').value = '';
+            }
+        });
+    </script>
+
+    <!-- form validation script -->
     <script src="script.js"></script>
 
+    <!-- check terms checkbox and confirm alert to submit form -->
     <script>
         document.getElementById("submit-button").addEventListener("click", function(event) {
             let agreeCheckbox = document.getElementById("agree");
