@@ -178,6 +178,16 @@
 
     <script src="script.js"></script>
 
+    <script>
+        document.getElementById("submit-button").addEventListener("click", function(event) {
+            let agreeCheckbox = document.getElementById("agree");
+            if (!agreeCheckbox.checked) {
+                alert("Please agree to the terms and conditions before submitting.");
+                event.preventDefault();
+            }
+        });
+    </script>
+
     <!-- ===============>> footer start here <<================= -->
     <?php include("include/footer.php"); ?>
     <!-- ===============>> footer end here <<================= -->

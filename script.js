@@ -183,11 +183,9 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
       alert("Please Select Disability Status");
     } else if (disability === "Yes" && disabilityPercentage == "") {
       alert("Please Enter Disability Percentage");
-    }
-     else if (disability === "Yes" && disabilityCertificate == "") {
+    } else if (disability === "Yes" && disabilityCertificate == "") {
       alert("Please Upload Disability Certificate");
-    }
-    else if (nationality == "") {
+    } else if (nationality == "") {
       alert("Please Select Nationality");
     } else if (!locality) {
       alert("Please Select Locality");
@@ -195,14 +193,11 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
       alert("Please Enter Aadhar Number");
     } else if (religion == "") {
       alert("Please Select Religion");
-    }
-    else if (profilePhoto == "") {
+    } else if (profilePhoto == "") {
       alert("Please Upload Profile Photo");
-    }
-    else if (signaturePhoto == "") {
+    } else if (signaturePhoto == "") {
       alert("Please Upload Signature Photo");
-    }
-    else {
+    } else {
       activePanelNum++;
     }
   } else if (activePanelNum === 1) {
@@ -290,7 +285,8 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
     let agreeCheckbox = document.getElementById("agree");
 
     if (!agreeCheckbox.checked) {
-      alert("You must agree to the terms and conditions before submitting.");
+      alert("Please agree to the terms and conditions before submitting.");
+      event.preventDefault();
     } else {
       activePanelNum++;
     }

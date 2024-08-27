@@ -17,7 +17,7 @@
             </div>
 
             <div class="button-row mt-4">
-                <button class="btn  ml-auto" type="submit" title="Send" name="submit"
+                <button class="btn ml-auto" id="submit-button" type="submit" title="Send" name="submit"
                     style="background-color:#0392ce; color:white; margin: 0px 296px; margin-top: 74px; border:none;">Submit</button>
     </center>
 </div>
