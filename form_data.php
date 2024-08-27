@@ -4,7 +4,6 @@ include 'include/config.php';
 if (isset($_POST['submit'])) {
     // Personal Details
     $courseType = $_POST['course_type'];
-    $applicationNo = $_POST['application_no'];
     $applicantName = $_POST['applicant_name'];
     $dob = $_POST['birth_date'];
     $email = $_POST['email'];
@@ -60,7 +59,8 @@ if (isset($_POST['submit'])) {
 
     // Default Status
     $status = 'Pending';
-   
+    $applicationNo = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
+
     // Insert query
     $insert = $qm->insertRecordReturn(
         "admission", 
