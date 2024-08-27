@@ -14,12 +14,6 @@
                 <small id="error-course_type" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
-                <p>Application No <sup style="color:#9194A0">*</sup></p>
-                <input class="multisteps-form__input form-control" type="text" name="application_no" id="application_no"
-                    value="<?php echo isset($_POST['submit']) ? $application_no : ''; ?>">
-                <small id="error-application_no" class="text-danger"></small>
-            </div>
-            <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
                 <p>Applicant's Name <sup style="color:#9194A0">*</sup></p>
                 <input class="multisteps-form__input form-control" type="text" name="applicant_name" id="applicant_name"
                     value="<?php echo isset($_POST['submit']) ? $applicant_name : ''; ?>">
@@ -70,7 +64,7 @@
             <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
                 <p>Category <sup style="color:#9194A0">*</sup></p>
                 <select class="multisteps-form__select form-control" name="category" id="category">
-                    <option value=""></option>
+                    <option value="">Select Category</option>
                     <option value="General">General</option>
                     <option value="OBC">OBC</option>
                     <option value="SC">SC</option>
@@ -81,17 +75,16 @@
             <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
                 <p>Gender <sup style="color:#9194A0">*</sup></p>
                 <select class="multisteps-form__select form-control" name="gender" id="gender">
-                    <option value=""></option>
+                    <option value="">Select Gender</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
-                    <option value="Other">Other</option>
                 </select>
                 <small id="error-gender" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
                 <p>Disability <sup style="color:#9194A0">*</sup></p>
                 <select class="multisteps-form__select form-control" name="disability" id="disability">
-                    <option value=""></option>
+                    <option value="">Select Disability Type</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
@@ -113,7 +106,7 @@
             <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
                 <p>Nationality <sup style="color:#9194A0">*</sup></p>
                 <select class="multisteps-form__select form-control" name="nationality" id="nationality">
-                    <option value=""></option>
+                    <option value="">Select Nationality</option>
                     <option value="Indian">Indian</option>
                     <option value="Other">Other</option>
                 </select>
@@ -140,7 +133,7 @@
             <div class="col-12 col-md-4 col-sm-6 px-1 mt-2">
                 <p>Religion <sup style="color:#9194A0">*</sup></p>
                 <select class="multisteps-form__select form-control" name="religion" id="religion">
-                    <option value=""></option>
+                    <option value="">Select Religion</option>
                     <option value="Hindu">Hindu</option>
                     <option value="Muslim">Muslim</option>
                     <option value="Christian">Christian</option>

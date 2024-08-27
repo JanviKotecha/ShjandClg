@@ -123,7 +123,6 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
     // Validation for Step 1
     if (activePanelNum === 0) {
       let courseType = document.getElementById("course_type").value;
-      let applicationNo = document.getElementById("application_no").value;
       let applicantName = document.getElementById("applicant_name").value;
       let birthDate = document.getElementById("birth_date").value;
       let email = document.getElementById("email").value;
@@ -154,8 +153,6 @@ DOMstrings.stepsForm.addEventListener("click", (e) => {
 
       if (courseType == "") {
         alert("Please Select Course Type");
-      } else if (applicationNo == "") {
-        alert("Please Enter Application Number");
       } else if (applicantName == "") {
         alert("Please Enter Applicant's Name");
       } else if (birthDate == "") {
