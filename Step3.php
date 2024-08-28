@@ -1,0 +1,81 @@
+<!--single form panel 3 -->
+<div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+    <h3 class="multisteps-form__title" style="padding-left:18px;">ACADEMIC DETAILS</h3>
+    <div class="multisteps-form__content">
+        <!-- H.S.C. / Diploma (Equivalent) Details -->
+        <h4 class="multisteps-form__title mt-4" style="padding-left:18px;">H.S.C. / Diploma (Equivalent) Details</h4>
+        <div class="form-row mt-4">
+            
+            <div class="col-12 col-sm-6 px-1">
+                <p>H.S.C. / Diploma (Equivalent) <sup style="color:#9194A0">*</sup></p>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <input type="radio" id="hsc" name="hsc_diploma" value="H.S.C.">H.S.C.
+                    </div>
+                    <div>
+                        <input type="radio" id="diploma" name="hsc_diploma" value="Diploma">
+                        Diploma (Equivalent)
+                    </div>
+                </div>
+                <small id="error-locality" class="text-danger"></small>
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Exam Board <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="text" name="hsc_board" id="hsc_board" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Passing Year <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="text" name="hsc_passing_year"
+                    id="hsc_passing_year" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Seat No <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="text" name="hsc_seat_no" id="hsc_seat_no" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Percentage <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="number" name="hsc_percentage"
+                    id="hsc_percentage" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Marksheet  <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="file" name="hsc_marksheet"
+                    id="hsc_marksheet" accept=".pdf,.doc,.docx" />
+            </div>
+        </div>
+
+        <!-- S.S.C. Details -->
+        <h4 class="multisteps-form__title mt-4" style="padding-left:18px;">S.S.C. Details</h4>
+        <div class="form-row mt-4 px-1">
+            <div class="col-12 col-sm-6 mt-2">
+                <p>Exam Board <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="text" name="ssc_board" id="ssc_board" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Passing Year <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="text" name="ssc_passing_year"
+                    id="ssc_passing_year" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Seat No <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="text" name="ssc_seat_no" id="ssc_seat_no" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Percentage <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="number" name="ssc_percentage"
+                    id="ssc_percentage" />
+            </div>
+            <div class="col-12 col-sm-6 mt-2 px-1">
+                <p>Marksheet  <sup style="color:#9194A0">*</sup></p>
+                <input class="multisteps-form__input form-control" type="file" name="ssc_marksheet"
+                    id="ssc_marksheet" accept=".pdf,.doc,.docx" />
+            </div>
+        </div>
+
+        <div class="button-row d-flex justify-content-center mt-5">
+            <button class="trk-btn trk-btn--border trk-btn--primary js-btn-prev mx-2" type="button" title="Prev"
+                style="background: white;color: #e79a59;">Previous Step</button>
+            <button class="trk-btn trk-btn--border trk-btn--primary ml-auto js-btn-next mx-2" type="button" title="Next">Next</button>
+        </div>
+    </div>
+</div>

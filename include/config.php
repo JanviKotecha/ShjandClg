@@ -11,6 +11,13 @@
   include ("rootMaster.php");
   include ("cusFunction.php");
 
+  define("UPLOAD_IMAGE_URL","images/");
+  define("UPLOAD_PROFILE_URL", UPLOAD_IMAGE_URL."a_profilePhoto/");
+  define("UPLOAD_SIGNATURE_URL", UPLOAD_IMAGE_URL."a_signaturePhoto/");
+  define("UPLOAD_DISABILITYCERTIFICATE_URL", UPLOAD_IMAGE_URL."a_disabilityCertificate/");
+  define("UPLOAD_HSCRESULT_URL", UPLOAD_IMAGE_URL."a_hscResult/");
+  define("UPLOAD_SSCRESULT_URL", UPLOAD_IMAGE_URL."a_sscResult/");
+
   date_default_timezone_set("Asia/Kolkata");
   $getDt = date("Y-m-d H:i:s");
 
