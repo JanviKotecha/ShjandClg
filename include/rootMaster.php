@@ -15,6 +15,8 @@
 	define("COURSE_URL", IMAGE_URL."courseimage/");
 	define("EVENTS_URL", IMAGE_URL."events/");
 	define("TOPERS_URL", IMAGE_URL."topers/");
+	define("ALUMNIPROFILE_URL", IMAGE_URL."alumniProfile/");
+	define("ALUMNILOGO_URL", IMAGE_URL."alumniLogo/");
 
 	define("ADMIN_URL",HOST_URL."Admin/");
 	define("ADMIN_IMAGE_URL",ADMIN_URL."image/");

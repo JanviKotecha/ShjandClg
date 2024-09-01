@@ -26,6 +26,8 @@
   define("UPLOAD_COURSE_URL", UPLOAD_IMAGE_URL."courseimage/");
   define("UPLOAD_EVENTS_URL", UPLOAD_IMAGE_URL."events/");
   define("UPLOAD_TOPERS_URL", UPLOAD_IMAGE_URL."topers/");
+  define("UPLOAD_ALUMNIPROFILE_URL", UPLOAD_IMAGE_URL."alumniProfile/");
+  define("UPLOAD_ALUMNILOGO_URL", UPLOAD_IMAGE_URL."alumniLogo/");
 
   date_default_timezone_set("Asia/Kolkata");
   $getDt = date("Y-m-d H:i:s");

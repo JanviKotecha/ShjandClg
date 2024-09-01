@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2024 at 04:25 PM
+-- Generation Time: Sep 01, 2024 at 03:28 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -101,71 +101,26 @@ CREATE TABLE `admission` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_cate`
+-- Table structure for table `alumni`
 --
 
-CREATE TABLE `blog_cate` (
+CREATE TABLE `alumni` (
   `id` int(11) NOT NULL,
-  `cate` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `img` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `jobPosition` varchar(255) NOT NULL,
+  `c_name` varchar(255) NOT NULL,
+  `c_logo` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `blog_cate`
+-- Dumping data for table `alumni`
 --
 
-INSERT INTO `blog_cate` (`id`, `cate`) VALUES
-(1, 'General'),
-(7, 'Eduction'),
-(8, 'Medicine'),
-(9, 'Drugs ( Ek Aushadhi )'),
-(10, 'test');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `blog_post`
---
-
-CREATE TABLE `blog_post` (
-  `id` int(11) NOT NULL,
-  `img` text NOT NULL,
-  `cate` int(11) NOT NULL,
-  `title` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `creted_by` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `eml` varchar(250) NOT NULL,
-  `mob` varchar(250) NOT NULL,
-  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `is_publish` varchar(250) NOT NULL DEFAULT '0',
-  `dt` datetime NOT NULL DEFAULT current_timestamp(),
-  `updt` date NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `blog_post`
---
-
-INSERT INTO `blog_post` (`id`, `img`, `cate`, `title`, `creted_by`, `eml`, `mob`, `description`, `is_publish`, `dt`, `updt`) VALUES
-(13, '1715002913.png', 9, 'test', 'DS', 'ds@gmail.com', '7845127845', '<p>10 amazing web of demos Developers Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.And meat blessed void a fruit gathered waters. 25 That Prevent Job Seekers From Overcoming Failure Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.</p>\r\n', '1', '2023-12-01 00:00:00', '2024-05-06'),
-(16, '1701451525.jpg', 7, 'Test Blog', 'Sangani Dhruvi', 'ds@gmail.com', '9876543210', 'Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.And meat blessed void a fruit gathered waters.\r\n\r\n25 That Prevent Job Seekers From Overcoming Failure\r\nPhasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.', '1', '2023-12-01 00:00:00', '0000-00-00'),
-(17, '1701451525.jpg', 7, 'Test Blog 2', 'Dhruvi Sangani', 'shruci@gmail.com', '9876543210', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.And meat blessed void a fruit gathered waters.\r\n\r\n25 That Prevent Job Seekers From Overcoming Failure\r\nPhasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.', '1', '2023-12-01 00:00:00', '0000-00-00'),
-(18, '1701451525.jpg', 7, 'Testing Blog', 'Testing User', 'test@gmail.com', '9876543210', '25 That Prevent Job Seekers From Overcoming Failure\r\nPhasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.', '1', '2023-12-01 00:00:00', '0000-00-00'),
-(19, '1701451525.jpg', 9, 'New Blog', 'Test', 'shruci@gmail.com', '9876543210', 'Loare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae ante enim. Fusce sed elit est. Suspendisse sit amet mauris in quam pretium faucibus et aliquam odio.', '1', '2023-12-01 00:00:00', '0000-00-00'),
-(20, '1714830745.png', 7, 'hgvbn', 'Dhruvi Sangani', 'dsangani44@gmail.com', '7894561230', '<p>kla,xmx,xclmclkcm.c,.cxmlclzxc,mcx</p>\r\n', '1', '2024-05-04 19:22:25', '2024-05-04'),
-(21, '', 7, 'Quo anim assumenda s', 'Id perferendis non ', 'jiqufi@mailinator.com', '7845851455', '<p>xm,sx</p>\r\n', '0', '2024-05-06 15:53:32', '2024-05-06');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `certificate`
---
-
-CREATE TABLE `certificate` (
-  `id` int(11) NOT NULL,
-  `c_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `crt_img` text NOT NULL,
-  `created_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+INSERT INTO `alumni` (`id`, `img`, `name`, `jobPosition`, `c_name`, `c_logo`, `created_at`, `updated_at`) VALUES
+(1, '', 'sdcf', 'fscdfszdf', 'fzdsfs', '', '2024-09-01 12:59:34', '2024-09-01 14:59:20');
 
 -- --------------------------------------------------------
 
@@ -194,60 +149,20 @@ INSERT INTO `contact_us` (`id`, `first_name`, `last_name`, `email`, `phone`, `ms
 -- --------------------------------------------------------
 
 --
--- Table structure for table `coupon`
---
-
-CREATE TABLE `coupon` (
-  `id` int(11) NOT NULL,
-  `coupon_code` text NOT NULL,
-  `c_amount` varchar(255) NOT NULL,
-  `c_status` varchar(255) NOT NULL,
-  `c_expire_date` varchar(255) NOT NULL,
-  `c_usedby` varchar(255) NOT NULL,
-  `created_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `coupon`
---
-
-INSERT INTO `coupon` (`id`, `coupon_code`, `c_amount`, `c_status`, `c_expire_date`, `c_usedby`, `created_at`) VALUES
-(5, 'HN762P', '200', '2', '2024-05-31', '', '2024-05-03 09:50:42'),
-(7, 'OZ114F', '600', '1', '2024-05-31', '50', '2024-05-03 10:40:46'),
-(8, 'AQ426O', '600', '2', '', '', '2024-05-03 10:47:24'),
-(9, 'GU338Q', '600', '1', '2024-05-24', '50', '2024-05-03 10:47:53'),
-(10, 'NR414M', '700', '1', '2024-05-31', '50', '2024-05-03 11:33:58'),
-(11, 'ON216R', '200', '0', '2024-08-31', '', '2024-07-31 17:34:25'),
-(12, 'IJ763L', '200', '0', '2024-07-31', '', '2024-07-31 17:35:56');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `course`
 --
 
 CREATE TABLE `course` (
   `id` int(11) NOT NULL,
-  `instructor_id` varchar(11) NOT NULL,
-  `c_title` varchar(255) NOT NULL,
-  `c_date` varchar(255) NOT NULL,
-  `c_exp_date` varchar(500) NOT NULL,
-  `c_time` varchar(255) NOT NULL,
-  `c_description` text NOT NULL,
-  `c_thumbnail` text NOT NULL,
-  `c_is_free` varchar(255) NOT NULL,
-  `c_withoutmembership_price` varchar(255) NOT NULL,
-  `c_membership_price` varchar(255) NOT NULL,
-  `c_metting_link` varchar(255) NOT NULL,
-  `c_metting_id` varchar(255) NOT NULL,
-  `c_metting_pass` varchar(255) NOT NULL,
-  `c_backup_type` text NOT NULL,
-  `c_backup_link` varchar(255) NOT NULL,
-  `enroll_stud` int(11) NOT NULL,
-  `enroll_stud_ids` varchar(500) NOT NULL,
-  `is_publish` int(11) NOT NULL,
-  `view_count` int(11) NOT NULL,
-  `created_at` datetime NOT NULL,
+  `c_img` varchar(255) NOT NULL,
+  `c_name` varchar(255) NOT NULL,
+  `c_subtitle` varchar(255) NOT NULL,
+  `duration` varchar(255) NOT NULL,
+  `eligibility` varchar(255) NOT NULL,
+  `medium` varchar(255) NOT NULL,
+  `objective` text NOT NULL,
+  `after_graduation` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -255,15 +170,8 @@ CREATE TABLE `course` (
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`id`, `instructor_id`, `c_title`, `c_date`, `c_exp_date`, `c_time`, `c_description`, `c_thumbnail`, `c_is_free`, `c_withoutmembership_price`, `c_membership_price`, `c_metting_link`, `c_metting_id`, `c_metting_pass`, `c_backup_type`, `c_backup_link`, `enroll_stud`, `enroll_stud_ids`, `is_publish`, `view_count`, `created_at`, `updated_at`) VALUES
-(1, '4,5', 'Html Basic', '07-04-2024 - 13-04-2024', '13-04-2024', '11:00 AM - 02:00 PM', '<p><strong><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">HTML BASIC</span></span></strong></p>\r\n\r\n<ul>\r\n	<li><span style=\"font-size:16px\">Formatting Tags</span></li>\r\n	<li><span style=\"font-size:16px\">Table</span></li>\r\n	<li><span style=\"font-size:16px\">Order list</span></li>\r\n	<li><span style=\"font-size:16px\">Unorder list</span></li>\r\n</ul>\r\n', '', '1', '', '', 'https://meet.google.com/kuy-wfmf-fup?authuser=0', '896455', '9632', 'youtube', 'https://www.youtube.com/embed/b5ccGgvEkns,https://www.youtube.com/embed/b5ccGgvEkns24', 0, '', 0, 10, '2024-03-15 11:31:42', '2024-04-06 15:24:49'),
-(2, '4', 'React Js for Begginer', '18-03-2024 - 18-04-2024', '18-04-2024', '08:05 AM - 11:45 AM', '<p><span style=\"font-size:18px\"><strong>React Hooks</strong></span></p>\r\n\r\n<ul>\r\n	<li>Use Effect</li>\r\n	<li>Use Form</li>\r\n	<li>Use State</li>\r\n</ul>\r\n', '1712211424.jpg', '0', '700', '200', 'https://test.com', '852147', '452163', '', '', 0, '', 1, 27, '2024-03-15 14:56:57', '2024-04-16 14:21:26'),
-(4, '4,6', 'Ratione maxime cupid', '06-03-2024 - 15-04-2024', '15-04-2024', '09:00 AM - 01:00 PM', '<ul>\n	<li>Html</li>\n	<li>Css</li>\n	<li>Js</li>\n	<li>React</li>\n</ul>\n', '1712213333.jpg', '0', '1500', '1200', 'https://test.com', 'Ducimus qui veniam', 'Odio et facere sequi', '', '', 0, '', 1, 42, '2024-03-15 16:12:41', '2024-04-04 12:18:53'),
-(5, '4,5', 'Html Basic Begginer', '16-03-2024 - 17-04-2024', '17-04-2024', '11:00 AM - 02:00 PM', '<p><strong><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">HTML BASIC</span></span></strong></p>\r\n\r\n<ul>\r\n	<li><span style=\"font-size:16px\">Formatting Tags</span></li>\r\n	<li><span style=\"font-size:16px\">Table</span></li>\r\n	<li><span style=\"font-size:16px\">Order list</span></li>\r\n	<li><span style=\"font-size:16px\">Unorder list</span></li>\r\n</ul>\r\n', '1712212302.jpg', '1', '', '', 'https://meet.google.com/kuy-wfmf-fup?authuser=0', '896455', '9632', 'youtube', '', 0, '', 1, 29, '2024-03-15 11:31:42', '2024-04-04 12:01:42'),
-(6, '4,5', 'Angular Basic', '16-03-2024 - 31-05-2024', '31-05-2024', '11:00 AM - 02:00 PM', '<p><strong><span style=\"color:#8e44ad\"><span style=\"font-size:16px\">HTML BASIC</span></span></strong></p>\r\n\r\n<ul>\r\n	<li><span style=\"font-size:16px\">Formatting Tags</span></li>\r\n	<li><span style=\"font-size:16px\">Table</span></li>\r\n	<li><span style=\"font-size:16px\">Order list</span></li>\r\n	<li><span style=\"font-size:16px\">Unorder list</span></li>\r\n</ul>\r\n', '1712212318.jpg', '1', '', '', 'https://meet.google.com/kuy-wfmf-fup?authuser=0', '896455', '9632', 'youtube', 'https://meet.google.com/kuy-wfmf-fup?authuser=0,https://www.youtube.com/embed/b5ccGgvEkns	,https://meet.google.com/kuy-wfmf-fup?authuser=0', 0, '', 1, 58, '2024-03-15 11:31:42', '2024-04-20 15:34:22'),
-(7, '4', 'React Native for Begginer', '18-03-2024 - 31-05-2024', '31-05-2024', '08:05 AM - 11:45 AM', '<p><span style=\"font-size:18px\"><strong>React Hooks</strong></span></p>\r\n\r\n<ul>\r\n	<li>Use Effect</li>\r\n	<li>Use Form</li>\r\n	<li>Use State</li>\r\n</ul>\r\n', '1712212332.jpg', '0', '700', '200', 'https://test.com', '852147', '452163', '', '', 0, '', 1, 105, '2024-03-15 14:56:57', '2024-04-20 15:27:56'),
-(8, '4,5,6', 'React js Advance', '06-03-2024 - 15-03-2024', '15-03-2024', '09:00 AM - 01:00 PM', '<ul>\r\n	<li>Html</li>\r\n	<li>Css</li>\r\n	<li>Js</li>\r\n	<li>React</li>\r\n</ul>\r\n', '1712212349.jpg', '0', '1500', '1200', 'https://test.com', 'Ducimus qui veniam', 'Odio et facere sequi', '', '', 0, '', 0, 0, '2024-03-15 16:12:41', '2024-04-20 15:27:20'),
-(9, '4', 'React Native for Intermidiat', '18-03-2024 - 15-05-2024', '15-05-2024', '08:05 AM - 11:45 AM', '<p><span style=\"font-size:18px\"><strong>React Hooks</strong></span></p>\r\n\r\n<ul>\r\n	<li>Use Effect</li>\r\n	<li>Use Form</li>\r\n	<li>Use State</li>\r\n</ul>\r\n', '1712212364.jpg', '0', '700', '200', 'https://test.com', '852147', '452163', '', '', 0, '', 1, 2, '2024-03-15 14:56:57', '2024-04-20 15:27:02');
+INSERT INTO `course` (`id`, `c_img`, `c_name`, `c_subtitle`, `duration`, `eligibility`, `medium`, `objective`, `after_graduation`, `created_at`, `updated_at`) VALUES
+(1, '1725176936.png', ' B.Com.', '(BACHELORS OF COMMERCE)11', '8 semesters ( 4 years )', ' Higher Secondary Exam (10+2) \r\nPassed in any discipline from Gujarat Board \r\nOR Higher Secondary Exam Passed in any \r\ndiscipline from other Board recognized by \r\nSaurashtra University. ', 'Gujarati', 'Equip the students with the knowledge of concepts, \r\nand techniques of management accounting and \r\nenable them to use various techniques of cost \r\nascertainment, budget preparation and variance analysis', '• Work in Government Sector \r\n• Marketing Manager \r\n• Public sector • Private sector \r\n• Financial Professionals', '2024-09-01 11:54:31', '2024-09-01 17:24:31');
 
 -- --------------------------------------------------------
 
@@ -273,6 +181,7 @@ INSERT INTO `course` (`id`, `instructor_id`, `c_title`, `c_date`, `c_exp_date`, 
 
 CREATE TABLE `events` (
   `id` int(11) NOT NULL,
+  `event_category` varchar(255) NOT NULL,
   `title` varchar(255) NOT NULL,
   `img` text NOT NULL,
   `link` text NOT NULL,
@@ -284,16 +193,33 @@ CREATE TABLE `events` (
 -- Dumping data for table `events`
 --
 
-INSERT INTO `events` (`id`, `title`, `img`, `link`, `created_at`, `updated_at`) VALUES
-(1, 'Event1', '1712237660.jpg', 'https://www.youtube.com/embed/b5ccGgvEkns', '2024-04-04 18:17:17', '2024-04-10 10:57:01'),
-(2, 'Event 2', '1712237744.jpg', 'https://www.youtube.com/embed/uYEhJj0P9J0', '2024-04-04 19:05:44', '2024-04-10 10:57:09'),
-(3, 'event3', '1712237769.jpg', 'https://www.youtube.com/embed/YKMNVWvvp6I', '2024-04-04 19:06:09', '2024-04-10 10:57:14'),
-(4, 'event4', '1712237792.jpg', 'https://www.youtube.com/embed/b5ccGgvEkns', '2024-04-04 19:06:32', '2024-04-10 10:57:20'),
-(5, 'event5', '1712237816.jpg', 'https://www.youtube.com/embed/KLvNMvHzKcs', '2024-04-04 19:06:56', '2024-04-10 10:57:33'),
-(6, 'event6', '1712237972.png', 'https://www.youtube.com/embed/uhhlrCk9wvQ', '2024-04-04 19:07:25', '2024-04-10 10:58:01'),
-(7, 'event7', '1712237989.png', 'https://www.youtube.com/embed/ETouS3Dvfsk', '2024-04-04 19:07:53', '2024-04-10 10:58:08'),
-(8, 'event8', '1712237907.jpg', 'https://www.youtube.com/embed/5eekY4ePqto', '2024-04-04 19:08:27', '2024-04-10 10:58:14'),
-(9, 'event9', '1712237957.png', 'https://www.youtube.com/embed/3uzlG8IGPwU', '2024-04-04 19:09:02', '2024-04-10 10:58:20');
+INSERT INTO `events` (`id`, `event_category`, `title`, `img`, `link`, `created_at`, `updated_at`) VALUES
+(11, 'College Activity', 'Garba', '1725186781.png', '', '2024-09-01 16:03:01', '2024-09-01 16:29:56');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `faculty`
+--
+
+CREATE TABLE `faculty` (
+  `id` int(11) NOT NULL,
+  `faculty_iamge` varchar(250) NOT NULL,
+  `faculty_name` varchar(250) NOT NULL,
+  `faculty_degree` varchar(250) NOT NULL,
+  `joinig_date` varchar(255) NOT NULL,
+  `resign_date` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `faculty`
+--
+
+INSERT INTO `faculty` (`id`, `faculty_iamge`, `faculty_name`, `faculty_degree`, `joinig_date`, `resign_date`, `created_at`, `updated_at`) VALUES
+(3, '1725173204.png', 'Dhruvi', 'BCA', '2024-08-01', '2024-08-31', '2024-09-01 06:46:44', '0000-00-00 00:00:00'),
+(4, '1725173286.png', 'Dhruvi', 'BCA', '2024-07-02', '', '2024-09-01 07:07:28', '2024-09-01 12:37:28');
 
 -- --------------------------------------------------------
 
@@ -320,32 +246,6 @@ INSERT INTO `faq` (`id`, `question`, `answer`, `created_at`, `updated_at`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `instructor`
---
-
-CREATE TABLE `instructor` (
-  `id` int(11) NOT NULL,
-  `Instructor_iamge` varchar(250) NOT NULL,
-  `Instructor_name` varchar(250) NOT NULL,
-  `Instructor_designation` varchar(250) NOT NULL,
-  `Instructor_description` text NOT NULL,
-  `add_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `instructor`
---
-
-INSERT INTO `instructor` (`id`, `Instructor_iamge`, `Instructor_name`, `Instructor_designation`, `Instructor_description`, `add_date`, `updated_at`) VALUES
-(1, '1712212786.jpg', 'Travis Websteer', 'Est ab sit voluptate', '<p>Hello everyone! I am [Name], and as a teacher by profession, I&#39;m committed to making a positive impact on the lives of children. With [X years] of experience and a [mention relevant degree/certification], I bring a wealth of knowledge and expertise to inspire young minds.</p>\r\n', '2024-04-06 09:58:17', '2024-04-06 15:28:17'),
-(4, '1712212797.jpg', 'Clio Patel', 'Illum nisi irure se', '<p>Hello everyone! I am [Name], and as a teacher by profession, I&#39;m committed to making a positive impact on the lives of children. With [X years] of experience and a [mention relevant degree/certification], I bring a wealth of knowledge and expertise to inspire young minds.</p>\r\n', '2024-04-04 06:39:57', '2024-04-04 12:09:57'),
-(5, '1712212809.jpg', 'Sandra Kaufman', 'Voluptate voluptates', '<p>Hello everyone! I am [Name], and as a teacher by profession, I&#39;m committed to making a positive impact on the lives of children. With [X years] of experience and a [mention relevant degree/certification], I bring a wealth of knowledge and expertise to inspire young minds.</p>\r\n', '2024-04-04 06:40:09', '2024-04-04 12:10:09'),
-(6, '1712218678.jpg', 'Hilary Kim', 'Excepturi ipsa esse', '<p>Hello everyone! I am [Name], and as a teacher by profession, I&#39;m committed to making a positive impact on the lives of children. With [X years] of experience and a [mention relevant degree/certification], I bring a wealth of knowledge and expertise to inspire young minds.</p>\r\n', '2024-04-04 08:17:58', '2024-04-04 13:47:58');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `login`
 --
 
@@ -365,62 +265,6 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`id`, `username`, `email`, `phone`, `password`, `dt`, `updated_at`) VALUES
 (1, 'admin', 'admin@gmail.com', '9876543210', '$2y$10$y15.AEe4IyK/vUVIf0fWIudzSQML6SndosvHYRbwYmNi/JbAeeFZG', '2024-02-16 16:28:33', '2024-03-26 15:02:11.000000');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `membership_pricing`
---
-
-CREATE TABLE `membership_pricing` (
-  `id` int(11) NOT NULL,
-  `membership_start_date` varchar(255) NOT NULL,
-  `membership_new_price` varchar(255) NOT NULL,
-  `membership_renew_price` varchar(255) NOT NULL,
-  `membership_discount_price` varchar(255) NOT NULL,
-  `membership_description` text NOT NULL,
-  `membership_privileges` text NOT NULL,
-  `membership_email` varchar(255) NOT NULL,
-  `membership_term_condition_id` varchar(255) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `membership_pricing`
---
-
-INSERT INTO `membership_pricing` (`id`, `membership_start_date`, `membership_new_price`, `membership_renew_price`, `membership_discount_price`, `membership_description`, `membership_privileges`, `membership_email`, `membership_term_condition_id`, `created_at`, `updated_at`) VALUES
-(0, '01-03-2024 - 31-07-2024', '500', '100', '', '<p>Your search for like-minded people, who would understand, appreciate, and nurture your talent ends here.</p>\r\n\r\n<p>Join FIP as a member!&nbsp;</p>\r\n\r\n<p>To follow the passion which you always wanted to, but something or the other was always in the way! Don&#39;t let it stop you, not this time!&nbsp;&nbsp;</p>\r\n', '<ul>\r\n	<li>Preferential seats in limited seat batches!</li>\r\n	<li>Fee concessions/Discounts in majority courses except some specific!</li>\r\n	<li>Entry in special webinars, sessions, and internal gatherings!</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n', 'fip_membership@gmail.com', 'false', '2024-03-20 10:20:01', '2024-04-23 11:29:49');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `notification`
---
-
-CREATE TABLE `notification` (
-  `id` int(11) NOT NULL,
-  `n_u_id` varchar(255) NOT NULL,
-  `n_thumbnill` text NOT NULL,
-  `n_title` varchar(255) NOT NULL,
-  `n_decription` text NOT NULL,
-  `n_is_send` varchar(255) NOT NULL,
-  `n_is_deleted_by_user` varchar(255) NOT NULL,
-  `n_is_viewd_by_user` text NOT NULL,
-  `n_created_at` datetime NOT NULL,
-  `n_updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `notification`
---
-
-INSERT INTO `notification` (`id`, `n_u_id`, `n_thumbnill`, `n_title`, `n_decription`, `n_is_send`, `n_is_deleted_by_user`, `n_is_viewd_by_user`, `n_created_at`, `n_updated_at`) VALUES
-(5, '43,44', '1712381460.png', 'Html Basic Course', 'Html Basic Course starts Tommorow ', 'true', '', '43', '2024-03-22 16:52:33', '2024-04-17 15:53:35'),
-(7, '43', '1712383275.jpg', 'Angular course', 'Angular Course Start Tommorow', 'true', '43', '43', '2024-04-06 11:31:15', '2024-04-17 14:44:48'),
-(8, '44', '1712383420.png', 'Certificate for Html Course', 'Your Html Course Certificate is ready', 'true', '', '', '2024-04-06 11:33:40', '2024-04-06 15:31:28'),
-(9, '45', '1713786026.jpeg', 'hello', 'test', 'true', '', '', '2024-04-22 17:10:26', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -550,51 +394,6 @@ INSERT INTO `notification_count` (`user`, `member_user`, `review`, `course`, `bl
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payment_methods`
---
-
-CREATE TABLE `payment_methods` (
-  `id` int(11) NOT NULL,
-  `method_img` text NOT NULL,
-  `method_name` varchar(255) NOT NULL,
-  `method_is_publish` varchar(255) NOT NULL,
-  `merchantId` varchar(255) NOT NULL,
-  `apiKey` varchar(255) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `payment_methods`
---
-
-INSERT INTO `payment_methods` (`id`, `method_img`, `method_name`, `method_is_publish`, `merchantId`, `apiKey`, `created_at`, `updated_at`) VALUES
-(1, '', 'PhonePe', 'true', 'PGTESTPAYUATr', '099eb0cd-02cf-4e2a-8aca-3e6c6aff0399', '2024-03-27 07:29:38', '2024-03-27 07:29:38');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `popup`
---
-
-CREATE TABLE `popup` (
-  `id` int(11) NOT NULL,
-  `img` text NOT NULL,
-  `tit` text NOT NULL,
-  `is_publish` int(11) NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `popup`
---
-
-INSERT INTO `popup` (`id`, `img`, `tit`, `is_publish`, `updated_at`) VALUES
-(1, '1714395108.jpg', 'Introduction', 0, '0000-00-00 00:00:00');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `privacy`
 --
 
@@ -611,36 +410,6 @@ CREATE TABLE `privacy` (
 
 INSERT INTO `privacy` (`id`, `title`, `description`, `updated_at`) VALUES
 (1, 'Privacy Policy', '<p>1. Each Member agrees to abide by the &ldquo;Terms and Conditions &ldquo;of FIP membership, as set forth herein. FIP may change the Terms and Conditions at any time with or without notice.</p>\r\n\r\n<p>2. The membership will grant you certain rights and priorities in the form of participation in future events and activities, Concessions, Reservations, or fee waivers to our majority paid courses.</p>\r\n\r\n<p>3. As long as you remain a member in good standing, you may use FIP&#39;s name and logo, in the format and with the notices provided or requested by FIP, solely to indicate your membership in FIP.</p>\r\n\r\n<p>4. Please note that this membership will NOT give any member a right to take part in the decision-making process at the FIP.</p>\r\n\r\n<p>5. This membership fee is annual and for the current Financial Year 2023-24 which is repayable annually as and when due.</p>\r\n\r\n<p>6. FIP reserves the right of allocating membership upon submission of a request from such person in prescribed form and manner. The acceptance of such form shall be determined in the sole and absolute discretion of the FIP.</p>\r\n\r\n<p>You agree to share information entered on this page with Federation of Indian Professionals (owner of this page) and Razorpay, adhering to applicable laws.</p>\r\n', '2024-03-26 14:55:26');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `review`
---
-
-CREATE TABLE `review` (
-  `id` int(11) NOT NULL,
-  `course_id` varchar(255) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `msg` text NOT NULL,
-  `rating` varchar(255) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `review`
---
-
-INSERT INTO `review` (`id`, `course_id`, `user_id`, `name`, `msg`, `rating`, `created_at`, `updated_at`) VALUES
-(1, '6', 0, 'Dhruvi', 'Really enjoyed the course . The instructor wan excellent and was clearly very knowledgeable about the topiscs.', '5', '2024-04-05 15:44:19', '0000-00-00 00:00:00'),
-(9, '1', 0, 'Sangani', 'k,sajdsnd', '2', '2024-04-05 16:01:41', '0000-00-00 00:00:00'),
-(11, '2', 0, 'Dhruvi sangani', 'this is very useful course.', '3', '2024-04-05 16:06:46', '2024-04-08 11:30:28'),
-(12, '9', 0, 'dhruvi', 'its a good', '4', '2024-04-05 18:59:34', '0000-00-00 00:00:00'),
-(13, '5', 43, 'Sangani Dhruvi', 'Testing', '3', '2024-04-05 19:09:16', '0000-00-00 00:00:00'),
-(14, '6', 43, 'Dhruvi', 'its an ossom............', '5', '2024-04-08 16:30:31', '2024-04-08 17:06:26'),
-(16, '6', 43, 'test', 'its an test', '4', '2024-04-09 17:00:48', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -688,6 +457,32 @@ INSERT INTO `testimonial` (`id`, `img`, `nm`, `desi`, `rev`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `topers`
+--
+
+CREATE TABLE `topers` (
+  `id` int(11) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `course` varchar(255) NOT NULL,
+  `semester` varchar(255) NOT NULL,
+  `year` varchar(255) NOT NULL,
+  `percentage` varchar(255) NOT NULL,
+  `active` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `topers`
+--
+
+INSERT INTO `topers` (`id`, `img`, `name`, `course`, `semester`, `year`, `percentage`, `active`, `created_at`, `updated_at`) VALUES
+(3, '1725191136.png', 'Dhruvi', ' B.Com.', 'Sem-6', '2022', '95', 1, '2024-09-01 12:21:00', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -729,23 +524,6 @@ INSERT INTO `user` (`id`, `uNo`, `nm`, `eml`, `mob`, `addr`, `dt`, `pwd`, `profi
 (61, 'CP663G', 'test new', 'testnew@gmail.com', '7016922945', 'test address', '2024-04-30 10:51:37', '$2y$10$Ob/2a5qAusKOckRHiR7URO0IxN72PQQT3v5rXbK7z1hlrgikBwATK', '1714455357.png', '', '', '', '', '', '', '', '', '', '', 'No', '0', '', 0, '2024-04-30 11:05:57'),
 (62, 'JO705X', 'Dhruvi Sangani', 'dsangani44@gmail.com', '7016922908', 'Junagadh', '2024-05-13 11:02:13', '$2y$10$WVQJFZJk5L/TmJEvxVAx6.0Wd2qMQaFFqkbc7zZ92jclKiIBEchqi', '1715578333.png', '953174', 'true', '', '', '', '', '', '', '', '', 'No', '0', '', 0, '0000-00-00 00:00:00');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `user_billing_history`
---
-
-CREATE TABLE `user_billing_history` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `msg` text NOT NULL,
-  `date` varchar(255) NOT NULL,
-  `time` varchar(255) NOT NULL,
-  `amount` varchar(255) NOT NULL,
-  `transaction_id` varchar(500) NOT NULL,
-  `created_at` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 --
 -- Indexes for dumped tables
 --
@@ -757,11 +535,41 @@ ALTER TABLE `admission`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `alumni`
+--
+ALTER TABLE `alumni`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `course`
+--
+ALTER TABLE `course`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `events`
+--
+ALTER TABLE `events`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `faculty`
+--
+ALTER TABLE `faculty`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `topers`
+--
+ALTER TABLE `topers`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -774,10 +582,40 @@ ALTER TABLE `admission`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `alumni`
+--
+ALTER TABLE `alumni`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `course`
+--
+ALTER TABLE `course`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `events`
+--
+ALTER TABLE `events`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `faculty`
+--
+ALTER TABLE `faculty`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=353;
+
+--
+-- AUTO_INCREMENT for table `topers`
+--
+ALTER TABLE `topers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
