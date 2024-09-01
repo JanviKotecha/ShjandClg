@@ -14,7 +14,8 @@
 	define("FACULTY_URL", IMAGE_URL."faculty/");
 	define("COURSE_URL", IMAGE_URL."courseimage/");
 	define("EVENTS_URL", IMAGE_URL."events/");
-	
+	define("TOPERS_URL", IMAGE_URL."topers/");
+
 	define("ADMIN_URL",HOST_URL."Admin/");
 	define("ADMIN_IMAGE_URL",ADMIN_URL."image/");
 	define("ADMIN_BACKGROUND_URL", ADMIN_IMAGE_URL."background/");
