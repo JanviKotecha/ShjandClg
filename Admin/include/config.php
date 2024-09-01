@@ -21,7 +21,7 @@
 
   define("UPLOAD_HOST_URL","../");
   define("UPLOAD_IMAGE_URL", UPLOAD_HOST_URL."images/");
-  define("UPLOAD_PROFILE_URL", UPLOAD_IMAGE_URL."instructorprofile/");
+  define("UPLOAD_FACULTY_URL", UPLOAD_IMAGE_URL."faculty/");
   define("UPLOAD_COURSE_URL", UPLOAD_IMAGE_URL."courseimage/");
   date_default_timezone_set("Asia/Kolkata");
   $getDt = date("Y-m-d H:i:s");

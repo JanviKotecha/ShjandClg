@@ -11,6 +11,8 @@
 	define("HSCRESULT_URL",IMAGE_URL."a_hscResult/");
     define("SSCRESULT_URL",IMAGE_URL."a_sscResult/");
 
+	define("FACULTY_URL", IMAGE_URL."faculty/");
+
 	define("ADMIN_URL",HOST_URL."Admin/");
 	define("ADMIN_IMAGE_URL",ADMIN_URL."image/");
 	define("ADMIN_BACKGROUND_URL", ADMIN_IMAGE_URL."background/");
