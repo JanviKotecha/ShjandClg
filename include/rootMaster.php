@@ -12,6 +12,7 @@
     define("SSCRESULT_URL",IMAGE_URL."a_sscResult/");
 
 	define("FACULTY_URL", IMAGE_URL."faculty/");
+	define("COURSE_URL", IMAGE_URL."courseimage/");
 
 	define("ADMIN_URL",HOST_URL."Admin/");
 	define("ADMIN_IMAGE_URL",ADMIN_URL."image/");
