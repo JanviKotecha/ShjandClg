@@ -141,8 +141,8 @@ window.location = "course.php";
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Course Name</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="c_name" name="c_name" value="<?php echo $row['c_name'] ?>"
-                                                    required>
+                                                <input type="text" class="form-control" id="c_name" name="c_name"
+                                                    value="<?php echo $row['c_name'] ?>" required>
                                             </div>
                                         </div>
                                     </div>
@@ -150,8 +150,8 @@ window.location = "course.php";
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Course Subtitle</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="c_subtitle" value="<?php echo $row['c_subtitle'] ?>"
-                                                    name="c_subtitle" required>
+                                                <input type="text" class="form-control" id="c_subtitle"
+                                                    value="<?php echo $row['c_subtitle'] ?>" name="c_subtitle" required>
                                             </div>
                                         </div>
                                     </div>
@@ -162,8 +162,8 @@ window.location = "course.php";
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Duration</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="duration" name="duration" value="<?php echo $row['duration'] ?>"
-                                                    required>
+                                                <input type="text" class="form-control" id="duration" name="duration"
+                                                    value="<?php echo $row['duration'] ?>" required>
                                             </div>
                                         </div>
                                     </div>
@@ -171,9 +171,13 @@ window.location = "course.php";
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Medium</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control" id="medium" name="medium" value="<?php echo $row['medium'] ?>" required>
-                                                    <option value="English">English</option>
-                                                    <option value="Gujarati">Gujarati</option>
+                                                <select class="form-control" id="medium" name="medium" required>
+                                                    <option value="English"
+                                                        <?php echo ($row['medium'] == 'English') ? 'selected' : ''; ?>>
+                                                        English</option>
+                                                    <option value="Gujarati"
+                                                        <?php echo ($row['medium'] == 'Gujarati') ? 'selected' : ''; ?>>
+                                                        Gujarati</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -212,7 +216,8 @@ window.location = "course.php";
                                             <label class="col-sm-3 col-form-label">After Graduation</label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="after_graduation"
-                                                    name="after_graduation" rows="4" required><?php echo $row['after_graduation'] ?></textarea>
+                                                    name="after_graduation" rows="4"
+                                                    required><?php echo $row['after_graduation'] ?></textarea>
                                             </div>
                                         </div>
                                     </div>
