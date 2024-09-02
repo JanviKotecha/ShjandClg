@@ -5,26 +5,26 @@
     {
       if($_GET['id']!='') {
         if(is_numeric($_GET['id'])) {
-          $res=$qm->getRecord("user","*","id=".$_GET['id']);
+          $res=$qm->getRecord("events","*","id=".$_GET['id']);
           if(mysqli_num_rows($res)>0) {
-            $qm->deleteRecord("user","id=".$_GET['id']);
+            $qm->deleteRecord("events","id=".$_GET['id']);
             $result=mysqli_fetch_array($res);
-            $_SESSION['alert_msg'] .= "<div class='msg_success'>Customer deleated successfully.</div>";
-            header("location:customer.php"); 
+            $_SESSION['alert_msg'] .= "<div class='msg_success'>Event deleated successfully.</div>";
+            header("location:events.php"); 
             exit;
         }else {
           $_SESSION['alert_msg'] .= "<div class='msg_error'>Data can't be found.</div>";
-          header("location:customer.php");
+          header("location:events.php");
           exit;
         }
         } else {
           $_SESSION['alert_msg'] .= "<div class='msg_error'>Only numeric value required.</div>";
-          header("location:customer.php");
+          header("location:events.php");
           exit;
         }
       } else  {
         $_SESSION['alert_msg'] .= "<div class='msg_error'>Id can't be empty.</div>";
-        header("location:customer.php");
+        header("location:events.php");
         exit;
       }
     }
@@ -56,14 +56,15 @@
               <div class="card">
                 <div class="card-body">
                   <h3 class="card-title">Event Detail 
-                    <a href="event_add" class="btn btn-primary" style="float: right;"><i class="fa fa-plus"></i></a>
+                    <a href="event_add.php" class="btn btn-primary" style="float: right;"><i class="fa fa-plus"></i></a>
                   </h3>
                   <div class="table-responsive">
-                    <table id="customer_table2" class="table table-striped" >
+                    <table id="events_table" class="table table-striped" >
                       
                       <thead>
                         <tr>
                           <th>No</th>
+                          <th>Category</th>
                           <th>Title</th>
                           <th>Image</th>
                           <th>Link</th>
@@ -80,13 +81,14 @@
                             $i++;?>
                             <tr>
                               <td><?php echo $i; ?></td>
+                              <td><?php echo $row['event_category']; ?></td>
                               <td><?php echo $row['title']; ?></td>
                               <td><div><img src="<?php echo $row["img"]=='' ? EVENTS_URL.'noimg.png' : (file_exists(UPLOAD_EVENTS_URL.$row["img"]) ? EVENTS_URL.$row["img"] : EVENTS_URL.'noimg.png'); ?>" class="border c-img" /></div></td>
                               
                               <td><?php echo $row['link']; ?></td>
                               <td><?php echo $row['created_at']; ?></td>
                               <td>
-                                <a class="btn btn-primary width" href="event_update?id=<?php echo $row['id'];?>"><i class="fa fa-edit"></i></a>
+                                <a class="btn btn-primary width" href="event_update.php?id=<?php echo $row['id'];?>"><i class="fa fa-edit"></i></a>
                                 <a class="btn btn-danger width" href="events.php?id=<?php echo $row['id'];?>" onclick="return confirm('Are you sure');"><i class="fa fa-trash"></i></a>
                               </td>
                             </tr>
@@ -112,7 +114,7 @@
   <!-- Initialize DataTables -->
   <script>
     $(document).ready( function () {
-      $('#customer_table2').DataTable({
+      $('#events_table').DataTable({
         "pageLength": 10, // Initial number of entries per page
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]], // Control number of entries per page
       });

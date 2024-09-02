@@ -86,8 +86,8 @@
     <li class="menu-header small text-uppercase">
       <span class="menu-header-text">PROMINENT Alumni Management</span>
     </li>
-    <li class="menu-item <?php echo $page_title =='event' ? 'active' : '' ;?>">
-      <a href="events.php" class="menu-link">
+    <li class="menu-item <?php echo $page_title =='alumni' ? 'active' : '' ;?>">
+      <a href="alumni.php" class="menu-link">
         <i class="menu-icon tf-icons bx bxs-graduation"></i>
         <div data-i18n="Account Settings">Alumni Students</div>
       </a>

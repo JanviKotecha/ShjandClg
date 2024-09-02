@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <?php include("include/secureConfig.php");
-$page_title = "instructors";
+$page_title = "faculty";
 if (isset($_GET['id'])) {
     if ($_GET['id'] != '') {
         if (is_numeric($_GET['id'])) {
-            $res = $qm->getRecord("instructor", "*", "id=" . $_GET['id']);
+            $res = $qm->getRecord("faculty", "*", "id=" . $_GET['id']);
             if (mysqli_num_rows($res) > 0) {
-                $qm->deleteRecord("instructor", "id=" . $_GET['id']);
+                $qm->deleteRecord("faculty", "id=" . $_GET['id']);
                 $result = mysqli_fetch_array($res);
-                $_SESSION['alert_msg'] .= "<div class='msg_success'>instructor deleated successfully.</div>";
+                $_SESSION['alert_msg'] .= "<div class='msg_success'>faculty deleated successfully.</div>";
                 header("location:faculty.php");
                 exit;
             } else {
@@ -51,26 +51,27 @@ if (isset($_GET['id'])) {
                             <?php include("include/alert_msg.php"); ?>
                             <div class="card">
                                 <div class="card-body">
-                                    <h3 class="card-title">instructor Detail
+                                    <h3 class="card-title">Faculty Detail
                                         <a href="faculty_add.php" class="btn btn-primary" style="float: right;"><i
                                                 class="fa fa-plus"></i></a>
                                     </h3>
                                     <div class="table-responsive">
-                                        <table id="instructor_table" class="table table-striped ">
+                                        <table id="faculty_table" class="table table-striped ">
                                             <thead>
                                                 <tr>
                                                     <th>No</th>
                                                     <th>Image</th>
                                                     <th>Name</th>
-                                                    <th>Designation</th>
-                                                    <th>Description</th>
+                                                    <th>Degree</th>
+                                                    <th>Joining Date</th>
+                                                    <th>Resign Date</th>
                                                     <th>Date</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <?php
-                                                $result = $qm->getRecord("instructor");
+                                                $result = $qm->getRecord("faculty");
                                                 if (mysqli_num_rows($result) > 0) {
                                                     $i = 0;
                                                     while ($row = mysqli_fetch_array($result)) {
@@ -81,21 +82,24 @@ if (isset($_GET['id'])) {
                                                             </td>
                                                             <td>
                                                                 <div class="avatar me-3">
-                                                                <img src="<?php echo $row["Instructor_iamge"]=='' ? PROFILE_URL.'noimg.png' : (file_exists(UPLOAD_PROFILE_URL.$row["Instructor_iamge"]) ? PROFILE_URL.$row["Instructor_iamge"] : PROFILE_URL.'noimg.png'); ?>" 
+                                                                <img src="<?php echo $row["faculty_iamge"]=='' ? FACULTY_URL.'noimg.png' : (file_exists(UPLOAD_FACULTY_URL.$row["faculty_iamge"]) ? FACULTY_URL.$row["faculty_iamge"] : FACULTY_URL.'noimg.png'); ?>" 
                                                                         class="rounded-circle">
                                                                 </div>
                                                             </td>
                                                             <td>
-                                                                <?php echo $row['Instructor_name']; ?>
+                                                                <?php echo $row['faculty_name']; ?>
                                                             </td>
                                                             <td>
-                                                                <?php echo $row['Instructor_designation']; ?>
+                                                                <?php echo $row['faculty_degree']; ?>
                                                             </td>
                                                             <td>
-                                                                <?php echo $row['Instructor_description']; ?>
+                                                                <?php echo $row['joinig_date']; ?>
                                                             </td>
                                                             <td>
-                                                                <?php echo $row['add_date']; ?>
+                                                                <?php echo !empty($row['resign_date']) ? $row['resign_date'] : '--'; ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php echo $row['created_at']; ?>
                                                             </td>
                                                             <td>
                                                                 <a class="btn btn-primary width"
@@ -131,7 +135,7 @@ if (isset($_GET['id'])) {
     <!-- Initialize DataTables -->
     <script>
         $(document).ready(function () {
-            $('#instructor_table').DataTable({
+            $('#faculty_table').DataTable({
                 "pageLength": 10, // Initial number of entries per page
                 "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]], // Control number of entries per page
             });
