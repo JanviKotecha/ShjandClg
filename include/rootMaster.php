@@ -10,6 +10,7 @@
     define("DISABILITYCERTIFICATE_URL",IMAGE_URL."a_disabilityCertificate/");
 	define("HSCRESULT_URL",IMAGE_URL."a_hscResult/");
     define("SSCRESULT_URL",IMAGE_URL."a_sscResult/");
+	define("ADMISSIONPDF",IMAGE_URL."admissionPdfs/");
 
 	define("FACULTY_URL", IMAGE_URL."faculty/");
 	define("COURSE_URL", IMAGE_URL."courseimage/");
