@@ -84,10 +84,16 @@ if(isset($_GET['id']))
                                         <div class="col-md-6">
                                             <p><b>Applicant Name:</b>
                                                 <?php echo htmlspecialchars($row['applicant_name']); ?></p>
+                                            <p><b>Email:</b> <?php echo htmlspecialchars($row['email']); ?></p>
+                                            <p><b>Mobile No:</b>
+                                                <?php echo htmlspecialchars($row['mobile_no']); ?></p>
                                             <p><b>Date of Birth:</b>
                                                 <?php echo htmlspecialchars($row['birthdate']); ?></p>
+                                            <p><b>Gender:</b> <?php echo htmlspecialchars($row['gender']); ?></p>
                                             <p><b>Father's Name:</b>
                                                 <?php echo htmlspecialchars($row['fathers_name']); ?></p>
+                                            <p><b>Mother's Name:</b>
+                                                <?php echo htmlspecialchars($row['mothers_name']); ?></p>
                                             <p><b>Parents' Mobile No:</b>
                                                 <?php echo htmlspecialchars($row['parents_mobile_no']); ?></p>
                                             <p><b>Category:</b> <?php echo htmlspecialchars($row['category']); ?></p>
@@ -97,16 +103,22 @@ if(isset($_GET['id']))
                                             <p><b>Religion:</b> <?php echo htmlspecialchars($row['religion']); ?></p>
                                             <p><b>Aadhar Number:</b>
                                                 <?php echo htmlspecialchars($row['aadhar_number']); ?></p>
+                                                <p><b>Number of Siblings:</b>
+                                                <?php echo htmlspecialchars($row['no_of_siblings']); ?></p>
+                                            
                                         </div>
                                         <div class="col-md-6">
-                                            <p><b>Email:</b> <?php echo htmlspecialchars($row['email']); ?></p>
-                                            <p><b>Mobile No:</b>
-                                                <?php echo htmlspecialchars($row['mobile_no']); ?></p>
-                                            <p><b>Mother's Name:</b>
-                                                <?php echo htmlspecialchars($row['mothers_name']); ?></p>
-                                            <p><b>Number of Siblings:</b>
-                                                <?php echo htmlspecialchars($row['no_of_siblings']); ?></p>
-                                            <p><b>Gender:</b> <?php echo htmlspecialchars($row['gender']); ?></p>
+                                            <?php if (!empty($row['profile_photo'])): ?>
+                                            <p><b>Profile Photo:</b></p>
+                                            <img src="<?php echo PROFILE_URL . htmlspecialchars($row['profile_photo']); ?>"
+                                                alt="Profile Photo" width="150" height="150">
+                                            <?php endif; ?>
+
+                                            <?php if (!empty($row['signature_photo'])): ?>
+                                            <p><b>Signature Photo:</b></p>
+                                            <img src="<?php echo SIGNATURE_URL . htmlspecialchars($row['signature_photo']); ?>"
+                                                alt="Signature Photo" class="mb-2" width="150" height="150">
+                                            <?php endif; ?>
                                             <p><b>Disability:</b> <?php echo htmlspecialchars($row['disability']); ?>
                                             </p>
                                             <?php if (strtolower($row['disability']) === 'yes') : ?>

@@ -148,6 +148,11 @@ if (isset($_POST['submit'])) {
     // exit();
     // After the form data is inserted and files are handled, generate the PDF
     class PDF extends FPDF {
+      private $applicationNo;
+
+        public function setApplicationNo($applicationNo) {
+            $this->applicationNo = $applicationNo;
+        }
       function AddDetails($details) {
         $this->SetFont('Arial', 'B', 12);
         foreach ($details as $label => $value) {
@@ -185,7 +190,7 @@ if (isset($_POST['submit'])) {
         // Display the academic year
         $this->SetFont('Arial', '', 12); // Set font to Arial regular with size 12
         $this->Cell(0, 10, 'Academic Year: ' . $academicYear, 0, 1, 'L');
-
+        $this->Cell(0, 10, 'Application No: ' . $this->applicationNo, 0, 1, 'R');
         // Line break
         $this->Ln(10);
       }
