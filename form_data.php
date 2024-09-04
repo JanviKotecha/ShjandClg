@@ -316,7 +316,9 @@ if (isset($_POST['submit'])) {
   $qm->UpdateRecord("admission", "pdf_url='$filename'", "id=$insert");
 
   // Output the PDF
-  $pdf->Output('I', 'admission_application.pdf');
+  // $pdf->Output('I', 'admission_application.pdf');
+  // exit();  
+  header("Location: success.php?file=$filename");
   exit();
 }
 
