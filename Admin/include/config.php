@@ -21,6 +21,11 @@
 
   define("UPLOAD_HOST_URL","../");
   define("UPLOAD_IMAGE_URL", UPLOAD_HOST_URL."images/");
+  define("UPLOAD_PROFILE_URL", UPLOAD_IMAGE_URL."a_profilePhoto/");
+  define("UPLOAD_SIGNATURE_URL", UPLOAD_IMAGE_URL."a_signaturePhoto/");
+  define("UPLOAD_DISABILITYCERTIFICATE_URL", UPLOAD_IMAGE_URL."a_disabilityCertificate/");
+  define("UPLOAD_HSCRESULT_URL", UPLOAD_IMAGE_URL."a_hscResult/");
+  define("UPLOAD_SSCRESULT_URL", UPLOAD_IMAGE_URL."a_sscResult/");
 
   define("UPLOAD_FACULTY_URL", UPLOAD_IMAGE_URL."faculty/");
   define("UPLOAD_COURSE_URL", UPLOAD_IMAGE_URL."courseimage/");
