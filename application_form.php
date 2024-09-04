@@ -56,7 +56,7 @@
                     <div class="col-12 col-lg-8 m-auto mb-4">
                         <div class="multisteps-form__progress" id="hidden">
                             <button class="multisteps-form__progress-btn js-active" type="button">Personal
-                                Detials</button>
+                                Details</button>
                             <button class="multisteps-form__progress-btn" type="button">Address Details</button>
                             <button class="multisteps-form__progress-btn" type="button">Academic Details</button>
                             <button class="multisteps-form__progress-btn" type="button">Terms & Submit</button>
