@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
     $agreeTerms = isset($_POST['agree']) ? 1 : 0;
 
     // Default Status
-    $status = 'Pending';
+    $status = 0;
     $applicationNo = str_pad(rand(0, 99999999), 8, '0', STR_PAD_LEFT);
 
     // Insert query
