@@ -1944,7 +1944,9 @@ ol {
   font-size: 1rem;
   width: 70px;
   height: 36px;
-  color: var(--text-color);
+  color: var(--title-color);
+}
+.paginations ul .disabled{
   opacity: 0.5;
 }
 .paginations ul li a.active, .paginations ul li a:hover {

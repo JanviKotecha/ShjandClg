@@ -49,64 +49,73 @@
             <div class="blog__wrapper">
                 <div class="row g-4">
                     <?php
-                        $result = $qm->getRecord("alumni");
+                        $limit = 6;
+                        $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                        $offset = ($current_page - 1) * $limit;
+                        $alumni = $qm->getRecord("alumni");
+                        $total_records =mysqli_num_rows($alumni);
+                        $total_pages = ceil($total_records / $limit);
+
+                        $result = $qm->getRecord("alumni","*" ,"","LIMIT $limit OFFSET $offset");
+                    
                         if (mysqli_num_rows($result) > 0) {                        
                           while ($row = mysqli_fetch_array($result)) {
                             ?>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog__item" data-aos="fade-up" data-aos-duration="800">
-                            <div class="blog__item-inner blog__item-inner--style2">
-                                <div class="blog__thumb alumniProfile d-flex justify-content-center">
-                                    <img src="<?php echo $row["img"]=='' ? ALUMNIPROFILE_URL.'noimg.png' : (file_exists(UPLOAD_ALUMNIPROFILE_URL.$row["img"]) ? ALUMNIPROFILE_URL.$row["img"] : ALUMNIPROFILE_URL.'noimg.png'); ?>"
-                                        class="rounded-circle">
-                                </div>
-
-                                <div class="blog__content">
-
-                                    <h5 class="10 style2 mt-2 text-center"><?php echo $row['name']; ?></h5>
-                                    <div class="blog__writer mt-3">
-                                        <div class="blog__writer-thumb">
-                                            <img src="<?php echo $row["c_logo"]=='' ? ALUMNILOGO_URL.'noimg.png' : (file_exists(UPLOAD_ALUMNILOGO_URL.$row["c_logo"]) ? ALUMNILOGO_URL.$row["c_logo"] : ALUMNILOGO_URL.'noimg.png'); ?>"
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="blog__item" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="blog__item-inner blog__item-inner--style2">
+                                        <div class="blog__thumb alumniProfile d-flex justify-content-center">
+                                            <img src="<?php echo $row["img"]=='' ? ALUMNIPROFILE_URL.'noimg.png' : (file_exists(UPLOAD_ALUMNIPROFILE_URL.$row["img"]) ? ALUMNIPROFILE_URL.$row["img"] : ALUMNIPROFILE_URL.'noimg.png'); ?>"
                                                 class="rounded-circle">
                                         </div>
-                                        <div class="blog__writer-designation">
-                                            <p><?php echo $row['c_name']; ?></p>
-                                            <div class="blog__meta">
-                                                <span class="blog__meta-tag blog__meta-tag--style1"><?php echo $row['jobPosition']; ?></span>
+
+                                        <div class="blog__content">
+
+                                            <h5 class="10 style2 mt-2 text-center"><?php echo $row['name']; ?></h5>
+                                            <div class="blog__writer mt-3">
+                                                <div class="blog__writer-thumb">
+                                                    <img src="<?php echo $row["c_logo"]=='' ? ALUMNILOGO_URL.'noimg.png' : (file_exists(UPLOAD_ALUMNILOGO_URL.$row["c_logo"]) ? ALUMNILOGO_URL.$row["c_logo"] : ALUMNILOGO_URL.'noimg.png'); ?>"
+                                                        class="rounded-circle">
+                                                </div>
+                                                <div class="blog__writer-designation">
+                                                    <p class="m-0"><?php echo $row['c_name']; ?></p>
+                                                    <div class="blog__meta py-1">
+                                                        <span class="blog__meta-tag blog__meta-tag--style1"><?php echo $row['jobPosition']; ?></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <?php 
+                            <?php 
                           }
                         }  ?>
                 </div>
+                <!-- Pagination -->
                 <div class="paginations" data-aos="fade-up" data-aos-duration="1200">
                     <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
-                        <li>
-                            <a href="#"><i class="fa-solid fa-angle-left me-2"></i> Prev</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">1</a>
-                        </li>
-                        <li class="d-none d-sm-block">
-                            <a href="#">2</a>
-                        </li>
-                        <li class="d-none d-sm-block">
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="dot">...</a>
-                        </li>
-                        <li>
-                            <a href="#">12</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">Next <i class="fa-solid fa-angle-right ms-2"></i> </a>
-                        </li>
+                        <?php 
+                          if ($current_page > 1) {
+                              echo '<li><a href="?page=' . ($current_page - 1) . '"><i class="fa-solid fa-angle-left me-2"></i> Prev</a></li>';
+                          } else {
+                              echo '<li class="disabled"><a><i class="fa-solid fa-angle-left me-2"></i> Prev</a></li>';
+                          }
+
+                          for ($i = 1; $i <= $total_pages; $i++) {
+                              if ($i == $current_page) {
+                                  echo '<li><a href="?page=' . $i . '" class="active">' . $i . '</a></li>';
+                              } else {
+                                  echo '<li><a href="?page=' . $i . '">' . $i . '</a></li>';
+                              }
+                          }
+
+                          if ($current_page < $total_pages) {
+                              echo '<li><a href="?page=' . ($current_page + 1) . '">Next <i class="fa-solid fa-angle-right ms-2"></i></a></li>';
+                          } else {
+                              echo '<li class="disabled"><a>Next <i class="fa-solid fa-angle-right ms-2"></i></a></li>';
+                          }
+                        ?>
                     </ul>
                 </div>
             </div>
