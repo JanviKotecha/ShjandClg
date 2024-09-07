@@ -11090,3 +11090,6 @@ html[data-bs-theme=dark] .partner--gradient::after {
   width: 70px;
   height: 70px;
 }
+.eventsImg img{
+  height: 195px;
+}
