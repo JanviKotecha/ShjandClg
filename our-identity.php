@@ -97,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="service padding-top padding-bottom">       
+    <section class="service padding-bottom">       
         <div class="container">
             <div class="service__wrapper">
                 <div class="row g-4 align-items-center">
@@ -137,7 +137,7 @@
         </div>
 
         <div class="service__shape">
-            <span class="service__shape-item service__shape-item--1"><img src="assets/images/icon/1.png"
+            <span class="service__shape-item service__shape-item--1"><img src="assets/images/header/notes.png"
                     alt="shape-icon"></span>
         </div>
     </section>
