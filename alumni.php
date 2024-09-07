@@ -30,7 +30,7 @@
                 <h2>Prominent Alumni</h2>
                 <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item "><a href="index.php">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Prominent Alumni Students</li>
                     </ol>
                 </nav>
