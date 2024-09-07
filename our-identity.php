@@ -62,7 +62,7 @@
                                             <h3> <span class="purecounter" data-purecounter-start="0"
                                                     data-purecounter-end="25">25K</span>K+
                                             </h3>
-                                            <p>Satisfied Customers</p>
+                                            <p>Satisfied Students</p>
                                         </div>
                                     </div>
                                 </div>
