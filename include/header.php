@@ -28,7 +28,7 @@
                 <a href="alumni.php">Alumni</a>
               </li>
               <li>
-                <a href="£">Events</a>
+                <a href="events.php">Events</a>
               </li>
               <li>
                 <a href="contact.php">Contact Us</a>
