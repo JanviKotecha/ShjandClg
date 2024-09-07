@@ -11093,3 +11093,8 @@ html[data-bs-theme=dark] .partner--gradient::after {
 .eventsImg img{
   height: 195px;
 }
+.course-decTitle{
+  color : #cd4f2b;
+  font-size: 18px;
+  font-weight: bold;
+}

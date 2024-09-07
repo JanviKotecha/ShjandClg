@@ -30,13 +30,13 @@
         $allowd = array("jpg","png","jpeg","gif");
         $Img = time().".".$ext;
         if(in_array($ext,$allowd)) {
-          $sel=$qm->getRecord("course","c_thumbnail","id=".$id);
+          $sel=$qm->getRecord("course","c_img","id=".$id);
           if(mysqli_num_rows($sel) > 0){
             $result=mysqli_fetch_array($sel);
-            unlink(UPLOAD_COURSE_URL.$result['c_thumbnail']);
+            unlink(UPLOAD_COURSE_URL.$result['c_img']);
           }
           move_uploaded_file($_FILES['image']['tmp_name'],UPLOAD_COURSE_URL.$Img);
-          $qm->updateRecord("course","c_thumbnail='".$Img."'","id=".$id);
+          $qm->updateRecord("course","c_img='".$Img."'","id=".$id);
           $_SESSION['alert_msg'] .= "<div class='msg_success'>Course updated successfully.</div>";
           header("location:course.php");
           exit;  
