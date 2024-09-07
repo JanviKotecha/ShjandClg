@@ -11094,7 +11094,7 @@ html[data-bs-theme=dark] .partner--gradient::after {
   height: 195px;
 }
 .course-decTitle{
-  color : #cd4f2b;
+  color : #cd4f2b !important;
   font-size: 18px;
   font-weight: bold;
 }
