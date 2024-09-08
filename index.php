@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include "include/config.php";
+?>
 <html lang="en" data-bs-theme="light">
 
 <head>
@@ -107,10 +110,6 @@
     </section>
     <!-- ===============>> Banner section end here <<================= -->
 
-
-
-
-
     <!-- ===============>> partner section start here <<================= -->
     <div class="partner partner--gradient">
         <div class="container">
@@ -148,10 +147,6 @@
         </div>
     </div>
     <!-- ===============>> partner section end here <<================= -->
-
-
-
-
 
     <!-- ===============>> About section start here <<================= -->
     <section class="about about--style1 ">
@@ -207,9 +202,6 @@
         </div>
     </section>
     <!-- ===============>> About section start here <<================= -->
-
-
-
 
     <!-- ===============>> feature section start here <<================= -->
     <section class="feature feature--style1 padding-bottom padding-top bg-color">
@@ -402,9 +394,6 @@
     </section>
     <!-- ===============>> feature section end here <<================= -->
 
-
-
-
     <!-- ===============>> Service section start here <<================= -->
     <section class="service padding-top padding-bottom">
         <div class="section-header section-header--max50">
@@ -513,9 +502,6 @@
         </div>
     </section>
     <!-- ===============>> Service section start here <<================= -->
-
-
-
 
     <!-- ========== Roadmap Section start Here========== -->
     <section class="roadmap roadmap--style1 padding-top  padding-bottom bg-color" id="roadmap">
@@ -647,8 +633,6 @@
         </div>
     </section>
     <!-- ========== Roadmap Section Ends Here========== -->
-
-
 
     <!-- ===============>> Pricing section start here <<================= -->
     <section class="pricing padding-top padding-bottom">
@@ -788,176 +772,78 @@
     </section>
     <!-- ===============>> Pricing section start here <<================= -->
 
-
-
-
-
     <!-- ===============>> Team section start here <<================= -->
     <section class="team padding-top padding-bottom bg-color">
         <div class="section-header section-header--max50">
-            <h2 class="mb-10 mt-minus-5">Meet our <span>advisers</span></h2>
-            <p>Hey everyone, meet our amazing advisers! They're here to help and guide us through anything.</p>
+            <h2 class="mb-10 mt-minus-5">Meet our <span>faculties</span></h2>
+            <p>Learn from passionate educators who bring knowledge to life. Discover the expertise that drives our academic excellence.</p>
         </div>
         <div class="container">
             <div class="team__wrapper">
                 <div class="row g-4 align-items-center">
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/1.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Dianne
-                                                    Russell</a> </h6>
-                                            <p class="mb-0">Trade Captain</p>
+                <?php
+                        $limit = 6;
+                        $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                        $offset = ($current_page - 1) * $limit;
+                        $faculty = $qm->getRecord("faculty");
+                        $total_records =mysqli_num_rows($faculty);
+                        $total_pages = ceil($total_records / $limit);
+
+                        $result = $qm->getRecord("faculty","*" ,"","LIMIT $limit OFFSET $offset");
+                    
+                        if (mysqli_num_rows($result) > 0) {                        
+                          while ($row = mysqli_fetch_array($result)) {
+                            ?>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
+                                        <div class="team__item-inner team__item-inner--shape">
+                                            <div class="team__item-thumb team__item-thumb--style1">
+                                                <img src="<?php echo $row["faculty_iamge"]=='' ? FACULTY_URL.'noimg.png' : (file_exists(UPLOAD_FACULTY_URL.$row["faculty_iamge"]) ? FACULTY_URL.$row["faculty_iamge"] : FACULTY_URL.'noimg.png'); ?>" 
+                                                class="dark">
+                                            </div>
+                                            <div class="team__item-content team__item-content--style1">
+                                                <div class="team__item-author team__item-author--style1">
+                                                    <div class="team__item-authorinfo">
+                                                        <h6 class="mb-1"><a class="stretched-link"><?php echo $row['faculty_name']; ?></a> </h6>
+                                                        <p class="mb-0"><?php echo $row['faculty_degree']; ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="900">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/2.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Theresa
-                                                    Webb</a> </h6>
-                                            <p class="mb-0">Strategic Advisor</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/3.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Courtney
-                                                    Henry</a> </h6>
-                                            <p class="mb-0">Management Consultant</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1100">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/4.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Albert
-                                                    Flores</a> </h6>
-                                            <p class="mb-0">Development Specialist</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/5.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Darrell
-                                                    Steward</a> </h6>
-                                            <p class="mb-0">Growth Strategist</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="900">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/6.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Wade
-                                                    Warren</a> </h6>
-                                            <p class="mb-0">Trade Consultant</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/7.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Cody
-                                                    Fisher</a> </h6>
-                                            <p class="mb-0">HR Consultant</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="1100">
-                            <div class="team__item-inner team__item-inner--shape">
-                                <div class="team__item-thumb team__item-thumb--style1">
-                                    <img src="assets/images/team/8.png" alt="Team Image" class="dark">
-                                </div>
-                                <div class="team__item-content team__item-content--style1">
-                                    <div class="team__item-author team__item-author--style1">
-                                        <div class="team__item-authorinfo">
-                                            <h6 class="mb-1"><a href="team-details.html" class="stretched-link">Bessie
-                                                    Cooper</a> </h6>
-                                            <p class="mb-0">Financial Advisor</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="team.html" class="trk-btn trk-btn--border trk-btn--primary mt-25">View more </a>
-                    </div>
+                            <?php 
+                          }
+                        }  ?>
                 </div>
             </div>
+            <!-- Pagination -->
+            <div class="paginations" data-aos="fade-up" data-aos-duration="1200">
+                    <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
+                        <?php 
+                          if ($current_page > 1) {
+                              echo '<li><a href="?page=' . ($current_page - 1) . '"><i class="fa-solid fa-angle-left me-2"></i> Prev</a></li>';
+                          } else {
+                              echo '<li class="disabled"><a><i class="fa-solid fa-angle-left me-2"></i> Prev</a></li>';
+                          }
+
+                          for ($i = 1; $i <= $total_pages; $i++) {
+                              if ($i == $current_page) {
+                                  echo '<li><a href="?page=' . $i . '" class="active">' . $i . '</a></li>';
+                              } else {
+                                  echo '<li><a href="?page=' . $i . '">' . $i . '</a></li>';
+                              }
+                          }
+
+                          if ($current_page < $total_pages) {
+                              echo '<li><a href="?page=' . ($current_page + 1) . '">Next <i class="fa-solid fa-angle-right ms-2"></i></a></li>';
+                          } else {
+                              echo '<li class="disabled"><a>Next <i class="fa-solid fa-angle-right ms-2"></i></a></li>';
+                          }
+                        ?>
+                    </ul>
+                </div>
         </div>
     </section>
     <!-- ===============>> Team section start here <<================= -->
