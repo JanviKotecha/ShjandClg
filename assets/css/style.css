@@ -11098,3 +11098,8 @@ html[data-bs-theme=dark] .partner--gradient::after {
   font-size: 18px;
   font-weight: bold;
 }
+.indexSecond{
+  color: #cd4f2b !important;
+  font-size: 25px !important;
+  font-weight: bold;
+}
