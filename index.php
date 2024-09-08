@@ -634,146 +634,8 @@
     </section>
     <!-- ========== Roadmap Section Ends Here========== -->
 
-    <!-- ===============>> Pricing section start here <<================= -->
-    <section class="pricing padding-top padding-bottom">
-        <div class="section-header section-header--max50">
-            <h2 class="mb-10 mt-minus-5">Our <span>pricings </span>plan</h2>
-            <p>We offer the best pricings around - from installations to repairs, maintenance, and more!</p>
-        </div>
-        <div class="container">
-            <div class="pricing__wrapper">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing__item" data-aos="fade-right" data-aos-duration="1000">
-                            <div class="pricing__item-inner">
-                                <div class="pricing__item-content">
-
-                                    <!-- pricing top part -->
-                                    <div class="pricing__item-top">
-                                        <h6 class="mb-15">Basic</h6>
-                                        <h3 class="mb-25">$99/<span>Monthly</span> </h3>
-                                    </div>
-
-                                    <!-- pricing middle part -->
-                                    <div class="pricing__item-middle">
-                                        <ul class="pricing__list">
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Weekly online meeting</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Unlimited learning access</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                24/7 technical support</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Personal training</li>
-                                        </ul>
-
-                                    </div>
-
-                                    <!-- pricing bottom part -->
-                                    <div class="pricing__item-bottom">
-                                        <a href="signup.html" class="trk-btn trk-btn--outline">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing__item " data-aos="fade-up" data-aos-duration="1000">
-                            <div class="pricing__item-inner active">
-                                <div class="pricing__item-content">
-
-                                    <!-- pricing top part -->
-                                    <div class="pricing__item-top">
-                                        <h6 class="mb-15">standard</h6>
-                                        <h3 class="mb-25">$149/<span>Monthly</span> </h3>
-                                    </div>
-
-                                    <!-- pricing middle part -->
-                                    <div class="pricing__item-middle">
-                                        <ul class="pricing__list">
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Weekly online meeting</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Unlimited learning access</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                24/7 technical support</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Personal training</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Business analysis</li>
-                                        </ul>
-
-                                    </div>
-
-                                    <!-- pricing bottom part -->
-                                    <div class="pricing__item-bottom">
-                                        <a href="signup.html" class="trk-btn trk-btn--outline active">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing__item" data-aos="fade-left" data-aos-duration="1000">
-                            <div class="pricing__item-inner">
-                                <div class="pricing__item-content">
-
-                                    <!-- pricing top part -->
-                                    <div class="pricing__item-top">
-                                        <h6 class="mb-15">premium</h6>
-                                        <h3 class="mb-25">$199/<span>Monthly</span> </h3>
-                                    </div>
-
-                                    <!-- pricing middle part -->
-                                    <div class="pricing__item-middle">
-                                        <ul class="pricing__list">
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                With all standard features</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Unlimited learning access</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                24/7 technical support</li>
-                                            <li class="pricing__list-item"><span><img src="assets/images/icon/check.svg"
-                                                        alt="check" class="dark"></span>
-                                                Personal training</li>
-                                        </ul>
-
-                                    </div>
-
-                                    <!-- pricing bottom part -->
-                                    <div class="pricing__item-bottom">
-                                        <a href="signup.html" class="trk-btn trk-btn--outline">Choose Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pricing__shape">
-            <span class="pricing__shape-item pricing__shape-item--1"> <span></span> </span>
-            <span class="pricing__shape-item pricing__shape-item--2"> <img src="assets/images/icon/1.png"
-                    alt="shape-icon">
-            </span>
-        </div>
-    </section>
-    <!-- ===============>> Pricing section start here <<================= -->
-
     <!-- ===============>> Team section start here <<================= -->
-    <section class="team padding-top padding-bottom bg-color">
+    <section class="team padding-top padding-bottom">
         <div class="section-header section-header--max50">
             <h2 class="mb-10 mt-minus-5">Meet our <span>faculties</span></h2>
             <p>Learn from passionate educators who bring knowledge to life. Discover the expertise that drives our academic excellence.</p>
@@ -782,7 +644,7 @@
             <div class="team__wrapper">
                 <div class="row g-4 align-items-center">
                 <?php
-                        $limit = 6;
+                        $limit = 4;
                         $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
                         $offset = ($current_page - 1) * $limit;
                         $faculty = $qm->getRecord("faculty");
@@ -847,139 +709,6 @@
         </div>
     </section>
     <!-- ===============>> Team section start here <<================= -->
-
-
-
-
-    <!-- ===============>> Blog section start here <<================= -->
-    <section class="blog padding-top padding-bottom">
-        <div class="container">
-            <div class="section-header d-md-flex align-items-center justify-content-between">
-                <div class="section-header__content">
-                    <h2 class="mb-10"><span>articles</span> for pro traders</h2>
-                    <p class="mb-0">Hey there pro traders, check out these articles with tips to take your trading game
-                        to the
-                        next level!</p>
-                </div>
-                <div class="section-header__action">
-                    <div class="swiper-nav swiper-nav--style1">
-                        <button class="swiper-nav__btn blog__slider-prev"><i
-                                class="fa-solid fa-angle-left"></i></button>
-                        <button class="swiper-nav__btn blog__slider-next active"><i
-                                class="fa-solid fa-angle-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="blog__wrapper" data-aos="fade-up" data-aos-duration="1000">
-                <div class="blog__slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="blog__item blog__item--style2">
-                                <div class="blog__item-inner">
-                                    <div class="blog__thumb">
-                                        <img src="assets/images/blog/1.png" alt="blog Images">
-                                    </div>
-
-                                    <div class="blog__content">
-                                        <div class="blog__meta">
-                                            <span class="blog__meta-tag blog__meta-tag--style1">Forex trading</span>
-                                        </div>
-                                        <h5 class="10"> <a href="blog-details.html">Swing Trading Definition</a> </h5>
-
-                                        <p class="mb-15">Our platform is not only about trading—it's also a hub for
-                                            knowledge and learning.
-                                            We provide resources. Our platform is not only about trading—it's also a hub
-                                            for knowledge and learning.
-                                            We provide resources.</p>
-
-                                        <div class="blog__writer">
-                                            <div class="blog__writer-thumb">
-                                                <img src="assets/images/blog/author/1.png" alt="writer">
-                                            </div>
-                                            <div class="blog__writer-designation">
-                                                <h6 class="mb-0">Vasha Gueye</h6>
-                                                <span>20/6/2024</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog__item blog__item--style2">
-                                <div class="blog__item-inner">
-                                    <div class="blog__thumb">
-                                        <img src="assets/images/blog/2.png" alt="blog Images">
-                                    </div>
-
-                                    <div class="blog__content">
-                                        <div class="blog__meta">
-                                            <span class="blog__meta-tag blog__meta-tag--style1">Trading market</span>
-                                        </div>
-                                        <h5 class="10"> <a href="blog-details.html">hedge funds work?</a> </h5>
-
-                                        <p class="mb-15">To cater to your individual trading preferences, we offer a
-                                            variety of order types,
-                                            including market.</p>
-
-                                        <div class="blog__writer">
-                                            <div class="blog__writer-thumb">
-                                                <img src="assets/images/blog/author/2.png" alt="writer">
-                                            </div>
-                                            <div class="blog__writer-designation">
-                                                <h6 class="mb-0">Abhivibha Kanmani</h6>
-                                                <span>30/5/2024</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="blog__item blog__item--style2">
-                                <div class="blog__item-inner">
-                                    <div class="blog__thumb">
-                                        <img src="assets/images/blog/3.png" alt="blog Images">
-                                    </div>
-
-                                    <div class="blog__content">
-                                        <div class="blog__meta">
-                                            <span class="blog__meta-tag blog__meta-tag--style1">Investment</span>
-                                        </div>
-                                        <h5 class="10"> <a href="blog-details.html">Options Trading business?</a> </h5>
-
-                                        <p class="mb-15">Security is our top priority, and we employ robust measures to
-                                            ensure the safety of
-                                            your funds.</p>
-
-                                        <div class="blog__writer">
-                                            <div class="blog__writer-thumb">
-                                                <img src="assets/images/blog/author/3.png" alt="writer">
-                                            </div>
-                                            <div class="blog__writer-designation">
-                                                <h6 class="mb-0">Hulya Aydin</h6>
-                                                <span>12/07/2024</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="blogs.html" class="trk-btn trk-btn--border trk-btn--primary mt-15">View more </a>
-            </div>
-        </div>
-        <div class="blog__shape">
-            <span class="blog__shape-item blog__shape-item--1"> <span></span> </span>
-        </div>
-    </section>
-    <!-- ===============>> Blog section start here <<================= -->
-
-
-
 
     <!-- ===============>> Testimonial section start here <<================= -->
     <section class="testimonial padding-top padding-bottom-style2 bg-color">
@@ -1097,9 +826,6 @@
     </section>
     <!-- ===============>> Testimonial section start here <<================= -->
 
-
-
-
     <!-- ===============>> FAQ section start here <<================= -->
     <section class="faq padding-top padding-bottom of-hidden">
         <div class="section-header section-header--max65">
@@ -1115,141 +841,52 @@
                         <div class="accordion accordion--style1" id="faqAccordion1" data-aos="fade-right"
                             data-aos-duration="1000">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="accordion__item accordion-item">
-                                        <div class="accordion__header accordion-header" id="faq1">
-                                            <button class="accordion__button accordion-button" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faqBody1"
-                                                aria-expanded="false" aria-controls="faqBody1">
-                                                <span class="accordion__button-content">What does this tool do?</span>
-                                            </button>
-                                        </div>
-                                        <div id="faqBody1" class="accordion-collapse collapse show"
-                                            aria-labelledby="faq1" data-bs-parent="#faqAccordion1">
-                                            <div class="accordion__body accordion-body">
-                                                <p class="mb-15">
-                                                    Online trading’s primary advantages are that it allows you to manage
-                                                    your trades at your
-                                                    convenience.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="accordion__item accordion-item">
-                                        <div class="accordion__header accordion-header" id="faq2">
-                                            <button class="accordion-button accordion__button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faqBody2"
-                                                aria-expanded="true" aria-controls="faqBody2">
-                                                <span class=" accordion__button-content">What are the disadvantages of
-                                                    online trading?</span>
-                                            </button>
-                                        </div>
-                                        <div id="faqBody2" class="accordion-collapse collapse" aria-labelledby="faq2"
-                                            data-bs-parent="#faqAccordion1">
-                                            <div class="accordion__body accordion-body">
-                                                <p class="mb-15">
-                                                    You don’t need to worry, the interface is user-friendly. Anyone can
-                                                    use
-                                                    it smoothly. Our user manual will help you to solve your problem.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="accordion__item accordion-item">
-                                        <div class="accordion__header accordion-header" id="faq3">
-                                            <button class="accordion-button accordion__button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faqBody3"
-                                                aria-expanded="false" aria-controls="faqBody3">
-                                                <span class="accordion__button-content">Is online trading safe?</span>
-                                            </button>
-                                        </div>
-                                        <div id="faqBody3" class="accordion-collapse collapse" aria-labelledby="faq3"
-                                            data-bs-parent="#faqAccordion1">
-                                            <div class="accordion__body accordion-body">
-                                                <p class="mb-15"> Online trading’s primary advantages are that it allows
-                                                    you to manage your
-                                                    trades at your convenience.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="accordion__item accordion-item">
-                                        <div class="accordion__header accordion-header" id="faq4">
-                                            <button class="accordion-button accordion__button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faqBody4"
-                                                aria-expanded="false" aria-controls="faqBody4">
-                                                <span class="accordion__button-content">What is online trading, and how
-                                                    does it work?</span>
-                                            </button>
-                                        </div>
-                                        <div id="faqBody4" class="accordion-collapse collapse" aria-labelledby="faq4"
-                                            data-bs-parent="#faqAccordion1">
-                                            <div class="accordion__body accordion-body">
-                                                <p class="mb-15"> Online trading’s primary advantages are that it allows
-                                                    you to manage your
-                                                    trades at your convenience.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="accordion__item accordion-item">
-                                        <div class="accordion__header accordion-header" id="faq5">
-                                            <button class="accordion-button accordion__button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faqBody5"
-                                                aria-expanded="false" aria-controls="faqBody5">
-                                                <span class="accordion__button-content">Which app is best for online
-                                                    trading?</span>
-                                            </button>
-                                        </div>
-                                        <div id="faqBody5" class="accordion-collapse collapse" aria-labelledby="faq5"
-                                            data-bs-parent="#faqAccordion1">
-                                            <div class="accordion__body accordion-body">
-                                                <p class="mb-15"> Online trading’s primary advantages are that it allows
-                                                    you to manage your
-                                                    trades at your convenience.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="accordion__item accordion-item border-0">
-                                        <div class="accordion__header accordion-header" id="faq6">
-                                            <button class="accordion-button accordion__button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faqBody6"
-                                                aria-expanded="false" aria-controls="faqBody6">
-                                                <span class="accordion__button-content"> How to create a trading
-                                                    account?</span>
-                                            </button>
-                                        </div>
-                                        <div id="faqBody6" class="accordion-collapse collapse" aria-labelledby="faq6"
-                                            data-bs-parent="#faqAccordion1">
-                                            <div class="accordion__body accordion-body">
-                                                <p class="mb-15"> Online trading’s primary advantages are that it allows
-                                                    you to manage your
-                                                    trades at your convenience.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php
+                                    $result = $qm->getRecord("faq");
+                                    if (mysqli_num_rows($result) > 0) {
+                                        $count = 0;
+                                        while ($row = mysqli_fetch_array($result)) {
+                                            $count++; 
+                                            $headerId = 'faq' . $count;
+                                            $bodyId = 'faqBody' . $count;
+                                            $isExpanded = ($count === 1) ? 'true' : 'false';
+                                            $showClass = ($count === 1) ? 'show' : '';
+                                            ?>
+                                                 <div class="col-12">
+                                                    <div class="accordion__item accordion-item">
+                                                        <div class="accordion__header accordion-header" id="<?php echo $headerId; ?>">
+                                                            <button class="accordion__button accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#<?php echo $bodyId; ?>"
+                                                                aria-expanded="<?php echo $isExpanded; ?>" aria-controls="<?php echo $bodyId; ?>">
+                                                                <span class="accordion__button-content"><?php echo $row['question']; ?></span>
+                                                            </button>
+                                                        </div>
+                                                        <div id="<?php echo $bodyId; ?>" class="accordion-collapse collapse <?php echo $showClass; ?>"
+                                                            aria-labelledby="<?php echo $headerId; ?>" data-bs-parent="#faqAccordion1">
+                                                            <div class="accordion__body accordion-body">
+                                                                <p class="mb-15">
+                                                                    <?php echo $row['answer']; ?>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <?php 
+                                        }
+                                    } ?>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="faq__thumb faq__thumb--style1" data-aos="fade-left" data-aos-duration="1000">
-                            <img class="dark" src="assets/images/others/1.png" alt="faq-thumb">
+                            <img class="dark" src="assets/images/cta/faq.png" alt="faq-thumb">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="faq__shape faq__shape--style1">
-            <span class="faq__shape-item faq__shape-item--1"><img src="assets/images/others/2.png"
+            <span class="faq__shape-item faq__shape-item--1"><img src="assets/images/cta/question.png"
                     alt="shpae-icon"></span>
         </div>
     </section>
