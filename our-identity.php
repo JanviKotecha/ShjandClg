@@ -45,7 +45,7 @@
                         <div class="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
                             <div class="about__thumb-inner">
                                 <div class="about__thumb-image floating-content">
-                                    <img class="dark" src="assets/images/about/1.png" alt="about-image">
+                                    <img class="dark" src="assets/images/cta/1.jpg" alt="about-image">
                                     <div class="floating-content__top-left" data-aos="fade-right"
                                         data-aos-duration="1000">
                                         <div class="floating-content__item">
@@ -60,7 +60,7 @@
                                         data-aos-duration="1000">
                                         <div class="floating-content__item">
                                             <h3> <span class="purecounter" data-purecounter-start="0"
-                                                    data-purecounter-end="25">25K</span>K+
+                                                    data-purecounter-end="800">800</span>+
                                             </h3>
                                             <p>Satisfied Students</p>
                                         </div>
@@ -97,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="service padding-bottom">       
+    <section class="service padding-top padding-bottom">
         <div class="container">
             <div class="service__wrapper">
                 <div class="row g-4 align-items-center">
@@ -110,8 +110,9 @@
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link" href="service-details.html">Our Mission</a>
                                     </h5>
-                                    <p class="mb-0">The mission of sahajanand college is to provide innovative educational environments, opportunities and experience that enable 
-                                    individuals, communities and the region to grow, thrive and prosper. </p>
+                                    <p class="mb-0">The mission of sahajanand college is to provide innovative
+                                        educational environments, opportunities and experience that enable
+                                        individuals, communities and the region to grow, thrive and prosper. </p>
                                 </div>
                             </div>
                         </div>
@@ -125,13 +126,15 @@
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link" href="service-details.html">Our Vision</a>
                                     </h5>
-                                    <p class="mb-0">It shall be the constant Endeavour of Sahajanand College to meet the education needs of the youth in the areas of professional studies 
-                                    and provide state-of the art learning opportunities along with inculcation of values of commitment and uprightness. 
+                                    <p class="mb-0">It shall be the constant Endeavour of Sahajanand College to meet the
+                                        education needs of the youth in the areas of professional studies
+                                        and provide state-of the art learning opportunities along with inculcation of
+                                        values of commitment and uprightness.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,6 +144,42 @@
                     alt="shape-icon"></span>
         </div>
     </section>
+
+    <!-- ===============>> cta section start here <<================= -->
+    <section class="cta padding-top padding-bottom">
+        <div class="container">
+            <div class="cta__wrapper">
+                <div class="cta__newsletter justify-content-center">
+                    <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000" style="background-color : #e79a59a6!important;">
+                        <div class="cta__thumb">
+                            <img src="assets/images/cta/3.png" alt="cta-thumb">
+                        </div>
+                        <div class="cta__subscribe">
+                            <h4 class="mb-0"> <span style="color:#cd4f2b;">TRUSTEE'S </span> MESSAGE</h4>
+                            <p>At sahajanand college of it and management, ' Discover You' is not just a theme. It is
+                                the commitment & the belief that gives us the
+                                impulse to go a step further & help to make each & every students to discover their
+                                immense latent potential skills. The skill is about
+                                synthesizing information & arriving at innovations. We at sahajanand college, do not
+                                limit ourselves in imparting academic education,
+                                but also inspire to develop a progressive gist of subjects & that to transcend into
+                                reality which can be pursued by unpredicted ways of
+                                thinking & to assist our students for discovering their innate capabilities which help
+                                them to become a innovative citizen of the society. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta__shape">
+                    <span class="cta__shape-item cta__shape-item--3"><img src="assets/images/cta/book.png"
+                            alt="shape1 icon"></span>
+                    <span class="cta__shape-item cta__shape-item--2"><img src="assets/images/cta/4.png"
+                            alt="shape2 icon"></span>
+                    <!-- <span class="cta__shape-item cta__shape-item--1"><img src="assets/images/cta/31.png" alt="shape3 icon"></span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============>> cta section start here <<================= -->
     <!-- ===============>> footer start here <<================= -->
     <?php include("include/footer.php"); ?>
     <!-- ===============>> footer end here <<================= -->

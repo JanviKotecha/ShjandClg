@@ -9251,7 +9251,7 @@ textarea:focus-within {
   width: 50px;
   backdrop-filter: blur(10px);
   filter: blur(100px);
-  background-color: var(--cta-img-bg-shadow);
+  /* background-color: var(--cta-img-bg-shadow); */
   transform: translate(-50%, -50%);
   z-index: -1;
 }
