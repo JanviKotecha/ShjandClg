@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2024 at 10:54 AM
+-- Generation Time: Sep 08, 2024 at 08:02 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -234,8 +234,10 @@ CREATE TABLE `faculty` (
 --
 
 INSERT INTO `faculty` (`id`, `faculty_iamge`, `faculty_name`, `faculty_degree`, `joinig_date`, `resign_date`, `created_at`, `updated_at`) VALUES
-(3, '1725173204.png', 'Dhruvi', 'BCA', '2024-08-01', '2024-08-31', '2024-09-01 06:46:44', '0000-00-00 00:00:00'),
-(4, '1725173286.png', 'Dhruvi', 'BCA', '2024-07-02', '', '2024-09-01 07:07:28', '2024-09-01 12:37:28');
+(3, '1725812945.png', 'Tatum Cobb', 'Test', '2001-06-02', '', '2024-09-08 16:30:33', '2024-09-08 22:00:33'),
+(4, '1725812953.png', 'Liberty Hernandez', 'Test', '1997-03-08', '', '2024-09-08 16:30:26', '2024-09-08 22:00:26'),
+(6, '1725812990.png', 'Hop Atkins', 'Test', '2011-10-05', '', '2024-09-08 16:30:40', '2024-09-08 22:00:40'),
+(7, '1725813055.png', 'Hakeem Joyce', 'Consequat Id minus', '2023-04-17', '', '2024-09-08 16:30:55', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -256,9 +258,11 @@ CREATE TABLE `faq` (
 --
 
 INSERT INTO `faq` (`id`, `question`, `answer`, `created_at`, `updated_at`) VALUES
-(1, 'can here all courses are free ?', 'no, here all corses are not free. Some courses avilable for free.', '2024-03-20 10:26:31', '2024-03-20 10:26:31'),
-(3, 'is it testing question ?', '<p>yes, it is testing.</p>\r\n', '2024-03-20 15:08:06', '2024-03-26 14:48:39'),
-(4, 'dfvfd', '<p>gfdg</p>\r\n', '2024-09-07 15:31:41', '0000-00-00 00:00:00');
+(1, 'What programs and courses does Sahajanand College offer?', '<p>We offer a wide range of undergraduate and postgraduate programs in arts, science, commerce, and professional studies. Please visit our courses page for detailed information.</p>\r\n', '2024-03-20 10:26:31', '2024-09-08 22:05:09'),
+(3, 'How do I apply for admission to Sahajanand College?\r\n', '<p>You can apply online through our official website by following the steps on our &quot;How to Apply&quot; page. Make sure to check the admission deadlines and required documents.</p>\r\n', '2024-03-20 15:08:06', '2024-09-08 22:05:36'),
+(4, 'What are the eligibility criteria for admission?', '<p>Eligibility criteria vary by program. Generally, applicants must have completed their previous level of education with a minimum percentage. Specific details are available on the individual program pages.</p>\r\n', '2024-09-07 15:31:41', '2024-09-08 22:06:03'),
+(5, 'What facilities and resources are available on campus?', '<p>Our campus offers state-of-the-art classrooms, a library, computer labs, sports facilities, and a student activity center. We also provide support services like career counseling and mentoring.</p>\r\n', '2024-09-08 22:06:44', '0000-00-00 00:00:00'),
+(6, 'Who can I contact for more information or guidance?', '<p>For any queries, you can reach out to our admission office via email or phone. Visit our &quot;Admission Offices&quot; &amp; &quot;Contact Us&quot; page for contact details and office locations.</p>\r\n', '2024-09-08 22:07:25', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -601,6 +605,12 @@ ALTER TABLE `notificationhistory`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `testimonial`
+--
+ALTER TABLE `testimonial`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `topers`
 --
 ALTER TABLE `topers`
@@ -644,13 +654,13 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `faculty`
 --
 ALTER TABLE `faculty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `faq`
 --
 ALTER TABLE `faq`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `login`
@@ -663,6 +673,12 @@ ALTER TABLE `login`
 --
 ALTER TABLE `notificationhistory`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+
+--
+-- AUTO_INCREMENT for table `testimonial`
+--
+ALTER TABLE `testimonial`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `topers`

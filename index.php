@@ -149,7 +149,7 @@
     <!-- ===============>> partner section end here <<================= -->
 
     <!-- ===============>> About section start here <<================= -->
-    <section class="about about--style1  bg-color">
+    <section class="about about--style1">
         <div class="container">
             <div class="about__wrapper">
                 <div class="row gx-5  gy-4 gy-sm-0  align-items-center">
@@ -184,16 +184,10 @@
                     <div class="col-lg-6">
                         <div class="about__content" data-aos="fade-left" data-aos-duration="800">
                             <div class="about__content-inner">
-                                <h2>Meet <span>our company</span> unless miss the opportunity </h2>
+                                <h2>Welcome to <span>Sahajanand College! </span></h2>
 
-                                <p class="mb-0">Hey there! So glad you stopped by to Meet Our Company. Don't miss out on
-                                    this
-                                    opportunity to learn about what we do and the amazing team that makes it all happen!
-                                    Our company is
-                                    all about creating innovative solutions and providing top-notch services to our
-                                    clients. From start to
-                                    finish, we're dedicated to delivering results that exceed expectations. </p>
-                                <a href="about.html" class="trk-btn trk-btn--border trk-btn--primary">Explore More </a>
+                                <p class="mb-0">Sahajanand College is a leading institution of higher learning, dedicated to fostering an environment where students are inspired to learn, grow, and excel. Located in the heart of the city, our college offers a diverse range of undergraduate programs in BBA, BCA, B.Com, and B.Sc., tailored to meet the needs of today's dynamic world.</p>
+                                <a href="our-identity.php" class="trk-btn trk-btn--border trk-btn--primary">Explore More </a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +198,7 @@
     <!-- ===============>> About section start here <<================= -->
 
     <!-- ===============>> feature section start here <<================= -->
-    <!-- <section class="feature feature--style1 padding-bottom padding-top bg-color">
+    <section class="feature feature--style1 padding-bottom padding-top bg-color">
         <div class="container">
             <div class="feature__wrapper">
                 <div class="row g-5 align-items-center justify-content-between">
@@ -212,11 +206,8 @@
                         <div class="feature__content" data-aos="fade-right" data-aos-duration="800">
                             <div class="feature__content-inner">
                                 <div class="section-header">
-                                    <h2 class="mb-10 mt-minus-5"> <span>benefits </span>We offer</h2>
-                                    <p class="mb-0">
-                                        Unlock the full potential of our product with our amazing features and
-                                        top-notch.
-                                    </p>
+                                    <h2 class="mb-10 mt-minus-5"> <span>Our </span>Values</h2>
+                                    <p class="mb-0">Guiding Principles that Shape Our Commitment to Excellence and Community</p>
                                 </div>
 
                                 <div class="feature__nav">
@@ -391,7 +382,7 @@
                     alt="shape-icon"></span>
             <span class="feature__shape-item feature__shape-item--2"> <span></span> </span>
         </div>
-    </section> -->
+    </section> 
     <!-- ===============>> feature section end here <<================= -->
 
     <!-- ===============>> Service section start here <<================= -->
