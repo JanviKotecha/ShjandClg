@@ -149,7 +149,7 @@
     <!-- ===============>> partner section end here <<================= -->
 
     <!-- ===============>> About section start here <<================= -->
-    <section class="about about--style1 ">
+    <section class="about about--style1  bg-color">
         <div class="container">
             <div class="about__wrapper">
                 <div class="row gx-5  gy-4 gy-sm-0  align-items-center">
@@ -204,7 +204,7 @@
     <!-- ===============>> About section start here <<================= -->
 
     <!-- ===============>> feature section start here <<================= -->
-    <section class="feature feature--style1 padding-bottom padding-top bg-color">
+    <!-- <section class="feature feature--style1 padding-bottom padding-top bg-color">
         <div class="container">
             <div class="feature__wrapper">
                 <div class="row g-5 align-items-center justify-content-between">
@@ -391,14 +391,15 @@
                     alt="shape-icon"></span>
             <span class="feature__shape-item feature__shape-item--2"> <span></span> </span>
         </div>
-    </section>
+    </section> -->
     <!-- ===============>> feature section end here <<================= -->
 
     <!-- ===============>> Service section start here <<================= -->
     <section class="service padding-top padding-bottom">
         <div class="section-header section-header--max50">
-            <h2 class="mb-10 mt-minus-5"><span>services </span>We offer</h2>
-            <p>We offer the best services around - from installations to repairs, maintenance, and more!</p>
+            <h2 class="mb-10 mt-minus-5"><span>Benefits </span>We offer</h2>
+            <p>Discover the advantages of studying at Sahajanand College.
+            Our programs are designed to empower your future and enhance your learning experience!</p>
         </div>
         <div class="container">
             <div class="service__wrapper">
@@ -410,11 +411,8 @@
                                     <img class="dark" src="assets/images/service/1.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
-                                    <h5> <a class="stretched-link" href="service-details.html">Strategy Consulting</a>
+                                    <h5> <a class="stretched-link">Boys Hostel Facility </a>
                                     </h5>
-                                    <p class="mb-0">A social assistant that's flexible can accommodate your schedule and
-                                        needs, making
-                                        life easier.</p>
                                 </div>
                             </div>
                         </div>
@@ -426,11 +424,8 @@
                                     <img class="dark" src="assets/images/service/2.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
-                                    <h5> <a class="stretched-link" href="service-details.html"> Financial Advisory</a>
+                                    <h5> <a class="stretched-link">3 Acre College Campus </a>
                                     </h5>
-                                    <p class="mb-0">Modules transform smart trading by automating processes and
-                                        improving decision-making.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -442,10 +437,7 @@
                                     <img class="dark" src="assets/images/service/3.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
-                                    <h5> <a class="stretched-link" href="service-details.html">Management</a> </h5>
-                                    <p class="mb-0">There, it's me, your friendly neighborhood reporter's news analyst
-                                        processes and
-                                        improving</p>
+                                    <h5><a class="stretched-link">Innovative Methods of Teaching</a> </h5>
                                 </div>
                             </div>
                         </div>
@@ -457,11 +449,8 @@
                                     <img class="dark" src="assets/images/service/4.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
-                                    <h5> <a class="stretched-link" href="service-details.html">Supply Optimization </a>
+                                    <h5> <a class="stretched-link">Advance Computer Labs</a>
                                     </h5>
-                                    <p class="mb-0">Hey, have you checked out that new cryptocurrency platform? It's
-                                        pretty cool and easy
-                                        to use!</p>
                                 </div>
                             </div>
                         </div>
@@ -473,10 +462,8 @@
                                     <img class="dark" src="assets/images/service/5.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
-                                    <h5> <a class="stretched-link" href="service-details.html">HR consulting</a> </h5>
-                                    <p class="mb-0">Hey guys, just a quick update on exchange orders. There have been
-                                        some changes
-                                        currency!</p>
+                                    <h5> <a class="stretched-link">Expert Faculty Staff</a> </h5>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -488,15 +475,146 @@
                                     <img class="dark" src="assets/images/service/6.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
-                                    <h5> <a class="stretched-link" href="service-details.html">Marketing consulting</a>
+                                    <h5> <a class="stretched-link">Expert Talks </a>
                                     </h5>
-                                    <p class="mb-0">Hey! Just wanted to let you know that the price notification module
-                                        processes is now
-                                        live!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Industry Visit </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Canteen & Library</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Garden Area</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Transportation</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Great Placement Opportunities</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">24 Hour CCTV Surveillance</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Swimming Pool</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Projector Room </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Sports Activity Center</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                <div class="service__item-thumb mb-30">
+                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                </div>
+                                <div class="service__item-content">
+                                    <h5> <a class="stretched-link">Wi - Fi Zone</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
