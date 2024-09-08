@@ -60,7 +60,7 @@
                                         data-aos-duration="1000">
                                         <div class="floating-content__item">
                                             <h3> <span class="purecounter" data-purecounter-start="0"
-                                                    data-purecounter-end="800">800</span>+
+                                                    data-purecounter-end="1300">1300</span>+
                                             </h3>
                                             <p>Satisfied Students</p>
                                         </div>
@@ -150,7 +150,8 @@
         <div class="container">
             <div class="cta__wrapper">
                 <div class="cta__newsletter justify-content-center">
-                    <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000" style="background-color : #e79a59a6!important;">
+                    <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000"
+                        style="background-color : #e79a59a6!important;">
                         <div class="cta__thumb">
                             <img src="assets/images/cta/3.png" alt="cta-thumb">
                         </div>
@@ -166,6 +167,10 @@
                                 reality which can be pursued by unpredicted ways of
                                 thinking & to assist our students for discovering their innate capabilities which help
                                 them to become a innovative citizen of the society. </p>
+
+                            <div class="blog__meta text-end py-1">
+                                <span class="blog__meta-tag blog__meta-tag--style1">- Mr. Shivbhadrasinh S. Jhala <br>- Mr. Divyeshbhai V. Ghoniya </span>                         
+                            </div>
                         </div>
                     </div>
                 </div>
