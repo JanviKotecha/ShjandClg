@@ -122,7 +122,7 @@
                                     B.B.A
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="swiper-slide">
                             <div class="partner__item">
                                 <div class="partner__item-inner indexSecond">
@@ -504,132 +504,64 @@
     <!-- ===============>> Service section start here <<================= -->
 
     <!-- ========== Roadmap Section start Here========== -->
-    <section class="roadmap roadmap--style1 padding-top  padding-bottom bg-color" id="roadmap">
+    <section class="roadmap roadmap--style2 padding-top  padding-bottom bg-color" id="roadmap">
         <div class="container">
             <div class="section-header section-header--max50">
-                <h2 class="mb-10 mt-minus-5">Product <span> roadmap</span></h2>
-                <p>A product roadmap shows the path ahead, helps teams plan, and guides the delivery of the product.</p>
+                <h2 class="mb-10 mt-minus-5">Undergraduate <span> Programs</span></h2>
+                <p>Explore a diverse range of programs designed to fuel your passion and prepare you for a successful
+                    future.</p>
             </div>
             <div class="roadmap__wrapper">
-                <div class="row gy-4 gy-md-0 gx-5">
-                    <div class="col-md-6 offset-md-6">
-                        <div class="roadmap__item ms-md-4 aos-init aos-animate" data-aos="fade-left"
-                            data-aos-duration="800">
-                            <div class="roadmap__item-inner">
-                                <div class="roadmap__item-content">
-                                    <div class="roadmap__item-header">
-                                        <h3>project research</h3>
-                                        <span>P1</span>
-                                    </div>
-                                    <p>Project research is the backbone of any successful project. It involves gathering
-                                        information,
-                                        setting objectives, and analyzing data to ensure the project is achievable.
-                                        Without proper research,
-                                        projects can fail due to lack of knowledge.</p>
-                                </div>
-                            </div>
+                <div class="roadmap__upper">
+                    <div class="roadmap__upper-inner">
+                        <div class="swiper">
+                            <div class="roadmap__slider">
+                                <div class="swiper-wrapper">
+                                    <?php $result=$qm->getRecord("course");
+                                        if (mysqli_num_rows($result)>0) {
+                                            $i=0;
+                                            while ($row=mysqli_fetch_array($result)) { 
+                                            $i++;?>
+                                                    <div
+                                                        class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
+                                                        <!-- Dynamic class for vertical line position -->
+                                                        <div
+                                                            class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
+                                                            <div class="roadmap__item-content">
+                                                                <!-- Use dynamic data from the database -->
+                                                                <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
+                                                                <p><?php 
+                                                                    // Get the 'objective' field from the database
+                                                                    $objective = htmlspecialchars($row['objective']);
 
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init aos-animate"
-                            data-aos="fade-right" data-aos-duration="800">
-                            <div class="roadmap__item-inner">
-                                <div class="roadmap__item-content">
-                                    <div class="roadmap__item-header">
-                                        <h3>framing idea</h3>
-                                        <span>P2</span>
-                                    </div>
-                                    <p>Hey there! Just wanted to throw out a framing idea for our upcoming project.
-                                        Let's start with the
-                                        big picture and then work our way down to the details. This way we ensure our
-                                        vision stays on track
-                                        while also ironing out.</p>
+                                                                    // Check if the objective length exceeds 200 characters
+                                                                    if (strlen($objective) > 50) {
+                                                                        // Truncate the text to 200 characters and add ellipsis
+                                                                        echo substr($objective, 0, 50) . '...';
+                                                                    } else {
+                                                                        // Print the full text if it's less than or equal to 200 characters
+                                                                        echo $objective;
+                                                                    } ?>
+                                                                </p>
+                                                            </div>
+                                                            <div class="roadmap__item-date">
+                                                                <!-- Format and display the date dynamically -->
+                                                                <span><?php echo $row['duration']; ?></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <?php } 
+                                        }  
+                                    ?>
                                 </div>
                             </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-6">
-                        <div class="roadmap__item ms-md-4 aos-init" data-aos="fade-left" data-aos-duration="800">
-                            <div class="roadmap__item-inner">
-                                <div class="roadmap__item-content">
-                                    <div class="roadmap__item-header">
-                                        <h3>Design first draft</h3>
-                                        <span>P3</span>
-                                    </div>
-                                    <p>Hey guys, just wanted to share my design first draft! I went for a minimalist
-                                        look with a pop of
-                                        color. What do you think? Open to any suggestions or feedback. Can't wait to see
-                                        how this turns out
-                                        over all kind of success!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init" data-aos="fade-right"
-                            data-aos-duration="800">
-                            <div class="roadmap__item-inner">
-                                <div class="roadmap__item-content">
-                                    <div class="roadmap__item-header">
-                                        <h3>Final design</h3>
-                                        <span>P4</span>
-                                    </div>
-                                    <p>So after lots of reiterations, and endless tweaking, we finally landed on the
-                                        final design. It's
-                                        slick, it's modern, and it perfectly captures the essence of what we were aiming
-                                        for. We couldn't be
-                                        more excited to launch it!</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-6">
-                        <div class="roadmap__item ms-md-4 aos-init" data-aos="fade-left" data-aos-duration="800">
-                            <div class="roadmap__item-inner">
-                                <div class="roadmap__item-content">
-                                    <div class="roadmap__item-header">
-                                        <h3>Project development</h3>
-                                        <span>P5</span>
-                                    </div>
-                                    <p>So we're deep in project development here, and things are coming along nicely.
-                                        We've got a solid
-                                        plan in place and our team is firing on all cylinders. There's still work to be
-                                        done, but we're
-                                        excited about what we're building.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init" data-aos="fade-right"
-                            data-aos-duration="800">
-                            <div class="roadmap__item-inner">
-                                <div class="roadmap__item-content">
-                                    <div class="roadmap__item-header">
-                                        <h3>Launch project</h3>
-                                        <span>P6</span>
-                                    </div>
-                                    <p>Alright folks, it's time to get this project off the ground! We've been talking
-                                        about it for weeks,
-                                        and now it's time to launch. We've got all the pieces in place, so let's get to
-                                        work and make this
-                                        thing happen!</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="roadmap__shape">
-            <span class="roadmap__shape-item roadmap__shape-item--1"> <span></span> </span>
-            <span class="roadmap__shape-item roadmap__shape-item--2"> <img src="assets/images/icon/1.png"
-                    alt="shape-icon">
-            </span>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="courses.php" class="trk-btn trk-btn--border trk-btn--primary">Explore More </a>
+            </div>
         </div>
     </section>
     <!-- ========== Roadmap Section Ends Here========== -->
@@ -638,12 +570,13 @@
     <section class="team padding-top padding-bottom">
         <div class="section-header section-header--max50">
             <h2 class="mb-10 mt-minus-5">Meet our <span>faculties</span></h2>
-            <p>Learn from passionate educators who bring knowledge to life. Discover the expertise that drives our academic excellence.</p>
+            <p>Learn from passionate educators who bring knowledge to life. Discover the expertise that drives our
+                academic excellence.</p>
         </div>
         <div class="container">
             <div class="team__wrapper">
                 <div class="row g-4 align-items-center">
-                <?php
+                    <?php
                         $limit = 4;
                         $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
                         $offset = ($current_page - 1) * $limit;
@@ -656,34 +589,35 @@
                         if (mysqli_num_rows($result) > 0) {                        
                           while ($row = mysqli_fetch_array($result)) {
                             ?>
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="team__item-inner team__item-inner--shape">
-                                            <div class="team__item-thumb team__item-thumb--style1">
-                                                <img src="<?php echo $row["faculty_iamge"]=='' ? FACULTY_URL.'noimg.png' : (file_exists(UPLOAD_FACULTY_URL.$row["faculty_iamge"]) ? FACULTY_URL.$row["faculty_iamge"] : FACULTY_URL.'noimg.png'); ?>" 
-                                                class="dark">
-                                            </div>
-                                            <div class="team__item-content team__item-content--style1">
-                                                <div class="team__item-author team__item-author--style1">
-                                                    <div class="team__item-authorinfo">
-                                                        <h6 class="mb-1"><a class="stretched-link"><?php echo $row['faculty_name']; ?></a> </h6>
-                                                        <p class="mb-0"><?php echo $row['faculty_degree']; ?></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="team__item team__item--shape" data-aos="fade-up" data-aos-duration="800">
+                            <div class="team__item-inner team__item-inner--shape">
+                                <div class="team__item-thumb team__item-thumb--style1">
+                                    <img src="<?php echo $row["faculty_iamge"]=='' ? FACULTY_URL.'noimg.png' : (file_exists(UPLOAD_FACULTY_URL.$row["faculty_iamge"]) ? FACULTY_URL.$row["faculty_iamge"] : FACULTY_URL.'noimg.png'); ?>"
+                                        class="dark">
+                                </div>
+                                <div class="team__item-content team__item-content--style1">
+                                    <div class="team__item-author team__item-author--style1">
+                                        <div class="team__item-authorinfo">
+                                            <h6 class="mb-1"><a
+                                                    class="stretched-link"><?php echo $row['faculty_name']; ?></a> </h6>
+                                            <p class="mb-0"><?php echo $row['faculty_degree']; ?></p>
                                         </div>
                                     </div>
                                 </div>
-                            <?php 
+
+                            </div>
+                        </div>
+                    </div>
+                    <?php 
                           }
                         }  ?>
                 </div>
             </div>
             <!-- Pagination -->
             <div class="paginations" data-aos="fade-up" data-aos-duration="1200">
-                    <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
-                        <?php 
+                <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
+                    <?php 
                           if ($current_page > 1) {
                               echo '<li><a href="?page=' . ($current_page - 1) . '"><i class="fa-solid fa-angle-left me-2"></i> Prev</a></li>';
                           } else {
@@ -704,8 +638,8 @@
                               echo '<li class="disabled"><a>Next <i class="fa-solid fa-angle-right ms-2"></i></a></li>';
                           }
                         ?>
-                    </ul>
-                </div>
+                </ul>
+            </div>
         </div>
     </section>
     <!-- ===============>> Team section start here <<================= -->
@@ -852,26 +786,29 @@
                                             $isExpanded = ($count === 1) ? 'true' : 'false';
                                             $showClass = ($count === 1) ? 'show' : '';
                                             ?>
-                                                 <div class="col-12">
-                                                    <div class="accordion__item accordion-item">
-                                                        <div class="accordion__header accordion-header" id="<?php echo $headerId; ?>">
-                                                            <button class="accordion__button accordion-button" type="button"
-                                                                data-bs-toggle="collapse" data-bs-target="#<?php echo $bodyId; ?>"
-                                                                aria-expanded="<?php echo $isExpanded; ?>" aria-controls="<?php echo $bodyId; ?>">
-                                                                <span class="accordion__button-content"><?php echo $row['question']; ?></span>
-                                                            </button>
-                                                        </div>
-                                                        <div id="<?php echo $bodyId; ?>" class="accordion-collapse collapse <?php echo $showClass; ?>"
-                                                            aria-labelledby="<?php echo $headerId; ?>" data-bs-parent="#faqAccordion1">
-                                                            <div class="accordion__body accordion-body">
-                                                                <p class="mb-15">
-                                                                    <?php echo $row['answer']; ?>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
-                                                <?php 
+                                <div class="col-12">
+                                    <div class="accordion__item accordion-item">
+                                        <div class="accordion__header accordion-header" id="<?php echo $headerId; ?>">
+                                            <button class="accordion__button accordion-button" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#<?php echo $bodyId; ?>"
+                                                aria-expanded="<?php echo $isExpanded; ?>"
+                                                aria-controls="<?php echo $bodyId; ?>">
+                                                <span
+                                                    class="accordion__button-content"><?php echo $row['question']; ?></span>
+                                            </button>
+                                        </div>
+                                        <div id="<?php echo $bodyId; ?>"
+                                            class="accordion-collapse collapse <?php echo $showClass; ?>"
+                                            aria-labelledby="<?php echo $headerId; ?>" data-bs-parent="#faqAccordion1">
+                                            <div class="accordion__body accordion-body">
+                                                <p class="mb-15">
+                                                    <?php echo $row['answer']; ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php 
                                         }
                                     } ?>
                             </div>
