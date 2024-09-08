@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 01, 2024 at 03:28 PM
+-- Generation Time: Sep 08, 2024 at 10:54 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -95,8 +95,16 @@ CREATE TABLE `admission` (
   `ssc_marksheet` varchar(255) DEFAULT NULL,
   `agree_terms` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL,
+  `pdf_url` varchar(255) NOT NULL,
   `createdAt` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admission`
+--
+
+INSERT INTO `admission` (`id`, `course_type`, `application_no`, `applicant_name`, `birthdate`, `email`, `mobile_no`, `fathers_name`, `mothers_name`, `parents_mobile_no`, `no_of_siblings`, `category`, `gender`, `disability`, `disability_percentage`, `disability_certificate`, `nationality`, `locality`, `aadhar_number`, `religion`, `is_minority`, `profile_photo`, `signature_photo`, `present_address`, `present_state`, `present_district`, `present_taluka`, `present_pincode`, `permanent_address`, `permanent_state`, `permanent_district`, `permanent_taluka`, `permanent_pincode`, `hsc_diploma`, `hsc_board`, `hsc_passing_year`, `hsc_seat_no`, `hsc_percentage`, `hsc_marksheet`, `ssc_board`, `ssc_passing_year`, `ssc_seat_no`, `ssc_percentage`, `ssc_marksheet`, `agree_terms`, `status`, `pdf_url`, `createdAt`) VALUES
+(1, 'B.C.A', '81182315', 'Knox Robbins', '2007-06-17', 'qaxuza@gmail.com', '9925588744', 'Lucian Watkins', 'Todd Caldwell', '8855778844', 53, 'OBC', 'Male', 'No', 0.00, '', 'Indian', 'Rural', '411', 'Christian', 1, '1725480499.jpeg', '1725480499.png', 'Dolor iste porro inc', 'Sint ut qui tempora ', 'Ut ea ea necessitati', 'Doloribus non et qua', '25', 'Accusantium cumque v', 'Voluptas facilis fac', 'Velit explicabo Do ', 'Ea qui et enim labor', '60', 'Diploma', 'Dolore facere conseq', '1977', 'Quia vel vero debiti', 65.00, '1725480499.pdf', 'Occaecat consequatur', '2015', 'Rerum omnis quaerat ', 18.00, '1725480499.pdf', '1', '0', 'admission_application_20240905_013819.pdf', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -120,7 +128,14 @@ CREATE TABLE `alumni` (
 --
 
 INSERT INTO `alumni` (`id`, `img`, `name`, `jobPosition`, `c_name`, `c_logo`, `created_at`, `updated_at`) VALUES
-(1, '', 'sdcf', 'fscdfszdf', 'fzdsfs', '', '2024-09-01 12:59:34', '2024-09-01 14:59:20');
+(1, '', 'sdcf', 'fscdfszdf', 'fzdsfs', '', '2024-09-01 12:59:34', '2024-09-01 14:59:20'),
+(4, '1725529626.png', 'Courtney Pope1', 'Eveniet sunt est 1', 'Cairo Hensley1', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06'),
+(5, '1725529626.png', 'Sangani D', 'Full stack', 'epsilon', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06'),
+(6, '1725529626.png', 'ds', 'Full stack d', 'epsilon', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06'),
+(7, '1725529626.png', 'sd', 'Full stack d', 'epsilon', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06'),
+(8, '1725529626.png', 'DS', 'Full stack dev', 'epsilon', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06'),
+(9, '1725529626.png', 'SD', 'Full stack dev', 'epsilon', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06'),
+(10, '1725529626.png', 'SDSDSDSD', 'Full stack dev', 'epsilon', '1725529626.png', '2024-09-05 09:47:06', '2024-09-05 15:17:06');
 
 -- --------------------------------------------------------
 
@@ -130,8 +145,7 @@ INSERT INTO `alumni` (`id`, `img`, `name`, `jobPosition`, `c_name`, `c_logo`, `c
 
 CREATE TABLE `contact_us` (
   `id` int(11) NOT NULL,
-  `first_name` varchar(250) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
+  `name` varchar(250) NOT NULL,
   `email` varchar(250) NOT NULL,
   `phone` varchar(250) NOT NULL,
   `msg` text NOT NULL,
@@ -142,9 +156,8 @@ CREATE TABLE `contact_us` (
 -- Dumping data for table `contact_us`
 --
 
-INSERT INTO `contact_us` (`id`, `first_name`, `last_name`, `email`, `phone`, `msg`, `date`) VALUES
-(1, 'test', '', 'test@gmail.com', '9876543210', 'test', '2024-03-15 14:59:09'),
-(7, 'Dhruvi', 'Sangani', 'dsangani44@gmail.com', '7016922908', 'i want to purchase new membership  how ?', '2024-03-30 16:12:28');
+INSERT INTO `contact_us` (`id`, `name`, `email`, `phone`, `msg`, `date`) VALUES
+(1, 'Dhruvi', 'dsangani44@gmail.com', '7016922456', 'frgrdg', '2024-09-07 15:06:44');
 
 -- --------------------------------------------------------
 
@@ -171,7 +184,10 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`id`, `c_img`, `c_name`, `c_subtitle`, `duration`, `eligibility`, `medium`, `objective`, `after_graduation`, `created_at`, `updated_at`) VALUES
-(1, '1725176936.png', ' B.Com.', '(BACHELORS OF COMMERCE)11', '8 semesters ( 4 years )', ' Higher Secondary Exam (10+2) \r\nPassed in any discipline from Gujarat Board \r\nOR Higher Secondary Exam Passed in any \r\ndiscipline from other Board recognized by \r\nSaurashtra University. ', 'Gujarati', 'Equip the students with the knowledge of concepts, \r\nand techniques of management accounting and \r\nenable them to use various techniques of cost \r\nascertainment, budget preparation and variance analysis', '• Work in Government Sector \r\n• Marketing Manager \r\n• Public sector • Private sector \r\n• Financial Professionals', '2024-09-01 11:54:31', '2024-09-01 17:24:31');
+(1, '1725712533.png', ' B.Com.', '(BACHELORS OF COMMERCE)', '8 semesters ( 4 years )', ' Higher Secondary Exam (10+2) \r\nPassed in any discipline from Gujarat Board \r\nOR Higher Secondary Exam Passed in any \r\ndiscipline from other Board recognized by \r\nSaurashtra University. ', 'Gujarati', 'Equip the students with the knowledge of concepts, \r\nand techniques of management accounting and \r\nenable them to use various techniques of cost \r\nascertainment, budget preparation and variance analysis', '• Work in Government Sector \r\n• Marketing Manager \r\n• Public sector • Private sector \r\n• Financial Professionals', '2024-09-07 12:39:11', '2024-09-07 18:09:11'),
+(3, '1725713586.png', 'B.C.A.', '(BACHELOR OF COMPUTER APPLICATIONS)', '8 semesters (4 years)', ': Higher Secondary Exam (10+2) \r\nPassed in any discipline from Gujarat Board OR Higher Secondary \r\nExam Passed in any discipline from other Board recognized \r\nby Saurashtra university. ', 'English', '• Perform sensitivity analysis \r\n• Select a portfolio of alternatives projects \r\n• Basic idea of Programming i.e. Java, Android, Python, \r\n.NET, iOS \r\n• Deals with mainly Professional area.', '• Work in Government Sector • Banking sector \r\n• Web Developer & Designer • Game Development \r\n• Digital Industrials collaboration • System analyser • Software developer \r\n• Network Mngt. & Establishment • Multimedia • Teaching Sector \r\n• Faculty in training institutes and schools • Security and Surveillance', '2024-09-07 12:53:06', '0000-00-00 00:00:00'),
+(4, '1725713653.png', 'B.B.A.', '(BACHELORS OF BUSINESS ADMINISTRATION)', '8 semesters ( 4 years ) ', ': Higher Secondary Exam (10+2) \r\nPassed in any discipline from \r\nGujarat Higher Education Board OR Higher \r\nSecondary Exam (10+2) Passed in any discipline \r\nfrom other Board recognized by Saurashtra university.', 'English', '• Demonstrate Critical Thinking and Decision Making \r\n• Ethical Behaviour and Social Responsibility • Core Business Knowledge \r\n• Effective communication skill', '• Work in Government Sector • Marketing Manager • Banking sector \r\n• Public sector • Private sector • Financial Professionals • Entrepreneurship \r\n• Consultancy • Human Resource Manager • Information Systems Manager \r\n• Work in Insurance sector • Teaching sector', '2024-09-07 12:54:13', '0000-00-00 00:00:00'),
+(5, '1725713729.png', 'B.Sc.', 'BACHELOR OF SCIENCE  (Chem., Botany, Maths, Physics) ', '8 semesters ( 4 years ) ', ' Higher Secondary Exam (10+2) \r\nPassed in any discipline from G.S.H.S.E.B. \r\nOR Diploma Degree holder in computer Science \r\ndiscipline OR Higher Secondary Exam (10+2) \r\nPassed in any discipline from other Board recognized \r\nby Saurashtra university. ', 'English', '• To prepare scientific professional person required fo public/private sector. \r\n• To prepare professionals dedicate and devoted to scientifical services. ', '• Specific Scientific Development • Research and Development in Science • Service Industries • Education', '2024-09-07 12:55:29', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -241,7 +257,8 @@ CREATE TABLE `faq` (
 
 INSERT INTO `faq` (`id`, `question`, `answer`, `created_at`, `updated_at`) VALUES
 (1, 'can here all courses are free ?', 'no, here all corses are not free. Some courses avilable for free.', '2024-03-20 10:26:31', '2024-03-20 10:26:31'),
-(3, 'is it testing question ?', '<p>yes, it is testing.</p>\r\n', '2024-03-20 15:08:06', '2024-03-26 14:48:39');
+(3, 'is it testing question ?', '<p>yes, it is testing.</p>\r\n', '2024-03-20 15:08:06', '2024-03-26 14:48:39'),
+(4, 'dfvfd', '<p>gfdg</p>\r\n', '2024-09-07 15:31:41', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -541,6 +558,12 @@ ALTER TABLE `alumni`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `course`
 --
 ALTER TABLE `course`
@@ -559,11 +582,23 @@ ALTER TABLE `faculty`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `faq`
+--
+ALTER TABLE `faq`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `notificationhistory`
+--
+ALTER TABLE `notificationhistory`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `topers`
@@ -579,19 +614,25 @@ ALTER TABLE `topers`
 -- AUTO_INCREMENT for table `admission`
 --
 ALTER TABLE `admission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `alumni`
 --
 ALTER TABLE `alumni`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `events`
@@ -603,6 +644,12 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `faculty`
 --
 ALTER TABLE `faculty`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `faq`
+--
+ALTER TABLE `faq`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
@@ -610,6 +657,12 @@ ALTER TABLE `faculty`
 --
 ALTER TABLE `login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=353;
+
+--
+-- AUTO_INCREMENT for table `notificationhistory`
+--
+ALTER TABLE `notificationhistory`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 
 --
 -- AUTO_INCREMENT for table `topers`
