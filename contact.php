@@ -114,13 +114,9 @@
                                                     class="dark"></span>
                                         </div>
                                         <div class="contact__item-content">
-                                            <p style="color : #e79a59;"><b>College Campus</b></p>
                                             <p> Jay Sardar Educational Complex, <br>Near Gundala Chowk, <br>Behind Shri
                                                 Ram Pump, <br>National Highway-27, <br> Gondal.
                                             </p>
-                                            <br>
-                                            <p style="color : #e79a59;"><b>College City Office</b></p>
-                                            <p>Nilkanth Arcade <br>First Floor, Shop No.  1,<br>MB.  Opposite College,<br>Mahadev Wadi Gondal. </p>
                                         </div>
                                     </div>
                                 </div>

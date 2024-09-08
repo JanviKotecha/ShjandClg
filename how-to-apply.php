@@ -132,7 +132,7 @@
         </div>
         <div class="pricing__shape">
             <span class="pricing__shape-item pricing__shape-item--1"> <span></span> </span>
-            <span class="pricing__shape-item pricing__shape-item--2"> <img src="assets/images/icon/1.png"
+            <span class="pricing__shape-item pricing__shape-item--2"> <img src="assets/images/icon/resume.png"
                     alt="shape-icon">
             </span>
         </div>
