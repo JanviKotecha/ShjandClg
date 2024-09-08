@@ -28,7 +28,7 @@
                 <a href="alumni.php">Alumni</a>
               </li>
               <li>
-                <a href="£">Events</a>
+                <a href="events.php">Events</a>
               </li>
               <li>
                 <a href="contact.php">Contact Us</a>
@@ -39,7 +39,7 @@
           <div class="header-action">
             <div class="menu-area">
               <div class="header-btn">
-                <a href="application_form.php" class="trk-btn trk-btn--border trk-btn--primary">
+                <a href="admissions.php" class="trk-btn trk-btn--border trk-btn--primary">
                   <span>Admissions</span>
                 </a>
               </div>

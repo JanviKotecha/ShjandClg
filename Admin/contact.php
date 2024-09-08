@@ -60,7 +60,6 @@
                           <th>Name</th>
                           <th>Email</th>
                           <th>Mobile</th>
-                          <th>Comapany Name</th>
                           <th>Message</th>
                           <th >Date</th>
                           <th><center>Action</center></th>
@@ -78,7 +77,6 @@
                               <td><?php echo $row['name']; ?></td>
                               <td><?php echo $row['email']; ?></td>
                               <td><?php echo $row['phone']; ?></td>
-                              <td><?php echo $row['company']; ?></td>
                               <td><b><?php echo $row['msg']; ?></b></td>
                               <td><?php echo $row['date']; ?></td>
                               <td>

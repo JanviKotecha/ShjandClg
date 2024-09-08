@@ -20,6 +20,22 @@
       </a>
     </li>
     <li class="menu-header small text-uppercase">
+      <span class="menu-header-text">Admission Managment</span>
+    </li>
+    <!-- Pages -->
+    <li class="menu-item <?php echo $page_title =='a_students' ? 'active' : '' ;?>">
+      <a href="AdmissionStudents.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-id-card"></i>
+        <div data-i18n="Account Settings">Admission Students</div>
+      </a>
+    </li>
+    <li class="menu-item <?php echo $page_title =='students' ? 'active' : '' ;?>">
+      <a href="students.php" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-user-plus"></i>
+        <div data-i18n="Account Settings">Students</div>
+      </a>
+    </li>
+    <li class="menu-header small text-uppercase">
       <span class="menu-header-text">Faculty Managment</span>
     </li>
     <!-- Pages -->

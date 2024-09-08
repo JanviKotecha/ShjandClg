@@ -5,7 +5,7 @@
           <div class="row gy-5 gx-4">
             <div class="col-md-6">
               <div class="footer__about">
-                <a href="index.html" class="footer__about-logo"><img src="assets/images/logo/logo-dark.png"
+                <a href="index.php" class="footer__about-logo"><img src="assets/images/logo/logo-dark.png"
                     alt="Logo"></a>
                 <p class="footer__about-moto ">Welcome to our trading site! We offer the best, most
                   affordable products and services around. Shop now and start finding great deals!</p>

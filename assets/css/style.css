@@ -1944,7 +1944,9 @@ ol {
   font-size: 1rem;
   width: 70px;
   height: 36px;
-  color: var(--text-color);
+  color: var(--title-color);
+}
+.paginations ul .disabled{
   opacity: 0.5;
 }
 .paginations ul li a.active, .paginations ul li a:hover {
@@ -9249,7 +9251,7 @@ textarea:focus-within {
   width: 50px;
   backdrop-filter: blur(10px);
   filter: blur(100px);
-  background-color: var(--cta-img-bg-shadow);
+  /* background-color: var(--cta-img-bg-shadow); */
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -11081,3 +11083,18 @@ html[data-bs-theme=dark] .partner--gradient::after {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Custom Css Add */
+
+.alumniProfile img{
+  width: 70px;
+  height: 70px;
+}
+.eventsImg img{
+  height: 195px;
+}
+.course-decTitle{
+  color : #cd4f2b !important;
+  font-size: 18px;
+  font-weight: bold;
+}
