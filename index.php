@@ -225,7 +225,7 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>Lending money for investment of your new projects</h6>
+                                                        <h6>We uphold the highest ethical standards in all our endeavors.</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -236,7 +236,7 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>more Security and control over money from the rest</h6>
+                                                        <h6>We strive for excellence in teaching, learning, and research.</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,7 +248,7 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>Mobile payment is more flexible and easy for all investors
+                                                        <h6>We embrace diversity and foster an inclusive environment for all.
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -260,7 +260,19 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>all transaction is kept free for the member of pro traders
+                                                        <h6>We encourage creativity, critical thinking, and innovation.
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-link" id="feat-pills-five-tab" data-bs-toggle="pill"
+                                            data-bs-target="#feat-pills-five" role="tab" aria-controls="feat-pills-five"
+                                            aria-selected="false">
+                                            <div class="feature__item">
+                                                <div class="feature__item-inner">
+                                                    <div class="feature__item-content">
+                                                        <h6>We are committed to giving back to the community and making a positive impact.
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -279,24 +291,13 @@
                                     <div class="tab-pane fade show active" id="feat-pills-one" role="tabpanel"
                                         aria-labelledby="feat-pills-one-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/1.png" alt="Feature image">
+                                            <img src="assets/images/values/1.png" alt="Feature image">
                                             <div class="floating-content__top-right floating-content__top-right--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/5.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
-                                                </div>
-                                            </div>
-                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="10">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
+                                                    <img src="assets/images/values/11.png" alt="rating">
+                                                    <p class="style2">Integrity</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -304,24 +305,14 @@
                                     <div class="tab-pane fade" id="feat-pills-two" role="tabpanel"
                                         aria-labelledby="feat-pills-two-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/2.png" alt="Feature image">
-                                            <div class="floating-content__top-right floating-content__top-right--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/6.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
-                                                </div>
-                                            </div>
+                                            <img src="assets/images/values/2.png" alt="Feature image">
+                                            
                                             <div class="floating-content__bottom-left floating-content__bottom-left--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="18">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
+                                                    <img src="assets/images/values/12.png" alt="rating">
+                                                    <p class="ms-3 style2">Excellence</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -329,49 +320,43 @@
                                     <div class="tab-pane fade" id="feat-pills-three" role="tabpanel"
                                         aria-labelledby="feat-pills-three-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/1.png" alt="Feature image">
+                                            <img src="assets/images/values/3.png" alt="Feature image">
                                             <div class="floating-content__top-right floating-content__top-right--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/7.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
+                                                    <img src="assets/images/values/13.png" alt="rating">
+                                                    <p class="style2">Inclusivity</p>
                                                 </div>
                                             </div>
-                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="30">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="feat-pills-four" role="tabpanel"
                                         aria-labelledby="feat-pills-four-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/2.png" alt="Feature image">
-                                            <div class="floating-content__top-right floating-content__top-right--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/8.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
-                                                </div>
-                                            </div>
+                                            <img src="assets/images/values/4.png" alt="Feature image">
+                                            
                                             <div class="floating-content__bottom-left floating-content__bottom-left--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="28">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
+                                                    <img src="assets/images/values/14.png" alt="rating">
+                                                    <p class="ms-3 style2">Innovation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="feat-pills-five" role="tabpanel"
+                                        aria-labelledby="feat-pills-five-tab" tabindex="0">
+                                        <div class="feature__image floating-content">
+                                            <img src="assets/images/values/5.png" alt="Feature image">
+                                            <div class="floating-content__top-right floating-content__top-right--style2"
+                                                data-aos="fade-left" data-aos-duration="1000">
+                                                <div
+                                                    class="floating-content__item floating-content__item--style2 text-center">
+                                                    <img src="assets/images/values/15.png" alt="rating">
+                                                    <p class="style2">Community Service</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -384,7 +369,7 @@
             </div>
         </div>
         <div class="feature__shape">
-            <span class="feature__shape-item feature__shape-item--1"><img src="assets/images/feature/shape/1.png"
+            <span class="feature__shape-item feature__shape-item--1"><img src="assets/images/values/values.png"
                     alt="shape-icon"></span>
             <span class="feature__shape-item feature__shape-item--2"> <span></span> </span>
         </div>
