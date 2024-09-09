@@ -477,7 +477,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/7.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Industry Visit </a>
@@ -490,7 +490,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/8.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Canteen & Library</a>
@@ -503,7 +503,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/9.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Garden Area</a>
@@ -517,7 +517,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/10.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Transportation</a>
@@ -530,7 +530,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/11.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Great Placement Opportunities</a>
@@ -543,7 +543,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/12.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">24 Hour CCTV Surveillance</a>
@@ -557,7 +557,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/13.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Swimming Pool</a>
@@ -570,7 +570,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/14.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Projector Room </a>
@@ -583,7 +583,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/15.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Sports Activity Center</a>
@@ -596,7 +596,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/16.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Wi - Fi Zone</a>
