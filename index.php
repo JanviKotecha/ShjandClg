@@ -34,38 +34,14 @@
                     <div class="col-lg-6 col-md-7">
                         <div class="banner__content" data-aos="fade-right" data-aos-duration="1000">
                             <div class="banner__content-coin">
-                                <img src="assets/images/banner/home1/3.png" alt="coin icon">
+                                <img src="assets/images/header/bag.png" alt="coin icon">
                             </div>
-                            <h1 class="banner__content-heading">Invest your money
-                                with <span>higher return</span></h1>
-                            <p class="banner__content-moto">Anyone can invest money to different currency to increase
-                                their earnings
-                                by the help of Bitrader through online.
+                            <h1 class="banner__content-heading">Welcome to <span>Sahajanand College!</span></h1>
+                            <p class="banner__content-moto">Discover a world of opportunities at Sahajanand College. Our commitment to academic excellence and holistic development ensures that you receive the best education and preparation for your future. Join a vibrant community of learners and leaders dedicated to making a difference.
                             </p>
                             <div class="banner__btn-group btn-group">
-                                <a href="signin.html" class="trk-btn trk-btn--primary trk-btn--arrow">Get Started
+                                <a href="courses.php" class="trk-btn trk-btn--primary trk-btn--arrow">Explore Our Programs
                                     <span><i class="fa-solid fa-arrow-right"></i></span> </a>
-
-                                <a href="https://www.youtube.com/watch?v=MHhIzIgFgJo&ab_channel=NoCopyrightFootages"
-                                    class="trk-btn trk-btn--outline22" data-fslightbox>
-                                    <span class="style1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <g clip-path="url(#clip0_1397_814)">
-                                                <path
-                                                    d="M10.5547 7.03647C9.89015 6.59343 9 7.06982 9 7.86852V16.1315C9 16.9302 9.89015 17.4066 10.5547 16.9635L16.7519 12.8321C17.3457 12.4362 17.3457 11.5638 16.7519 11.1679L10.5547 7.03647Z"
-                                                    stroke="#A4FD5" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <rect x="-0.75" y="0.75" width="22.5" height="22.5" rx="11.25"
-                                                transform="matrix(-1 0 0 1 22.5 0)" stroke="#A4FD5"
-                                                stroke-width="1.5" />
-                                            <defs>
-                                                <clipPath id="clip0_1397_814">
-                                                    <rect width="24" height="24" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg></span> Watch Video
-                                </a>
                             </div>
                             <div class="banner__content-social">
                                 <p>Follow Us</p>
@@ -96,14 +72,14 @@
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="banner__thumb" data-aos="fade-left" data-aos-duration="1000">
-                            <img src="assets/images/banner/home1/1.png" alt="banner-thumb" class="dark">
+                            <img src="assets/images/header/study.png" alt="banner-thumb" class="dark">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="banner__shape">
-            <span class="banner__shape-item banner__shape-item--1"><img src="assets/images/banner/home1/4.png"
+            <span class="banner__shape-item banner__shape-item--1"><img src="assets/images/header/bag.png"
                     alt="shape icon"></span>
         </div>
 
@@ -149,7 +125,7 @@
     <!-- ===============>> partner section end here <<================= -->
 
     <!-- ===============>> About section start here <<================= -->
-    <section class="about about--style1">
+    <!-- <section class="about about--style1">
         <div class="container">
             <div class="about__wrapper">
                 <div class="row gx-5  gy-4 gy-sm-0  align-items-center">
@@ -199,7 +175,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ===============>> About section start here <<================= -->
 
     <!-- ===============>> feature section start here <<================= -->
