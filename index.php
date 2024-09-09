@@ -186,8 +186,13 @@
                             <div class="about__content-inner">
                                 <h2>Welcome to <span>Sahajanand College! </span></h2>
 
-                                <p class="mb-0">Sahajanand College is a leading institution of higher learning, dedicated to fostering an environment where students are inspired to learn, grow, and excel. Located in the heart of the city, our college offers a diverse range of undergraduate programs in BBA, BCA, B.Com, and B.Sc., tailored to meet the needs of today's dynamic world.</p>
-                                <a href="our-identity.php" class="trk-btn trk-btn--border trk-btn--primary">Explore More </a>
+                                <p class="mb-0">Sahajanand College is a leading institution of higher learning,
+                                    dedicated to fostering an environment where students are inspired to learn, grow,
+                                    and excel. Located in the heart of the city, our college offers a diverse range of
+                                    undergraduate programs in BBA, BCA, B.Com, and B.Sc., tailored to meet the needs of
+                                    today's dynamic world.</p>
+                                <a href="our-identity.php" class="trk-btn trk-btn--border trk-btn--primary">Explore More
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +212,8 @@
                             <div class="feature__content-inner">
                                 <div class="section-header">
                                     <h2 class="mb-10 mt-minus-5"> <span>Our </span>Values</h2>
-                                    <p class="mb-0">Guiding Principles that Shape Our Commitment to Excellence and Community</p>
+                                    <p class="mb-0">Guiding Principles that Shape Our Commitment to Excellence and
+                                        Community</p>
                                 </div>
 
                                 <div class="feature__nav">
@@ -382,7 +388,7 @@
                     alt="shape-icon"></span>
             <span class="feature__shape-item feature__shape-item--2"> <span></span> </span>
         </div>
-    </section> 
+    </section>
     <!-- ===============>> feature section end here <<================= -->
 
     <!-- ===============>> Service section start here <<================= -->
@@ -390,12 +396,12 @@
         <div class="section-header section-header--max50">
             <h2 class="mb-10 mt-minus-5"><span>Benefits </span>We offer</h2>
             <p>Discover the advantages of studying at Sahajanand College.
-            Our programs are designed to empower your future and enhance your learning experience!</p>
+                Our programs are designed to empower your future and enhance your learning experience!</p>
         </div>
         <div class="container">
             <div class="service__wrapper">
                 <div class="row g-4 align-items-center">
-                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -408,7 +414,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -421,7 +427,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -433,7 +439,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -446,7 +452,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -454,12 +460,12 @@
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Expert Faculty Staff</a> </h5>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -473,7 +479,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -486,7 +492,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -499,7 +505,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -513,7 +519,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -526,7 +532,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -539,7 +545,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -553,7 +559,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -566,7 +572,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -579,7 +585,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -592,7 +598,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -607,8 +613,21 @@
                     </div>
 
                 </div>
+                <!-- Pagination -->
+                <div class="paginations mt-5" data-aos="fade-up" data-aos-duration="800">
+                    <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
+                        <li><a href="#" class="prev paginationPrev"><i class="fa-solid fa-angle-left me-2"></i> Prev</a>
+                        </li>
+                        <li><a href="#" class="pagination-link active" data-target="page-1">1</a></li>
+                        <li><a href="#" class="pagination-link" data-target="page-2">2</a></li>
+                        <li><a href="#" class="pagination-link" data-target="page-3">3</a></li>
+                        <li><a href="#" class="next paginationNext">Next <i
+                                    class="fa-solid fa-angle-right ms-2"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </section>
     <!-- ===============>> Service section start here <<================= -->
 
@@ -631,15 +650,15 @@
                                             $i=0;
                                             while ($row=mysqli_fetch_array($result)) { 
                                             $i++;?>
-                                                    <div
-                                                        class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
-                                                        <!-- Dynamic class for vertical line position -->
-                                                        <div
-                                                            class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
-                                                            <div class="roadmap__item-content">
-                                                                <!-- Use dynamic data from the database -->
-                                                                <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
-                                                                <p><?php 
+                                    <div
+                                        class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
+                                        <!-- Dynamic class for vertical line position -->
+                                        <div
+                                            class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
+                                            <div class="roadmap__item-content">
+                                                <!-- Use dynamic data from the database -->
+                                                <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
+                                                <p><?php 
                                                                     // Get the 'objective' field from the database
                                                                     $objective = htmlspecialchars($row['objective']);
 
@@ -651,15 +670,15 @@
                                                                         // Print the full text if it's less than or equal to 200 characters
                                                                         echo $objective;
                                                                     } ?>
-                                                                </p>
-                                                            </div>
-                                                            <div class="roadmap__item-date">
-                                                                <!-- Format and display the date dynamically -->
-                                                                <span><?php echo $row['duration']; ?></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <?php } 
+                                                </p>
+                                            </div>
+                                            <div class="roadmap__item-date">
+                                                <!-- Format and display the date dynamically -->
+                                                <span><?php echo $row['duration']; ?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php } 
                                         }  
                                     ?>
                                 </div>
