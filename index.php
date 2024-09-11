@@ -24,7 +24,7 @@
     <section class="banner banner--style1">
         <div class="banner__bg">
             <div class="banner__bg-element">
-                <img src="assets/images/banner/home1/bg.png" alt="section-bg-element" class="dark d-none d-lg-block">
+                <img src="assets/images/banner/header/study.png" alt="section-bg-element" class="dark d-none d-lg-block">
                 <span class="bg-color d-lg-none"></span>
             </div>
         </div>
@@ -34,38 +34,14 @@
                     <div class="col-lg-6 col-md-7">
                         <div class="banner__content" data-aos="fade-right" data-aos-duration="1000">
                             <div class="banner__content-coin">
-                                <img src="assets/images/banner/home1/3.png" alt="coin icon">
+                                <img src="assets/images/header/study.png" alt="coin icon">
                             </div>
-                            <h1 class="banner__content-heading">Invest your money
-                                with <span>higher return</span></h1>
-                            <p class="banner__content-moto">Anyone can invest money to different currency to increase
-                                their earnings
-                                by the help of Bitrader through online.
+                            <h1 class="banner__content-heading">Welcome to <span>Sahajanand College!</span></h1>
+                            <p class="banner__content-moto">Discover a world of opportunities at Sahajanand College. Our commitment to academic excellence and holistic development ensures that you receive the best education and preparation for your future. Join a vibrant community of learners and leaders dedicated to making a difference.
                             </p>
                             <div class="banner__btn-group btn-group">
-                                <a href="signin.html" class="trk-btn trk-btn--primary trk-btn--arrow">Get Started
+                                <a href="courses.php" class="trk-btn trk-btn--primary trk-btn--arrow">Explore Our Programs
                                     <span><i class="fa-solid fa-arrow-right"></i></span> </a>
-
-                                <a href="https://www.youtube.com/watch?v=MHhIzIgFgJo&ab_channel=NoCopyrightFootages"
-                                    class="trk-btn trk-btn--outline22" data-fslightbox>
-                                    <span class="style1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <g clip-path="url(#clip0_1397_814)">
-                                                <path
-                                                    d="M10.5547 7.03647C9.89015 6.59343 9 7.06982 9 7.86852V16.1315C9 16.9302 9.89015 17.4066 10.5547 16.9635L16.7519 12.8321C17.3457 12.4362 17.3457 11.5638 16.7519 11.1679L10.5547 7.03647Z"
-                                                    stroke="#A4FD5" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <rect x="-0.75" y="0.75" width="22.5" height="22.5" rx="11.25"
-                                                transform="matrix(-1 0 0 1 22.5 0)" stroke="#A4FD5"
-                                                stroke-width="1.5" />
-                                            <defs>
-                                                <clipPath id="clip0_1397_814">
-                                                    <rect width="24" height="24" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg></span> Watch Video
-                                </a>
                             </div>
                             <div class="banner__content-social">
                                 <p>Follow Us</p>
@@ -96,14 +72,14 @@
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="banner__thumb" data-aos="fade-left" data-aos-duration="1000">
-                            <img src="assets/images/banner/home1/1.png" alt="banner-thumb" class="dark">
+                            <img src="assets/images/header/world.png" alt="banner-thumb" class="dark">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="banner__shape">
-            <span class="banner__shape-item banner__shape-item--1"><img src="assets/images/banner/home1/4.png"
+            <span class="banner__shape-item banner__shape-item--1"><img src="assets/images/header/bag.png"
                     alt="shape icon"></span>
         </div>
 
@@ -149,7 +125,7 @@
     <!-- ===============>> partner section end here <<================= -->
 
     <!-- ===============>> About section start here <<================= -->
-    <section class="about about--style1">
+    <!-- <section class="about about--style1">
         <div class="container">
             <div class="about__wrapper">
                 <div class="row gx-5  gy-4 gy-sm-0  align-items-center">
@@ -186,15 +162,20 @@
                             <div class="about__content-inner">
                                 <h2>Welcome to <span>Sahajanand College! </span></h2>
 
-                                <p class="mb-0">Sahajanand College is a leading institution of higher learning, dedicated to fostering an environment where students are inspired to learn, grow, and excel. Located in the heart of the city, our college offers a diverse range of undergraduate programs in BBA, BCA, B.Com, and B.Sc., tailored to meet the needs of today's dynamic world.</p>
-                                <a href="our-identity.php" class="trk-btn trk-btn--border trk-btn--primary">Explore More </a>
+                                <p class="mb-0">Sahajanand College is a leading institution of higher learning,
+                                    dedicated to fostering an environment where students are inspired to learn, grow,
+                                    and excel. Located in the heart of the city, our college offers a diverse range of
+                                    undergraduate programs in BBA, BCA, B.Com, and B.Sc., tailored to meet the needs of
+                                    today's dynamic world.</p>
+                                <a href="our-identity.php" class="trk-btn trk-btn--border trk-btn--primary">Explore More
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ===============>> About section start here <<================= -->
 
     <!-- ===============>> feature section start here <<================= -->
@@ -207,7 +188,8 @@
                             <div class="feature__content-inner">
                                 <div class="section-header">
                                     <h2 class="mb-10 mt-minus-5"> <span>Our </span>Values</h2>
-                                    <p class="mb-0">Guiding Principles that Shape Our Commitment to Excellence and Community</p>
+                                    <p class="mb-0">Guiding Principles that Shape Our Commitment to Excellence and
+                                        Community</p>
                                 </div>
 
                                 <div class="feature__nav">
@@ -219,7 +201,7 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>Lending money for investment of your new projects</h6>
+                                                        <h6>We uphold the highest ethical standards in all our endeavors.</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -230,7 +212,7 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>more Security and control over money from the rest</h6>
+                                                        <h6>We strive for excellence in teaching, learning, and research.</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -242,7 +224,7 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>Mobile payment is more flexible and easy for all investors
+                                                        <h6>We embrace diversity and foster an inclusive environment for all.
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -254,7 +236,19 @@
                                             <div class="feature__item">
                                                 <div class="feature__item-inner">
                                                     <div class="feature__item-content">
-                                                        <h6>all transaction is kept free for the member of pro traders
+                                                        <h6>We encourage creativity, critical thinking, and innovation.
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav-link" id="feat-pills-five-tab" data-bs-toggle="pill"
+                                            data-bs-target="#feat-pills-five" role="tab" aria-controls="feat-pills-five"
+                                            aria-selected="false">
+                                            <div class="feature__item">
+                                                <div class="feature__item-inner">
+                                                    <div class="feature__item-content">
+                                                        <h6>We are committed to giving back to the community and making a positive impact.
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -273,24 +267,13 @@
                                     <div class="tab-pane fade show active" id="feat-pills-one" role="tabpanel"
                                         aria-labelledby="feat-pills-one-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/1.png" alt="Feature image">
+                                            <img src="assets/images/values/1.png" alt="Feature image">
                                             <div class="floating-content__top-right floating-content__top-right--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/5.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
-                                                </div>
-                                            </div>
-                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="10">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
+                                                    <img src="assets/images/values/11.png" alt="rating">
+                                                    <p class="style2">Integrity</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -298,24 +281,14 @@
                                     <div class="tab-pane fade" id="feat-pills-two" role="tabpanel"
                                         aria-labelledby="feat-pills-two-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/2.png" alt="Feature image">
-                                            <div class="floating-content__top-right floating-content__top-right--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/6.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
-                                                </div>
-                                            </div>
+                                            <img src="assets/images/values/2.png" alt="Feature image">
+                                            
                                             <div class="floating-content__bottom-left floating-content__bottom-left--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="18">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
+                                                    <img src="assets/images/values/12.png" alt="rating">
+                                                    <p class="ms-3 style2">Excellence</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -323,49 +296,43 @@
                                     <div class="tab-pane fade" id="feat-pills-three" role="tabpanel"
                                         aria-labelledby="feat-pills-three-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/1.png" alt="Feature image">
+                                            <img src="assets/images/values/3.png" alt="Feature image">
                                             <div class="floating-content__top-right floating-content__top-right--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/7.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
+                                                    <img src="assets/images/values/13.png" alt="rating">
+                                                    <p class="style2">Inclusivity</p>
                                                 </div>
                                             </div>
-                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="30">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="feat-pills-four" role="tabpanel"
                                         aria-labelledby="feat-pills-four-tab" tabindex="0">
                                         <div class="feature__image floating-content">
-                                            <img src="assets/images/feature/2.png" alt="Feature image">
-                                            <div class="floating-content__top-right floating-content__top-right--style2"
-                                                data-aos="fade-left" data-aos-duration="1000">
-                                                <div
-                                                    class="floating-content__item floating-content__item--style2 text-center">
-                                                    <img src="assets/images/feature/8.png" alt="rating">
-                                                    <p class="style2">Interest Rate For Loan</p>
-                                                </div>
-                                            </div>
+                                            <img src="assets/images/values/4.png" alt="Feature image">
+                                            
                                             <div class="floating-content__bottom-left floating-content__bottom-left--style2"
                                                 data-aos="fade-left" data-aos-duration="1000">
                                                 <div
                                                     class="floating-content__item floating-content__item--style3  d-flex align-items-center">
-                                                    <h3 class="style2"> <span class="purecounter"
-                                                            data-purecounter-start="0"
-                                                            data-purecounter-end="28">10M</span>M
-                                                    </h3>
-                                                    <p class="ms-3 style2">Available for loan</p>
+                                                    <img src="assets/images/values/14.png" alt="rating">
+                                                    <p class="ms-3 style2">Innovation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="feat-pills-five" role="tabpanel"
+                                        aria-labelledby="feat-pills-five-tab" tabindex="0">
+                                        <div class="feature__image floating-content">
+                                            <img src="assets/images/values/5.png" alt="Feature image">
+                                            <div class="floating-content__top-right floating-content__top-right--style2"
+                                                data-aos="fade-left" data-aos-duration="1000">
+                                                <div
+                                                    class="floating-content__item floating-content__item--style2 text-center">
+                                                    <img src="assets/images/values/15.png" alt="rating">
+                                                    <p class="style2">Community Service</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -378,11 +345,11 @@
             </div>
         </div>
         <div class="feature__shape">
-            <span class="feature__shape-item feature__shape-item--1"><img src="assets/images/feature/shape/1.png"
+            <span class="feature__shape-item feature__shape-item--1"><img src="assets/images/values/values.png"
                     alt="shape-icon"></span>
             <span class="feature__shape-item feature__shape-item--2"> <span></span> </span>
         </div>
-    </section> 
+    </section>
     <!-- ===============>> feature section end here <<================= -->
 
     <!-- ===============>> Service section start here <<================= -->
@@ -390,12 +357,12 @@
         <div class="section-header section-header--max50">
             <h2 class="mb-10 mt-minus-5"><span>Benefits </span>We offer</h2>
             <p>Discover the advantages of studying at Sahajanand College.
-            Our programs are designed to empower your future and enhance your learning experience!</p>
+                Our programs are designed to empower your future and enhance your learning experience!</p>
         </div>
         <div class="container">
             <div class="service__wrapper">
                 <div class="row g-4 align-items-center">
-                    <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="col-sm-6 col-md-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -408,7 +375,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -421,7 +388,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -433,7 +400,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -446,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -454,12 +421,12 @@
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Expert Faculty Staff</a> </h5>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-1">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
@@ -473,11 +440,11 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/7.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Industry Visit </a>
@@ -486,11 +453,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/8.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Canteen & Library</a>
@@ -499,11 +466,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/9.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Garden Area</a>
@@ -513,11 +480,11 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/10.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Transportation</a>
@@ -526,11 +493,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/11.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Great Placement Opportunities</a>
@@ -539,11 +506,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-2">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/12.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">24 Hour CCTV Surveillance</a>
@@ -553,11 +520,11 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/13.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Swimming Pool</a>
@@ -566,11 +533,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/14.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Projector Room </a>
@@ -579,11 +546,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/15.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Sports Activity Center</a>
@@ -592,11 +559,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 service-item page-3">
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1200">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/6.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/16.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link">Wi - Fi Zone</a>
@@ -607,8 +574,21 @@
                     </div>
 
                 </div>
+                <!-- Pagination -->
+                <div class="paginations mt-5" data-aos="fade-up" data-aos-duration="800">
+                    <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
+                        <li><a href="#" class="prev paginationPrev"><i class="fa-solid fa-angle-left me-2"></i> Prev</a>
+                        </li>
+                        <li><a href="#" class="pagination-link active" data-target="page-1">1</a></li>
+                        <li><a href="#" class="pagination-link" data-target="page-2">2</a></li>
+                        <li><a href="#" class="pagination-link" data-target="page-3">3</a></li>
+                        <li><a href="#" class="next paginationNext">Next <i
+                                    class="fa-solid fa-angle-right ms-2"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </section>
     <!-- ===============>> Service section start here <<================= -->
 
@@ -631,15 +611,15 @@
                                             $i=0;
                                             while ($row=mysqli_fetch_array($result)) { 
                                             $i++;?>
-                                                    <div
-                                                        class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
-                                                        <!-- Dynamic class for vertical line position -->
-                                                        <div
-                                                            class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
-                                                            <div class="roadmap__item-content">
-                                                                <!-- Use dynamic data from the database -->
-                                                                <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
-                                                                <p><?php 
+                                    <div
+                                        class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
+                                        <!-- Dynamic class for vertical line position -->
+                                        <div
+                                            class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
+                                            <div class="roadmap__item-content">
+                                                <!-- Use dynamic data from the database -->
+                                                <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
+                                                <p><?php 
                                                                     // Get the 'objective' field from the database
                                                                     $objective = htmlspecialchars($row['objective']);
 
@@ -651,15 +631,15 @@
                                                                         // Print the full text if it's less than or equal to 200 characters
                                                                         echo $objective;
                                                                     } ?>
-                                                                </p>
-                                                            </div>
-                                                            <div class="roadmap__item-date">
-                                                                <!-- Format and display the date dynamically -->
-                                                                <span><?php echo $row['duration']; ?></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <?php } 
+                                                </p>
+                                            </div>
+                                            <div class="roadmap__item-date">
+                                                <!-- Format and display the date dynamically -->
+                                                <span><?php echo $row['duration']; ?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php } 
                                         }  
                                     ?>
                                 </div>

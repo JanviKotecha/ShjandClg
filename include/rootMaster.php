@@ -18,6 +18,7 @@
 	define("TOPERS_URL", IMAGE_URL."topers/");
 	define("ALUMNIPROFILE_URL", IMAGE_URL."alumniProfile/");
 	define("ALUMNILOGO_URL", IMAGE_URL."alumniLogo/");
+	define("TESTIMONIAL_URL", IMAGE_URL."testimonial/");
 
 	define("ADMIN_URL",HOST_URL."Admin/");
 	define("ADMIN_IMAGE_URL",ADMIN_URL."image/");

@@ -105,7 +105,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="800">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/1.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/mission.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link" href="service-details.html">Our Mission</a>
@@ -121,7 +121,7 @@
                         <div class="service__item service__item--style1" data-aos="fade-up" data-aos-duration="1000">
                             <div class="service__item-inner text-center">
                                 <div class="service__item-thumb mb-30">
-                                    <img class="dark" src="assets/images/service/2.png" alt="service-icon">
+                                    <img class="dark" src="assets/images/service/vision.png" alt="service-icon">
                                 </div>
                                 <div class="service__item-content">
                                     <h5> <a class="stretched-link" href="service-details.html">Our Vision</a>
