@@ -24,7 +24,7 @@
     <section class="banner banner--style1">
         <div class="banner__bg">
             <div class="banner__bg-element">
-                <img src="assets/images/banner/home1/bg.png" alt="section-bg-element" class="dark d-none d-lg-block">
+                <img src="assets/images/banner/header/study.png" alt="section-bg-element" class="dark d-none d-lg-block">
                 <span class="bg-color d-lg-none"></span>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <div class="col-lg-6 col-md-7">
                         <div class="banner__content" data-aos="fade-right" data-aos-duration="1000">
                             <div class="banner__content-coin">
-                                <img src="assets/images/header/bag.png" alt="coin icon">
+                                <img src="assets/images/header/study.png" alt="coin icon">
                             </div>
                             <h1 class="banner__content-heading">Welcome to <span>Sahajanand College!</span></h1>
                             <p class="banner__content-moto">Discover a world of opportunities at Sahajanand College. Our commitment to academic excellence and holistic development ensures that you receive the best education and preparation for your future. Join a vibrant community of learners and leaders dedicated to making a difference.
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="banner__thumb" data-aos="fade-left" data-aos-duration="1000">
-                            <img src="assets/images/header/study.png" alt="banner-thumb" class="dark">
+                            <img src="assets/images/header/world.png" alt="banner-thumb" class="dark">
                         </div>
                     </div>
                 </div>
