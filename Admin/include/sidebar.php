@@ -66,24 +66,6 @@
     <li class="menu-header small text-uppercase">
       <span class="menu-header-text">CMS Management</span>
     </li>
-    <li class="menu-item <?php echo $page_title =='termsC' ? 'active' : '' ;?>">
-      <a href="terms_condition_page.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-briefcase"></i>
-        <div data-i18n="Account Settings">Terms & Condition</div>
-      </a>
-    </li>
-    <li class="menu-item <?php echo $page_title =='privacy' ? 'active' : '' ;?>">
-      <a href="privacy_page.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-lock"></i>
-        <div data-i18n="Account Settings">Privacy Policy</div>
-      </a>
-    </li>
-    <li class="menu-item <?php echo $page_title =='about' ? 'active' : '' ;?>">
-      <a href="about.php" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-info-circle"></i>
-        <div data-i18n="Account Settings">About Us</div>
-      </a>
-    </li>
     <li class="menu-item <?php echo $page_title =='testimonial' ? 'active' : '' ;?>">
       <a href="testimonial.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-chat"></i>
