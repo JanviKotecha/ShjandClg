@@ -734,7 +734,7 @@
     <!-- ===============>> Team section start here <<================= -->
 
     <!-- ===============>> Testimonial section start here <<================= -->
-    <section class="testimonial padding-top padding-bottom-style2 bg-color">
+    <!-- <section class="testimonial padding-top padding-bottom-style2 bg-color">
         <div class="container">
             <div class="section-header d-md-flex align-items-center justify-content-between">
                 <div class="section-header__content">
@@ -846,7 +846,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ===============>> Testimonial section start here <<================= -->
 
     <!-- ===============>> FAQ section start here <<================= -->

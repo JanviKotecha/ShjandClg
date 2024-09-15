@@ -59,7 +59,7 @@
                         $total_records =mysqli_num_rows($events);
                         $total_pages = ceil($total_records / $limit);
 
-                        $result = $qm->getRecord("events","*" ,"","LIMIT $limit OFFSET $offset");
+                        $result = $qm->getRecord("events","*" ,"","ORDER BY id DESC LIMIT $limit OFFSET $offset");
                     
                         if (mysqli_num_rows($result) > 0) {                        
                           while ($row = mysqli_fetch_array($result)) {
