@@ -73,8 +73,7 @@
                                 </div>
 
                                 <div class="blog__content">
-                                    <h5 class="10 style2 text-center mt-3"> <a
-                                            href="blog-details.html"><?php echo $row['title']; ?></a>
+                                    <h5 class="10 style2 text-center mt-3"> <a><?php echo $row['title']; ?></a>
                                     </h5>
                                     <div class="blog__meta text-center py-1">
                                         <span class="blog__meta-tag blog__meta-tag--style1"><?php echo $row['event_category']; ?></span>
