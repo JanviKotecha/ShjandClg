@@ -22,7 +22,7 @@
 
 
     <!-- ================> Page header start here <================== -->
-    <section class="page-header bg--cover" style="background-image:url(assets/images/header/1.png)">
+    <section class="page-header bg--cover" style="background-image:url(assets/images/header/banner4.png)">
         <div class="container">
             <div class="page-header__content" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Admission Offices</h2>
