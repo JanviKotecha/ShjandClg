@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2024 at 08:02 PM
+-- Generation Time: Sep 19, 2024 at 07:41 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -210,7 +210,53 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`id`, `event_category`, `title`, `img`, `link`, `created_at`, `updated_at`) VALUES
-(11, 'College Activity', 'Garba', '1725186781.png', '', '2024-09-01 16:03:01', '2024-09-01 16:29:56');
+(11, 'College Activity', 'Seminar Of Jay Vasavda', '1726245873.jpg', '', '2024-09-01 16:03:01', '2024-09-13 22:22:24'),
+(12, 'College Activity', 'Gopal Namkeen Company Visit', '1726245896.jpg', '', '2024-09-13 22:14:56', '2024-09-13 22:15:13'),
+(13, 'College Activity', 'Seminar of Feminine boldness', '1726246134.jpg', '', '2024-09-13 22:18:54', '2024-09-13 22:22:34'),
+(14, 'College Activity', 'Drawing Competition', '1726246244.jpg', '', '2024-09-13 22:20:44', '0000-00-00 00:00:00'),
+(15, 'College Activity', 'Seminar of Career', '1726246333.jpg', '', '2024-09-13 22:22:13', '0000-00-00 00:00:00'),
+(16, 'General', 'Khelamahakumbha', '1726246419.jpg', '', '2024-09-13 22:23:39', '0000-00-00 00:00:00'),
+(17, 'College Activity', 'Tree planting', '1726246492.jpg', '', '2024-09-13 22:24:52', '0000-00-00 00:00:00'),
+(18, 'General', 'Blood Donation Camp', '1726246556.jpg', '', '2024-09-13 22:25:56', '0000-00-00 00:00:00'),
+(19, 'General', 'Kala Mahakumbha', '1726246614.jpg', '', '2024-09-13 22:26:54', '0000-00-00 00:00:00'),
+(20, 'College Activity', 'Fit India', '1726246693.jpg', '', '2024-09-13 22:28:13', '0000-00-00 00:00:00'),
+(21, 'College Celebration', 'Traditional Day', '1726246759.jpg', '', '2024-09-13 22:29:19', '0000-00-00 00:00:00'),
+(22, 'College Celebration', 'Farewell party', '1726246859.jpg', '', '2024-09-13 22:30:59', '0000-00-00 00:00:00'),
+(23, 'College Celebration', 'Holi Celebration', '1726246918.jpg', '', '2024-09-13 22:31:58', '0000-00-00 00:00:00'),
+(24, 'General', 'Fight against covid 19', '1726247091.jpg', '', '2024-09-13 22:34:51', '0000-00-00 00:00:00'),
+(25, 'General', 'Distribution of Food Packet', '1726247180.jpg', '', '2024-09-13 22:36:20', '0000-00-00 00:00:00'),
+(26, 'Newspaper Highlights', 'Distribution of Food Packet', '1726247243.jpg', '', '2024-09-13 22:37:23', '0000-00-00 00:00:00'),
+(27, 'General', 'Visited the food service ', '1726247468.jpg', '', '2024-09-13 22:41:08', '0000-00-00 00:00:00'),
+(28, 'General', 'Proud on Our Past Students', '1726247559.jpg', '', '2024-09-13 22:42:39', '0000-00-00 00:00:00'),
+(29, 'General', 'Blood Donation Camp', '1726247657.jpg', '', '2024-09-13 22:44:17', '0000-00-00 00:00:00'),
+(30, 'General', 'Help to Dhairyrajshih - ₹11000', '1726247783.jpg', '', '2024-09-13 22:46:23', '0000-00-00 00:00:00'),
+(31, 'General', 'RT-CPR Testing Camp', '1726247853.jpg', '', '2024-09-13 22:47:33', '0000-00-00 00:00:00'),
+(32, 'General', 'Seminar of awareness about cybercrime', '1726247944.jpg', '', '2024-09-13 22:49:04', '0000-00-00 00:00:00'),
+(33, 'General', ' Dwarka picnic', '1726248069.png', '', '2024-09-13 22:51:09', '0000-00-00 00:00:00'),
+(34, 'General', 'Accupressure Seminar', '1726248163.png', '', '2024-09-13 22:52:43', '0000-00-00 00:00:00'),
+(35, 'College Celebration', 'Holi Celebration', '1726248325.png', '', '2024-09-13 22:55:25', '0000-00-00 00:00:00'),
+(36, 'College Celebration', 'Musical Night', '1726248397.jpg', '', '2024-09-13 22:56:37', '0000-00-00 00:00:00'),
+(37, 'College Celebration', 'Vrindavan nagri', '1726248526.png', '', '2024-09-13 22:58:46', '2024-09-13 22:59:21'),
+(38, 'College Celebration', 'Teacher\'s Day', '1726248607.png', '', '2024-09-13 23:00:07', '0000-00-00 00:00:00'),
+(39, 'College Celebration', 'Navaratri Celebration', '1726248676.png', '', '2024-09-13 23:01:16', '0000-00-00 00:00:00'),
+(40, 'College Celebration', 'Happy Birthday Shivbhadrasinh', '1726248760.png', '', '2024-09-13 23:02:40', '0000-00-00 00:00:00'),
+(41, 'College Activity', 'College Picnic', '1726248843.png', '', '2024-09-13 23:04:03', '0000-00-00 00:00:00'),
+(42, 'General', 'Gayatri Yagya', '1726248915.png', '', '2024-09-13 23:05:15', '0000-00-00 00:00:00'),
+(43, 'College Celebration', 'Happy Holi', '1726249026.png', '', '2024-09-13 23:07:06', '0000-00-00 00:00:00'),
+(44, 'College Activity', 'NSS Camp', '1726249097.png', '', '2024-09-13 23:08:17', '0000-00-00 00:00:00'),
+(45, 'College Celebration', 'Welcome of New Students', '1726249194.png', '', '2024-09-13 23:09:54', '0000-00-00 00:00:00'),
+(46, 'College Celebration', 'Traditional day', '1726402165.png', '', '2024-09-15 17:39:25', '0000-00-00 00:00:00'),
+(47, 'General', 'Spacefull Campus', '1726402355.png', '', '2024-09-15 17:41:32', '2024-09-15 17:42:35'),
+(48, 'College Celebration', ' ', '1726402430.png', '', '2024-09-15 17:43:50', '0000-00-00 00:00:00'),
+(49, 'General', ' ', '1726402497.png', '', '2024-09-15 17:44:57', '0000-00-00 00:00:00'),
+(50, 'General', ' ', '1726402593.png', '', '2024-09-15 17:46:33', '0000-00-00 00:00:00'),
+(51, 'College Celebration', 'Sports Day', '1726402672.png', '', '2024-09-15 17:47:52', '0000-00-00 00:00:00'),
+(52, 'College Celebration', 'Teacher\'s Day', '1726402767.png', '', '2024-09-15 17:49:27', '0000-00-00 00:00:00'),
+(53, 'College Celebration', 'Sahajanand College ka Raja', '1726402856.jpg', '', '2024-09-15 17:50:56', '0000-00-00 00:00:00'),
+(54, 'General', 'Proud on our Rifle shooting Student', '1726403013.png', '', '2024-09-15 17:53:33', '0000-00-00 00:00:00'),
+(55, 'College Celebration', 'First Day of College', '1726403165.jpg', '', '2024-09-15 17:56:05', '0000-00-00 00:00:00'),
+(56, 'College Activity', 'Picnic', '1726403281.jpg', '', '2024-09-15 17:58:01', '0000-00-00 00:00:00'),
+(57, 'College Celebration', 'Ganpati', '1726403368.png', '', '2024-09-15 17:59:28', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -285,7 +331,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `username`, `email`, `phone`, `password`, `dt`, `updated_at`) VALUES
-(1, 'admin', 'admin@gmail.com', '9876543210', '$2y$10$y15.AEe4IyK/vUVIf0fWIudzSQML6SndosvHYRbwYmNi/JbAeeFZG', '2024-02-16 16:28:33', '2024-03-26 15:02:11.000000');
+(1, 'admin', 'admin@gmail.com', '9876543219', '$2y$10$y15.AEe4IyK/vUVIf0fWIudzSQML6SndosvHYRbwYmNi/JbAeeFZG', '2024-02-16 16:28:33', '2024-09-11 09:55:56.000000');
 
 -- --------------------------------------------------------
 
@@ -471,9 +517,7 @@ CREATE TABLE `testimonial` (
 --
 
 INSERT INTO `testimonial` (`id`, `img`, `nm`, `desi`, `rev`) VALUES
-(7, '1722430346.png', 'Prakash ', 'Manager', 'Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it'),
-(8, '1722429941.png', 'Snehal', 'CEO', 'Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it'),
-(14, '1722429934.png', 'j', 'j', 'j');
+(15, '1726028569.png', 'Itaque', 'Ut veritatis dolore ', 'Enim eveniet corpor');
 
 -- --------------------------------------------------------
 
@@ -648,7 +692,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `faculty`
@@ -678,7 +722,7 @@ ALTER TABLE `notificationhistory`
 -- AUTO_INCREMENT for table `testimonial`
 --
 ALTER TABLE `testimonial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `topers`
