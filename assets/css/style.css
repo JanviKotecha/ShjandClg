@@ -11103,3 +11103,10 @@ html[data-bs-theme=dark] .partner--gradient::after {
   font-size: 25px !important;
   font-weight: bold;
 }
+
+.testimonial__author-thumb img {
+  border-radius: 0px;
+  width: 150px !important;
+  height: 150px !important;
+  max-width: 150px;
+}

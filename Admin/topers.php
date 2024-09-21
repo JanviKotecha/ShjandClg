@@ -115,7 +115,7 @@ if (isset($_GET['id'])) {
                                                         <?php echo $row['semester'], " - ", $row['year']; ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row['percentage']; ?>
+                                                        <?php echo $row['percentage']; ?> %
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-switch toggle-switch">
