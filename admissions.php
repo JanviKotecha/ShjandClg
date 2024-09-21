@@ -28,14 +28,14 @@
     <!-- ===============>> Header section end here <<================= -->
 
     <!-- ================> Page header start here <================== -->
-    <section class="page-header bg--cover" style="background-image:url(assets/images/header/1.png)">
+    <section class="page-header bg--cover" style="background-image:url(assets/images/header/extra.png)">
         <div class="container">
             <div class="page-header__content" data-aos="fade-right" data-aos-duration="1000">
-                <h2>Contact Us</h2>
+                <h2>Admission</h2>
                 <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item "><a href="index.php">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        <li class="breadcrumb-item active" aria-current="page">Admission</li>
                     </ol>
                 </nav>
             </div>
@@ -84,8 +84,8 @@
             </div>
         </div>
         <div class="contact__shape">
-            <span class="contact__shape-item contact__shape-item--1"><img src="assets/images/contact/4.png"
-                    alt="shape-icon"></span>
+            <!-- <span class="contact__shape-item contact__shape-item--1"><img src="assets/images/contact/4.png"
+                    alt="shape-icon"></span> -->
             <span class="contact__shape-item contact__shape-item--2"> <span></span> </span>
         </div>
     </div>
