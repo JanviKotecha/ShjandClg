@@ -63,7 +63,7 @@
         <div data-i18n="Account Settings">Events & Activity</div>
       </a>
     </li>
-    <li class="menu-header small text-uppercase">
+    <!-- <li class="menu-header small text-uppercase">
       <span class="menu-header-text">CMS Management</span>
     </li>
     <li class="menu-item <?php echo $page_title =='testimonial' ? 'active' : '' ;?>">
@@ -71,7 +71,7 @@
         <i class="menu-icon tf-icons bx bx-chat"></i>
         <div data-i18n="Account Settings">Testimonial</div>
       </a>
-    </li>
+    </li> -->
     <li class="menu-header small text-uppercase">
       <span class="menu-header-text">College Topers Management</span>
     </li>

@@ -6,7 +6,22 @@
   $faculty=0;
   $students=0;
   $course=0;
-  $gallery_event=0;
+
+  $students1=$qm->getRecord("admission","*","status=0");
+  $students = mysqli_num_rows($students1);
+
+  $students22=$qm->getRecord("admission","*","status = 1");
+  $students2 = mysqli_num_rows($students22);
+
+  $events1=$qm->getRecord("events");
+  $gallery_event = mysqli_num_rows($events1);
+
+  $course1=$qm->getRecord("course");
+  $course = mysqli_num_rows($course1);
+
+  $faculty1=$qm->getRecord("faculty");
+  $faculty = mysqli_num_rows($faculty1);
+
 ?>
 
 <head>
@@ -98,6 +113,11 @@
                                                         <span class="fw-medium d-block mt-3 mb-1">Students</span>
                                                         <h3 class="card-title mb-2"><?php echo $students; ?></h3>
                                                     </div>
+                                                    <div class="col-md-6">
+                                                        <span class="fw-medium d-block mt-3 mb-1">Pending Admission</span>
+                                                        <h3 class="card-title mb-2"><?php echo $students2; ?></h3>
+                                                    </div>
+                                                    
                                                 </div>
                                                 <!-- <small class="text-success fw-medium"><i class="bx bx-up-arrow-alt"></i> +72.80%</small> -->
                                             </div>

@@ -59,7 +59,7 @@
                         $total_records =mysqli_num_rows($events);
                         $total_pages = ceil($total_records / $limit);
 
-                        $result = $qm->getRecord("events","*" ,"","LIMIT $limit OFFSET $offset");
+                        $result = $qm->getRecord("events","*" ,"","ORDER BY id DESC LIMIT $limit OFFSET $offset");
                     
                         if (mysqli_num_rows($result) > 0) {                        
                           while ($row = mysqli_fetch_array($result)) {
@@ -73,8 +73,7 @@
                                 </div>
 
                                 <div class="blog__content">
-                                    <h5 class="10 style2 text-center mt-3"> <a
-                                            href="blog-details.html"><?php echo $row['title']; ?></a>
+                                    <h5 class="10 style2 text-center mt-3"> <a><?php echo $row['title']; ?></a>
                                     </h5>
                                     <div class="blog__meta text-center py-1">
                                         <span class="blog__meta-tag blog__meta-tag--style1"><?php echo $row['event_category']; ?></span>
