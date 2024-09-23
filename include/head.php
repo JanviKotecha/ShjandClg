@@ -24,7 +24,7 @@
 
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 
   <!-- main css for template -->
   <link rel="stylesheet" href="assets/css/style.css">

@@ -1931,7 +1931,6 @@ ol {
   box-shadow: 0px -16px 48px rgba(6, 35, 63, 0.03), 0px 16px 48px rgba(6, 35, 63, 0.03);
   border-radius: 8px;
   padding: 12px 16px;
-  max-width: 450px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -9191,14 +9190,14 @@ textarea:focus-within {
 
 .cta__newsletter-inner {
   gap: 30px;
-  background-color: var(--brand-color);
+  background-color: #e79a591f;
   border-radius: 24px;
   width: 98%;
   margin: 0 auto;
   z-index: 2;
 }
 .cta__newsletter-inner--style3 {
-  background-color: var(--bg-color-10);
+  background-color: #e79a591f;
 }
 @media (max-width: 767px) {
   .cta__newsletter-inner {

@@ -43,31 +43,7 @@
                                 <a href="courses.php" class="trk-btn trk-btn--primary trk-btn--arrow">Explore Our Programs
                                     <span><i class="fa-solid fa-arrow-right"></i></span> </a>
                             </div>
-                            <div class="banner__content-social">
-                                <p>Follow Us</p>
-                                <ul class="social">
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style1 active"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style1"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style1"><i
-                                                class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style1"><i
-                                                class="fab fa-youtube"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="signin.html" class="social__link social__link--style1"><i
-                                                class="fab fa-twitter"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
@@ -78,10 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner__shape">
-            <span class="banner__shape-item banner__shape-item--1"><img src="assets/images/header/bag.png"
-                    alt="shape icon"></span>
-        </div>
+        
 
     </section>
     <!-- ===============>> Banner section end here <<================= -->

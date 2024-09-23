@@ -156,7 +156,7 @@
                 <small id="error-profile_photo" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-6 col-sm-6 px-1 d-flex justify-content-center">
-                <img id="profile_photo_preview" style="display: none; margin-top: 10px;" width="40" height="40" />
+                <img id="profile_photo_preview" style="display: none; margin-top: 10px;" width="100" height="40" />
             </div>
             <div class="col-12 col-md-6 col-sm-6 px-1 mt-2">
                 <p>Signature Photo <sup style="color:#9194A0">*</sup></p>
@@ -165,7 +165,7 @@
                 <small id="error-signature_photo" class="text-danger"></small>
             </div>
             <div class="col-12 col-md-6 col-sm-6 px-1 d-flex justify-content-center">
-                <img id="signature_photo_preview" style="display: none; margin-top: 10px;" width="40" height="40" />
+                <img id="signature_photo_preview" style="display: none; margin-top: 10px;" width="100" height="40" />
             </div>
         </div>
         <div class="button-row d-flex justify-content-center mt-5">

@@ -1,6 +1,5 @@
 <?php
-	// define("HOST_URL","http://localhost/FIP_web/");
-	define("HOST_URL","http://localhost/myWork/ShjandClg/");
+	define("HOST_URL","http://localhost/ShjandClg/");
 	
 	define("WEB_TITLE","Sahjanand College");
 

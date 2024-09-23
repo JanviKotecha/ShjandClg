@@ -60,25 +60,19 @@
                     <div>
                         <ul class="social">
                             <li class="social__item">
-                                <a href="#" class="social__link social__link--style22"><i
+                                <a href="https://www.facebook.com/sahajanandcollege" class="social__link social__link--style22"><i
                                         class="fab fa-facebook-f"></i></a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link social__link--style22 "><i
+                                <a href="https://www.instagram.com/sahajanand_college_gondal" class="social__link social__link--style22 "><i
                                         class="fab fa-instagram"></i></a>
                             </li>
+                            
                             <li class="social__item">
-                                <a href="#" class="social__link social__link--style22"><i
-                                        class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="social__item">
-                                <a href="#" class="social__link social__link--style22"><i
+                                <a href="https://youtu.be/n0ezZ9N4Eto?si=KZu53qbHKSX4aDTg" class="social__link social__link--style22"><i
                                         class="fab fa-youtube"></i></a>
                             </li>
-                            <li class="social__item">
-                                <a href="#" class="social__link social__link--style22 "><i
-                                        class="fab fa-twitter"></i></a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>

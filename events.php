@@ -5,8 +5,46 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>sahajanand college of IT and management Gondal </title>
+    <title>Sahajanand College of IT and Management, Gondal</title>
     <?php include("include/head.php"); ?>
+
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        /* Fullscreen Swiper styling */
+        #image-slider {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+        }
+
+        .slider-img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            max-height: 100%;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+        }
+
+        #close-slider {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 999;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,14 +52,12 @@
     <!-- ===============>> Preloader start here <<================= -->
     <?php include("include/preloder.php"); ?>
     <!-- ===============>> Preloader end here <<================= -->
+
     <!-- ===============>> Header section start here <<================= -->
     <header class="header-section bg-color-3">
         <?php include("include/header.php"); ?>
     </header>
     <!-- ===============>> Header section end here <<================= -->
-
-
-
 
     <!-- ================> Page header start here <================== -->
     <section class="page-header bg--cover" style="background-image:url(assets/images/header/1.png)">
@@ -43,9 +79,6 @@
     </section>
     <!-- ================> Page header end here <================== -->
 
-
-
-
     <!-- ===============>> Blogs section start here <<================= -->
     <div class="blog padding-top padding-bottom section-bg-color">
         <div class="container">
@@ -63,17 +96,18 @@
                     
                         if (mysqli_num_rows($result) > 0) {                        
                           while ($row = mysqli_fetch_array($result)) {
-                            ?>
+                    ?>
                     <div class="col-sm-6 col-lg-4">
                         <div class="blog__item" data-aos="fade-up" data-aos-duration="800">
                             <div class="blog__item-inner blog__item-inner--style2">
                                 <div class="blog__thumb eventsImg">
-                                    <img src="<?php echo $row["img"]=='' ? EVENTS_URL.'noimg.png' : (file_exists(UPLOAD_EVENTS_URL.$row["img"]) ? EVENTS_URL.$row["img"] : EVENTS_URL.'noimg.png'); ?>"
-                                        class="border c-img" />
+                                    <img src="<?php echo $row["img"] == '' ? EVENTS_URL.'noimg.png' : (file_exists(UPLOAD_EVENTS_URL.$row["img"]) ? EVENTS_URL.$row["img"] : EVENTS_URL.'noimg.png'); ?>"
+                                        class="border c-img open-slider" data-slide-index="<?php echo $offset; ?>" />
                                 </div>
 
                                 <div class="blog__content">
-                                    <h5 class="10 style2 text-center mt-3"> <a><?php echo $row['title']; ?></a>
+                                    <h5 class="10 style2 text-center mt-3"> 
+                                        <a><?php echo $row['title']; ?></a>
                                     </h5>
                                     <div class="blog__meta text-center py-1">
                                         <span class="blog__meta-tag blog__meta-tag--style1"><?php echo $row['event_category']; ?></span>
@@ -84,8 +118,10 @@
                     </div>
                     <?php 
                           }
-                        }  ?>
+                        }  
+                    ?>
                 </div>
+
                 <!-- Pagination -->
                 <div class="paginations" data-aos="fade-up" data-aos-duration="1200">
                     <ul class="lab-ul d-flex flex-wrap justify-content-center mb-1">
@@ -115,21 +151,65 @@
             </div>
         </div>
     </div>
-    <!-- ===============>> Blogs section start here <<================= -->
+    <!-- ===============>> Blogs section end here <<================= -->
 
+    <!-- Fullscreen Slider (initially hidden) -->
+    <div class="swiper-container" id="image-slider">
+        <div class="swiper-wrapper">
+            <?php
+            $events = $qm->getRecord("events");
+            while ($row = mysqli_fetch_array($events)) { ?>
+                <div class="swiper-slide">
+                    <img src="<?php echo $row["img"] == '' ? EVENTS_URL.'noimg.png' : (file_exists(UPLOAD_EVENTS_URL.$row["img"]) ? EVENTS_URL.$row["img"] : EVENTS_URL.'noimg.png'); ?>" class="slider-img" />
+                </div>
+            <?php } ?>
+        </div>
 
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
-
+        <!-- Close button -->
+        <div id="close-slider">X</div>
+    </div>
 
     <!-- ===============>> footer start here <<================= -->
     <?php include("include/footer.php"); ?>
     <!-- ===============>> footer end here <<================= -->
 
-
-
     <!-- ===============>> scrollToTop start here <<================= -->
     <?php include("include/footer-script.php"); ?>
 
+    <!-- Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Swiper
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                spaceBetween: 10,
+                loop: true,
+            });
+
+            // Open the slider when an image is clicked
+            document.querySelectorAll('.open-slider').forEach((img, index) => {
+                img.addEventListener('click', function () {
+                    const clickedSlideIndex = index;
+                    document.getElementById('image-slider').style.display = 'block';
+                    swiper.slideTo(clickedSlideIndex + 1, 0); // Move to the clicked image
+                });
+            });
+
+            // Close the slider
+            document.getElementById('close-slider').addEventListener('click', function () {
+                document.getElementById('image-slider').style.display = 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>

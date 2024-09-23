@@ -56,28 +56,7 @@
                             <div class="contact__social">
                                 <h3>let’s <span>get in touch</span>
                                     with us</h3>
-                                <ul class="social">
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style4 active"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style4 "><i
-                                                class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style4"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link social__link--style4"><i
-                                                class="fab fa-youtube"></i></a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="signin.html" class="social__link social__link--style4"><i
-                                                class="fab fa-twitter"></i></a>
-                                    </li>
-                                </ul>
+                                
                             </div>
                             <div class="contact__details">
                                 <div class="contact__item" data-aos="fade-right" data-aos-duration="1000">

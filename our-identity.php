@@ -151,7 +151,7 @@
             <div class="cta__wrapper">
                 <div class="cta__newsletter justify-content-center">
                     <div class="cta__newsletter-inner" data-aos="fade-up" data-aos-duration="1000"
-                        style="background-color : #e79a59a6!important;">
+                        >
                         <div class="cta__thumb">
                             <img src="assets/images/cta/3.png" alt="cta-thumb">
                         </div>
