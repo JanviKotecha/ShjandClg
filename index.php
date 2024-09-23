@@ -584,34 +584,36 @@
                                             $i=0;
                                             while ($row=mysqli_fetch_array($result)) { 
                                             $i++;?>
-                                    <div
-                                        class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
-                                        <!-- Dynamic class for vertical line position -->
-                                        <div
-                                            class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
-                                            <div class="roadmap__item-content">
-                                                <!-- Use dynamic data from the database -->
-                                                <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
-                                                <p><?php 
-                                                                    // Get the 'objective' field from the database
-                                                                    $objective = htmlspecialchars($row['objective']);
+                                            <div class="swiper-slide">
+                                                <div
+                                                    class="roadmap__item <?php echo ($i % 2 == 0) ? 'roadmap__item--reverse' : ''; ?>">
+                                                    <!-- Dynamic class for vertical line position -->
+                                                    <div
+                                                        class="roadmap__item-inner <?php echo ($i % 2 == 0) ? 'roadmap__item-inner--vertical-line-top' : 'roadmap__item-inner--vertical-line-bottom'; ?>">
+                                                        <div class="roadmap__item-content">
+                                                            <!-- Use dynamic data from the database -->
+                                                            <h5><?php echo htmlspecialchars($row['c_name']); ?></h5>
+                                                            <p><?php 
+                                                                                // Get the 'objective' field from the database
+                                                                                $objective = htmlspecialchars($row['objective']);
 
-                                                                    // Check if the objective length exceeds 200 characters
-                                                                    if (strlen($objective) > 50) {
-                                                                        // Truncate the text to 200 characters and add ellipsis
-                                                                        echo substr($objective, 0, 50) . '...';
-                                                                    } else {
-                                                                        // Print the full text if it's less than or equal to 200 characters
-                                                                        echo $objective;
-                                                                    } ?>
-                                                </p>
+                                                                                // Check if the objective length exceeds 200 characters
+                                                                                if (strlen($objective) > 50) {
+                                                                                    // Truncate the text to 200 characters and add ellipsis
+                                                                                    echo substr($objective, 0, 50) . '...';
+                                                                                } else {
+                                                                                    // Print the full text if it's less than or equal to 200 characters
+                                                                                    echo $objective;
+                                                                                } ?>
+                                                            </p>
+                                                        </div>
+                                                        <div class="roadmap__item-date">
+                                                            <!-- Format and display the date dynamically -->
+                                                            <span><?php echo $row['duration']; ?></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="roadmap__item-date">
-                                                <!-- Format and display the date dynamically -->
-                                                <span><?php echo $row['duration']; ?></span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <?php } 
                                         }  
                                     ?>
